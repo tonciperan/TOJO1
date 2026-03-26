@@ -1,25 +1,17 @@
-/* RESET I OSNOVE */
-body, html { 
-    height: 100%; 
-    margin: 0; 
-    font-family: 'Montserrat', sans-serif; 
-    overflow-x: hidden;
-}
-
 /* GLAVNI KONTEJNER */
 .contact-wrapper {
     position: relative;
     width: 100%;
-    height: calc(100vh - 80px); /* Oduzimamo visinu navigacije od ukupne visine ekrana */
-    margin-top: 80px; /* TOČNA VISINA TVOJE NAVIGACIJE - ako je veća, stavi npr. 100px */
+    height: calc(100vh - 80px);
+    margin-top: 80px;
     display: flex;
     align-items: center; 
-    justify-content: flex-end; /* Pomiče karticu na DESNU stranu */
+    justify-content: flex-end;
     padding-right: 8%; 
     box-sizing: border-box;
 }
 
-/* KARTA - Smanjena da ne bježi ispod headera */
+/* KARTA */
 .map-container {
     position: absolute;
     top: 0; 
@@ -39,7 +31,7 @@ body, html {
     max-width: 420px;
     box-shadow: 0 15px 40px rgba(0,0,0,0.2);
     text-align: left;
-    border-radius: 4px; /* Blago zaobljeni rubovi za moderniji izgled */
+    border-radius: 4px;
 }
 
 .contact-card h1 {
@@ -85,25 +77,31 @@ hr { border: 0; border-top: 1px solid #f0f0f0; margin: 25px 0; }
     letter-spacing: 1px;
 }
 
-/* MOBITEL PRILAGODBA */
+/* MOBITEL */
 @media (max-width: 768px) {
     .contact-wrapper {
-        margin-top: 70px; /* Nešto manji razmak za mobitele */
+        margin-top: 70px;
         height: auto;
         padding: 0;
         display: block;
+        /* VAŽNO: ne smije blokirati nav overlay */
+        position: static;
+        overflow: visible;
     }
     .map-container {
         position: relative;
         height: 300px;
+        z-index: 0;
     }
     .contact-card {
         max-width: 100%;
         padding: 40px 20px;
         box-shadow: none;
+        position: static;
     }
 }
-/* Osiguranje da booking modal ostane sakriven na kontakt stranici */
+
+/* Booking modal */
 #bookingModal.modal {
     display: none; 
     position: fixed;
@@ -115,7 +113,6 @@ hr { border: 0; border-top: 1px solid #f0f0f0; margin: 25px 0; }
     background: rgba(0,0,0,0.8);
 }
 
-/* Stil za sadržaj modala na kontakt stranici */
 #bookingModal .modal-content {
     background: #fff;
     margin: 5% auto;
@@ -123,5 +120,11 @@ hr { border: 0; border-top: 1px solid #f0f0f0; margin: 25px 0; }
     max-width: 500px;
     border-radius: 4px;
     position: relative;
-    color: #1a1a1a; /* Da tekst ne bude bijel kao pozadina */
+    color: #1a1a1a;
+}
+
+/* ── NAV FIX — hamburger uvijek klikabilan ── */
+.menu-toggle {
+    z-index: 10001 !important;
+    position: relative !important;
 }
