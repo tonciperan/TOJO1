@@ -334,11 +334,12 @@ nav > a:hover {
 /* --- 4. SEKCIJA APARTMANA (SLIDER) --- */
 .apartment-slider-section {
     background: #ffffff;
-    padding: 80px 0;
+    padding: 80px 0 110px;
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .apt-card {
@@ -2730,17 +2731,19 @@ html {
 
 /* ── MAINSWIPER PAGINATION ── */
 .main-apt-pagination {
-    bottom: 0px !important;
     position: absolute !important;
     z-index: 10;
+    width: 100%;
+    text-align: center;
 }
 
 .main-apt-pagination .swiper-pagination-bullet {
-    background: rgba(255,255,255,0.5) !important;
+    background: rgba(26, 26, 26, 0.25) !important;
     width: 8px !important;
     height: 8px !important;
     opacity: 1 !important;
     transition: all 0.3s !important;
+    margin: 0 4px !important;
 }
 
 .main-apt-pagination .swiper-pagination-bullet-active {
@@ -2918,7 +2921,6 @@ body.menu-open header {
 
 /* Nav footer — kontakt info na dnu */
 nav::after {
-    content: 'apartmani-tojo1.netlify.app';
     position: absolute;
     bottom: 30px;
     left: 40px;

@@ -45,11 +45,10 @@ document.addEventListener('DOMContentLoaded', function() {
     if (btn && nav) {
         btn.onclick = function(e) {
             e.preventDefault();
-            // Makni inline right style koji može blokirati CSS animaciju
             nav.style.right = '';
             btn.classList.toggle('active');
             nav.classList.toggle('active');
-            body.classList.toggle('menu-open');
+            document.body.classList.toggle('menu-open');
         };
     }
 });
