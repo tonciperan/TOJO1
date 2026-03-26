@@ -2547,14 +2547,18 @@ html.with-fancybox body {
         flex-direction: column;
         max-height: none;
     }
-    .lm-main {
-        min-height: 220px;
-        max-height: 260px;
-    }
     .lm-right {
+        order: -1;
         min-width: unset;
         padding: 22px 18px;
         max-height: 50vh;
+    }
+    .lm-left {
+        order: 1;
+    }
+    .lm-main {
+        min-height: 220px;
+        max-height: 260px;
     }
     .pg-main {
         min-height: 220px;
