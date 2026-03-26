@@ -649,4 +649,12 @@
                 th.src = src;
                 th.style.cssText = 'width:58px;height:42px;object-fit:cover;border-radius:3px;cursor:pointer;flex-shrink:0;opacity:'+(i===_gIdx?'1':'0.45')+';outline:'+(i===_gIdx?'2px solid #c5a47e':'none')+';transition:opacity 0.2s;';
                 th.onclick = function() { _gIdx=i; renderGallery(); };
-                tr.appendChi
+                tr.appendChild(th);
+            });
+            _gOv.appendChild(tr);
+        }
+
+        function closeGallery() { if(_gOv) _gOv.style.display='none'; document.body.style.overflow=''; }
+    </script>
+    </body>
+</html>

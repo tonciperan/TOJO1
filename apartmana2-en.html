@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <!-- SEO -->
-    <meta name="description" content="Spacious apartment A2 in Grebaštica for 5 persons. Two bedrooms, balcony with panoramic sea view. Direct booking with owner.">
-    <meta name="keywords" content="apartmani Grebaštica, smještaj Šibenik, apartmani uz more, ljetovanje Dalmacija, NP Krka, Kornati">
+    <meta name="description" content="Spacious apartment A2 in Grebaštica for 5 persons. Two bedrooms, balcony with panoramic sea view.">
+    <meta name="keywords" content="apartmani Grebaštica, smještaj Šibenik, apartments Grebaštica, accommodation Šibenik, sea view Croatia">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://www.apartments-tojo.com/apartmana2-en.html">
+    <link rel="alternate" hreflang="hr" href="https://www.apartments-tojo.com/apartmana2.html">
+    <link rel="alternate" hreflang="en" href="https://www.apartments-tojo.com/apartmana2-en.html">
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.apartments-tojo.com/apartmana2-en.html">
     <meta property="og:title" content="Apartment A2 | TOJO Apartments Grebaštica – 5 persons">
-    <meta property="og:description" content="Spacious apartment A2 in Grebaštica for 5 persons. Two bedrooms, balcony with panoramic sea view. Direct booking with owner.">
+    <meta property="og:description" content="Spacious apartment A2 in Grebaštica for 5 persons. Two bedrooms, balcony with panoramic sea view.">
     <meta property="og:image" content="https://www.apartments-tojo.com/images/logo.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -20,13 +22,13 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Apartment A2 | TOJO Apartments Grebaštica – 5 persons">
-    <meta name="twitter:description" content="Spacious apartment A2 in Grebaštica for 5 persons. Two bedrooms, balcony with panoramic sea view. Direct booking with owner.">
+    <meta name="twitter:description" content="Spacious apartment A2 in Grebaštica for 5 persons. Two bedrooms, balcony with panoramic sea view.">
     <meta name="twitter:image" content="https://www.apartments-tojo.com/images/logo.png">
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/logo.png">
+   <link rel="icon" type="image/png" href="images/logo.png">
     <link rel="apple-touch-icon" href="images/logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Apartment A2 | TOJO Apartments Grebaštica – 5 persons</title>
+    <title>Apartment A1 | TOJO Apartments Grebaštica – 4 persons</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -73,19 +75,6 @@
         .btn-whatsapp { flex: 1; display: inline-block; padding: 18px 20px; background: #25D366; color: #fff; text-align: center; text-decoration: none; font-size: 12px; letter-spacing: 2px; font-weight: 600; transition: 0.3s; }
         .btn-whatsapp:hover { background: #1ebe5b; transform: translateY(-2px); }
 
-        /* Highlight badge za najtraženiji apartman */
-        .apt-badge {
-            display: inline-block;
-            background: #c5a47e;
-            color: #fff;
-            font-size: 10px;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            padding: 5px 14px;
-            border-radius: 2px;
-            margin-bottom: 12px;
-        }
-
         .apt-details-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; margin-bottom: 80px; padding-top: 60px; border-top: 1px solid #eee; }
         .apt-section-title { font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 400; margin-bottom: 30px; padding-bottom: 12px; border-bottom: 1px solid #eee; }
 
@@ -125,14 +114,6 @@
         .other-apt-card strong { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 400; display: block; }
         .other-apt-card p { font-size: 13px; color: #888; margin-top: 8px; }
 
-        /* Sobe highlight sekcija */
-        .rooms-section { margin-bottom: 80px; padding-top: 60px; border-top: 1px solid #eee; }
-        .rooms-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 25px; margin-top: 30px; }
-        .room-card { padding: 25px; background: #f9f9f9; border-radius: 2px; }
-        .room-card h4 { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 400; margin-bottom: 10px; }
-        .room-card p { font-size: 13px; color: #666; line-height: 1.7; }
-        .room-icon { font-size: 28px; margin-bottom: 12px; display: block; }
-
         @media (max-width: 1024px) {
             .apt-hero-top { flex-direction: column; gap: 30px; }
             .apt-info-col { position: static; width: 100%; }
@@ -145,7 +126,12 @@
         }
         @media (max-width: 768px) {
             .apt-detail-hero { padding: 100px 4% 40px; }
-            .apt-gallery-col { width: 100%; max-width: 100%; }
+
+            /* Galerija — puna širina, fiksna visina */
+            .apt-gallery-col {
+                width: 100%;
+                max-width: 100%;
+            }
             .apt-main-swiper {
                 aspect-ratio: 4/3 !important;
                 height: auto !important;
@@ -164,19 +150,38 @@
                 display: block !important;
                 max-width: none !important;
             }
+
+            /* Sakrij thumbs i strelice na mobitelu */
             .apt-thumb-swiper { display: none !important; }
             .n1, .p1 { display: none !important; }
+
+            /* Info stupac — puna širina */
             .apt-info-col { width: 100%; }
+
+            /* Statistike — manji */
             .apt-quick-stats { gap: 8px; }
             .apt-stat { padding: 10px 12px; min-width: 60px; }
             .apt-stat-num { font-size: 18px; }
+
+            /* Highlight box — stupac */
             .apt-highlight-box { flex-direction: column; text-align: center; }
+
+            /* Sadržaji — jedan stupac */
             .amenities-grid { grid-template-columns: 1fr; }
+
+            /* CTA gumbi — stupac */
             .apt-cta-btns { flex-direction: column; }
-            .apt-cta-btns .btn-book, .btn-whatsapp { flex: none; width: 100%; }
+            .apt-cta-btns .btn-book,
+            .btn-whatsapp { flex: none; width: 100%; }
+
+            /* Lokacija */
             .apt-location-grid { grid-template-columns: 1fr; gap: 25px; }
             .apt-map iframe { height: 250px; }
+
+            /* Recenzije */
             .reviews-grid { grid-template-columns: 1fr; }
+
+            /* Ostali apartmani */
             .other-apts-grid { flex-direction: column; }
         }
     </style>
@@ -197,7 +202,7 @@
             </div>
             <a href="kontakt-en.html">Contact</a>
             <a href="#" class="btn-book nav-cta-btn" id="nav-rezerviraj">BOOK NOW</a>
-                     <div class="lang-switch"><a href="apartmana2.html">HR</a><span>|</span><a href="apartmana2-en.html" class="lang-active">EN</a></div>
+                     <div class="lang-switch"><a href="apartmana2.html">HR</a><span>|</span><a href="#" class="lang-active">EN</a></div>
         </nav>
         <div class="menu-toggle" id="mobile-menu">
             <span></span><span></span><span></span>
@@ -209,9 +214,9 @@
         <!-- GORNJI DIO: galerija + info -->
         <div class="apt-hero-top">
 
-                    <div class="apt-gallery-col">
+                <div class="apt-gallery-col">
                        <div class="swiper mySwiper2 apt-main-swiper">
-                    <div class="swiper-wrapper">
+                        <div class="swiper-wrapper">
                         <div class="swiper-slide"><img src="images/A2/balkon.jpeg" alt="Apartment A2 – balkon s pogledom na more"></div>
                         <div class="swiper-slide"><img src="images/A2/balkon (2).jpeg" alt="Apartment A2 – interijer"></div>
                         <div class="swiper-slide"><img src="images/A2/balkon (3).jpeg" alt="Apartment A2 – spavaća soba"></div>
@@ -247,6 +252,24 @@
                         <div class="swiper-slide"><img src="images/A2/wc.jpg" alt="thumb 2"></div>
                         <div class="swiper-slide"><img src="images/A2/balkon (2).jpeg" alt="thumb 3"></div>
                         <div class="swiper-slide"><img src="images/A2/balkon (3).jpeg" alt="thumb 4"></div>
+                        <div class="swiper-slide"><img src="images/A2/wc.jpg" alt="thumb 5"></div>
+                        <div class="swiper-slide"><img src="images/A2/wc (1).jpeg" alt="thumb 6"></div>
+                        <div class="swiper-slide"><img src="images/A2/wc (2).jpeg" alt="thumb 7"></div>
+                        <div class="swiper-slide"><img src="images/A2/wc (3).jpg" alt="thumb 8"></div>
+                        <div class="swiper-slide"><img src="images/A2/wc (4).jpeg" alt="thumb 9"></div>
+                        <div class="swiper-slide"><img src="images/A2/kuhinja (6).jpg" alt="thumb 10"></div>
+                        <div class="swiper-slide"><img src="images/A2/kuhinja (3).jpg" alt="thumb 11"></div>
+                        <div class="swiper-slide"><img src="images/A2/kuhinja (4).jpg" alt="thumb 12"></div>
+                        <div class="swiper-slide"><img src="images/A2/kuhinja (5).jpg" alt="thumb 13"></div>
+                        <div class="swiper-slide"><img src="images/A2/pred.jpg" alt="thumb 14"></div>
+                        <div class="swiper-slide"><img src="images/A2/pred1.jpg" alt="thumb 15"></div>
+                        <div class="swiper-slide"><img src="images/A2/pred (2).jpg" alt="thumb 16"></div>
+                        <div class="swiper-slide"><img src="images/A2/soba1 (2).jpg" alt="thumb 17"></div>
+                        <div class="swiper-slide"><img src="images/A2/soba1 (3).jpg" alt="thumb 18"></div>
+                        <div class="swiper-slide"><img src="images/A2/soba1 (4).jpg" alt="thumb 19"></div>
+                        <div class="swiper-slide"><img src="images/A2/soba2 (3).jpg" alt="thumb 20"></div>
+                        <div class="swiper-slide"><img src="images/A2/soba2 (4).jpg" alt="thumb 21"></div>
+                        <div class="swiper-slide"><img src="images/A2/soba2 (5).jpg" alt="thumb 22"></div>
                     </div>
                 </div>
             </div>
@@ -494,7 +517,7 @@
         </div>
     </footer>
 
-    <!-- Booking Modal -->
+     <!-- Booking Modal -->
     <div id="bookingModal" class="modal">
         <div class="modal-content">
             <span class="close-modal">&times;</span>
@@ -575,16 +598,16 @@
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="script.js"></script>
     <script src="apartmani.js"></script>
-                <script>
+              <script>
         document.addEventListener('DOMContentLoaded', function() {
-            var thumbsSw = new Swiper('.myThumb1', {
+            var thumbsSw = new Swiper('.myThumb2', {
                 spaceBetween: 8,
                 slidesPerView: 4,
                 freeMode: true,
                 watchSlidesProgress: true,
             });
 
-            var mainEl = document.querySelector('.mySwiper1');
+            var mainEl = document.querySelector('.mySwiper2');
             if (mainEl && mainEl.swiper) { mainEl.swiper.destroy(true, true); }
 
             var galleryImgs = [];
@@ -593,11 +616,11 @@
                 if (src && galleryImgs.indexOf(src) === -1) galleryImgs.push(src);
             });
 
-            new Swiper('.mySwiper1', {
+            new Swiper('.mySwiper2', {
                 loop: true,
                 speed: 700,
-                navigation: { nextEl: '.n1', prevEl: '.p1' },
-                pagination: { el: '#pagination1', clickable: true, dynamicBullets: true },
+                navigation: { nextEl: '.n2', prevEl: '.p2' },
+                pagination: { el: '#pagination2', clickable: true, dynamicBullets: true },
                 thumbs: { swiper: thumbsSw },
                 keyboard: { enabled: true },
                 on: {
@@ -687,4 +710,5 @@
 
         function closeGallery() { if(_gOv) _gOv.style.display='none'; document.body.style.overflow=''; }
     </script>
-</body>
+    </body>
+</html>
