@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartman A1 | Apartmani TOJO – Grebaštica</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="apartmani.css">
+    <style>
+        .apt-detail-hero {
+            padding: 140px 10% 60px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        .apt-hero-top {
+            display: flex;
+            gap: 60px;
+            align-items: flex-start;
+            margin-bottom: 80px;
+        }
+        .apt-gallery-col { flex: 1.3; min-width: 0; }
+        .apt-main-swiper { width: 100%; height: auto; aspect-ratio: 16/10; border-radius: 2px; overflow: hidden; }
+        .apt-main-swiper .swiper-slide img { width: 100%; height: 100%; object-fit: cover; }
+        .apt-thumb-swiper { margin-top: 10px; height: 80px; }
+        .apt-thumb-swiper .swiper-slide { opacity: 0.5; cursor: pointer; transition: opacity 0.3s; border-radius: 2px; overflow: hidden; }
+        .apt-thumb-swiper .swiper-slide-thumb-active { opacity: 1; }
+        .apt-thumb-swiper .swiper-slide img { width: 100%; height: 100%; object-fit: cover; }
+
+        .apt-info-col { flex: 1; position: relative; }
+        .apt-info-col .apt-label { font-size: 11px; letter-spacing: 3px; color: #c5a47e; text-transform: uppercase; display: block; margin-bottom: 12px; }
+        .apt-info-col h1 { font-family: 'Playfair Display', serif; font-size: 42px; font-weight: 400; margin-bottom: 20px; line-height: 1.2; }
+
+        .apt-quick-stats { display: flex; gap: 15px; margin-bottom: 25px; flex-wrap: wrap; }
+        .apt-stat { display: flex; flex-direction: column; align-items: center; background: #f9f9f9; padding: 14px 18px; border-radius: 2px; min-width: 75px; border-bottom: 2px solid #c5a47e; }
+        .apt-stat-num { font-size: 22px; font-weight: 600; color: #1a1a1a; line-height: 1; }
+        .apt-stat-lbl { font-size: 10px; text-transform: uppercase; letter-spacing: 1px; color: #888; margin-top: 4px; }
+
+        .apt-desc { font-size: 15px; color: #555; line-height: 1.9; margin-bottom: 30px; }
+
+        .apt-price-box { background: #f9f9f9; border-left: 4px solid #c5a47e; padding: 20px 25px; margin-bottom: 25px; }
+        .apt-price-box p { font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; }
+        .apt-price-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; }
+        .apt-price-row span:first-child { font-size: 13px; color: #555; }
+        .apt-price-row span:last-child { font-size: 18px; font-weight: 600; color: #1a1a1a; }
+
+        .apt-cta-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+        .apt-cta-btns .btn-book { flex: 1; text-align: center; }
+        .btn-whatsapp { flex: 1; display: inline-block; padding: 18px 20px; background: #25D366; color: #fff; text-align: center; text-decoration: none; font-size: 12px; letter-spacing: 2px; font-weight: 600; transition: 0.3s; }
+        .btn-whatsapp:hover { background: #1ebe5b; transform: translateY(-2px); }
+
+        .apt-details-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; margin-bottom: 80px; padding-top: 60px; border-top: 1px solid #eee; }
+        .apt-section-title { font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 400; margin-bottom: 30px; padding-bottom: 12px; border-bottom: 1px solid #eee; }
+
+        .amenities-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+        .amenity-item { display: flex; align-items: center; gap: 10px; font-size: 13px; color: #444; }
+        .amenity-icon { width: 36px; height: 36px; background: #f9f9f9; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 16px; flex-shrink: 0; }
+
+        .rules-list { list-style: none; padding: 0; }
+        .rules-list li { display: flex; align-items: flex-start; gap: 12px; padding: 12px 0; border-bottom: 1px solid #f5f5f5; font-size: 13px; color: #444; line-height: 1.6; }
+        .rules-list li:last-child { border-bottom: none; }
+        .rule-icon { font-size: 18px; flex-shrink: 0; margin-top: 1px; }
+        .rule-label { font-weight: 600; color: #1a1a1a; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; display: block; margin-bottom: 2px; }
+
+        .apt-location-section { margin-bottom: 80px; padding-top: 60px; border-top: 1px solid #eee; }
+        .apt-location-grid { display: grid; grid-template-columns: 1fr 2fr; gap: 60px; align-items: start; }
+        .distances-list { list-style: none; padding: 0; }
+        .distances-list li { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #f5f5f5; font-size: 13px; color: #444; }
+        .distances-list li:last-child { border-bottom: none; }
+        .distances-list span:last-child { font-weight: 600; color: #c5a47e; }
+        .apt-map iframe { width: 100%; height: 350px; border: 0; border-radius: 2px; }
+
+        .apt-reviews-section { padding-top: 60px; border-top: 1px solid #eee; margin-bottom: 80px; }
+        .reviews-header { display: flex; align-items: center; gap: 20px; margin-bottom: 40px; }
+        .review-score { background: #1a1a1a; color: #fff; padding: 14px 20px; border-radius: 2px; text-align: center; }
+        .review-score-num { font-size: 32px; font-weight: 600; line-height: 1; display: block; }
+        .review-score-lbl { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; opacity: 0.7; }
+        .reviews-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 25px; }
+        .review-card { background: #f9f9f9; padding: 25px; border-radius: 2px; border-left: 3px solid #c5a47e; }
+        .review-card p { font-size: 13px; color: #555; line-height: 1.8; font-style: italic; margin-bottom: 15px; }
+        .review-author { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: #1a1a1a; }
+        .review-stars { color: #c5a47e; font-size: 13px; margin-bottom: 8px; }
+
+        .other-apts-grid { display: flex; gap: 20px; flex-wrap: wrap; }
+        .other-apt-card { flex: 1; min-width: 200px; display: block; padding: 25px; background: #f9f9f9; text-decoration: none; color: #1a1a1a; border-bottom: 2px solid #c5a47e; transition: background 0.3s; }
+        .other-apt-card:hover { background: #f0ebe4; }
+        .other-apt-card .apt-label { margin-bottom: 8px; }
+        .other-apt-card strong { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 400; display: block; }
+        .other-apt-card p { font-size: 13px; color: #888; margin-top: 8px; }
+
+        @media (max-width: 1024px) {
+            .apt-hero-top { flex-direction: column; gap: 30px; }
+            .apt-info-col { position: static; width: 100%; }
+            .apt-gallery-col { width: 100%; }
+            .apt-main-swiper { height: 400px; }
+            .apt-details-grid { grid-template-columns: 1fr; gap: 40px; }
+            .apt-location-grid { grid-template-columns: 1fr; }
+            .reviews-grid { grid-template-columns: 1fr; }
+            .rooms-grid { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 768px) {
+            .apt-detail-hero { padding: 100px 4% 40px; }
+
+            /* Galerija — puna širina, fiksna visina */
+            .apt-gallery-col {
+                width: 100%;
+                max-width: 100%;
+            }
+            .apt-main-swiper {
+                aspect-ratio: 4/3 !important;
+                height: auto !important;
+                width: 100% !important;
+                overflow: hidden;
+            }
+            .apt-main-swiper .swiper-slide {
+                width: 100% !important;
+                height: 100% !important;
+            }
+            .apt-main-swiper .swiper-slide img {
+                width: 100% !important;
+                height: 100% !important;
+                object-fit: cover !important;
+                object-position: center !important;
+                display: block !important;
+                max-width: none !important;
+            }
+
+            /* Sakrij thumbs i strelice na mobitelu */
+            .apt-thumb-swiper { display: none !important; }
+            .n1, .p1 { display: none !important; }
+
+            /* Info stupac — puna širina */
+            .apt-info-col { width: 100%; }
+
+            /* Statistike — manji */
+            .apt-quick-stats { gap: 8px; }
+            .apt-stat { padding: 10px 12px; min-width: 60px; }
+            .apt-stat-num { font-size: 18px; }
+
+            /* Highlight box — stupac */
+            .apt-highlight-box { flex-direction: column; text-align: center; }
+
+            /* Sadržaji — jedan stupac */
+            .amenities-grid { grid-template-columns: 1fr; }
+
+            /* CTA gumbi — stupac */
+            .apt-cta-btns { flex-direction: column; }
+            .apt-cta-btns .btn-book,
+            .btn-whatsapp { flex: none; width: 100%; }
+
+            /* Lokacija */
+            .apt-location-grid { grid-template-columns: 1fr; gap: 25px; }
+            .apt-map iframe { height: 250px; }
+
+            /* Recenzije */
+            .reviews-grid { grid-template-columns: 1fr; }
+
+            /* Ostali apartmani */
+            .other-apts-grid { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">APARTMANI TOJO</a>
+        <nav id="nav-menu">
+            <a href="index.html">Početna</a>
+            <div class="nav-dropdown">
+                <a href="#">Apartmani</a>
+                <div class="dropdown-menu">
+                    <a href="apartmana1.html">Apartman A1<span class="dropdown-sub">1. Kat • 4 osobe</span></a>
+                    <a href="apartmana2.html">Apartman A2<span class="dropdown-sub">1. Kat • 5 osoba</span></a>
+                    <a href="apartmana3.html">Apartman A3<span class="dropdown-sub">1. Kat • 4 osobe</span></a>
+                </div>
+            </div>
+            <a href="kontakt.html">Kontakt</a>
+            <a href="#" class="btn-book nav-cta-btn" id="nav-rezerviraj">REZERVIRAJ SAD</a>
+        </nav>
+        <div class="menu-toggle" id="mobile-menu">
+            <span></span><span></span><span></span>
+        </div>
+    </header>
+
+    <main class="apt-detail-hero">
+
+        <!-- GORNJI DIO: galerija + info -->
+        <div class="apt-hero-top">
+
+<div class="apt-gallery-col">
+                <div class="swiper mySwiper1 apt-main-swiper" id="mainSwiper1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/A1/balkon (2).jpeg" alt="Apartman A1 – terasa" style="cursor:zoom-in;"></div>
+                        <div class="swiper-slide"><img src="images/A1/balkon (3).jpeg" alt="Apartman A1 – pogled na more" style="cursor:zoom-in;width:100%;height:100%;object-fit:cover;display:block;"></div>
+                    <div class="swiper-slide"><img src="images/A1/kodnik.jpeg" alt="Apartman A1 – hodnik" style="cursor:zoom-in;width:100%;height:100%;object-fit:cover;display:block;"></div>
+                    <div class="swiper-slide"><img src="images/A1/soba (11).jpg" alt="Apartman A1 – spavaća soba" style="cursor:zoom-in;width:100%;height:100%;object-fit:cover;display:block;"></div>
+                    <div class="swiper-slide"><img src="images/A1/soba (4).jpg" alt="Apartman A1 – spavaća soba" style="cursor:zoom-in;width:100%;height:100%;object-fit:cover;display:block;"></div>
+                    <div class="swiper-slide"><img src="images/A1/wc.jpeg" alt="Apartman A1 – kupaonica" style="cursor:zoom-in;width:100%;height:100%;object-fit:cover;display:block;"></div>
+                    <div class="swiper-slide"><img src="images/A1/kuzina.jpg" alt="Apartman A1 – kuhinja" style="cursor:zoom-in;width:100%;height:100%;object-fit:cover;display:block;"></div>
+                    <div class="swiper-slide"><img src="images/A1/kuzina (2).jpg" alt="Apartman A1 – kuhinja" style="cursor:zoom-in;width:100%;height:100%;object-fit:cover;display:block;"></div>
+                    </div>
+                    <div class="swiper-button-next n1"></div>
+                    <div class="swiper-button-prev p1"></div>
+                    <div class="swiper-pagination" id="pagination1"></div>
+                </div>
+                <div class="swiper myThumb1 apt-thumb-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/A1/balkon (2).jpeg" alt="thumb 1" style="cursor:zoom-in;width:100%;height:100%;object-fit:cover;display:block;"></div>
+                        <div class="swiper-slide"><img src="images/A1/balkon (3).jpeg" alt="thumb 2" style="cursor:zoom-in;width:100%;height:100%;object-fit:cover;display:block;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="apt-info-col">
+                <span class="apt-label">1. Kat • Apartmani TOJO</span>
+                <h1>Apartman A1</h1>
+
+                <div class="apt-quick-stats">
+                    <div class="apt-stat">
+                        <span class="apt-stat-num">4</span>
+                        <span class="apt-stat-lbl">Osobe</span>
+                    </div>
+                    <div class="apt-stat">
+                        <span class="apt-stat-num">50</span>
+                        <span class="apt-stat-lbl">m²</span>
+                    </div>
+                    <div class="apt-stat">
+                        <span class="apt-stat-num">1</span>
+                        <span class="apt-stat-lbl">Spavaća</span>
+                    </div>
+                    <div class="apt-stat">
+                        <span class="apt-stat-num">1</span>
+                        <span class="apt-stat-lbl">Kupaonica</span>
+                    </div>
+                </div>
+
+                <p class="apt-desc">
+                    Prostran apartman od 50 m² s direktnim izlazom na natkriven terasu i uređeni vrt.
+                    U spavaćoj sobi nalazi se bračni krevet s izlazom na terasu. Kuhinja ima razvlačnu sofu —
+                    idealno za obitelji s djecom. Apartman je potpuno opremljen klimom, satelitskim TV-om,
+                    tosterom i kuhalom za vodu. WiFi i parking su besplatni.
+                </p>
+
+                <div class="apt-price-box">
+                    <p>Cijena po noći</p>
+                    <div class="apt-price-row">
+                        <span>Pred/post sezona</span>
+                        <span>od 60 €</span>
+                    </div>
+                    <div class="apt-price-row">
+                        <span>Visoka sezona (srpanj – kolovoz)</span>
+                        <span>od 80 €</span>
+                    </div>
+                </div>
+
+                <div class="apt-cta-btns">
+                    <a href="javascript:void(0)" class="btn-book" data-apt="A1">REZERVIRAJ SAD</a>
+                    <a href="https://wa.me/385955502487?text=Zanima%20me%20Apartman%20A1" target="_blank" class="btn-whatsapp">WHATSAPP</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- SADRŽAJI I PRAVILA -->
+        <div class="apt-details-grid">
+            <div>
+                <h2 class="apt-section-title">Sadržaji apartmana</h2>
+                <div class="amenities-grid">
+                    <div class="amenity-item"><div class="amenity-icon">📶</div><span>Besplatni WiFi</span></div>
+                    <div class="amenity-item"><div class="amenity-icon">❄️</div><span>Klima uređaj</span></div>
+                    <div class="amenity-item"><div class="amenity-icon">🚗</div><span>Besplatan parking</span></div>
+                    <div class="amenity-item"><div class="amenity-icon">📺</div><span>Satelitski TV</span></div>
+                    <div class="amenity-item"><div class="amenity-icon">🍳</div><span>Potpuno opremljena kuhinja</span></div>
+                    <div class="amenity-item"><div class="amenity-icon">☕</div><span>Kuhalo za vodu & toster</span></div>
+                    <div class="amenity-item"><div class="amenity-icon">🌿</div><span>Natkrivena terasa & vrt</span></div>
+                    <div class="amenity-item"><div class="amenity-icon">🛁</div><span>Kupaonica s kadom</span></div>
+                    <div class="amenity-item"><div class="amenity-icon">🛏️</div><span>Posteljina i ručnici</span></div>
+                    <div class="amenity-item"><div class="amenity-icon">🍖</div><span>Roštilj u dvorištu</span></div>
+                    <div class="amenity-item"><div class="amenity-icon">🌊</div><span>Pogled na more</span></div>
+                    <div class="amenity-item"><div class="amenity-icon">🐾</div><span>Kućni ljubimci dopušteni</span></div>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="apt-section-title">Pravila boravka</h2>
+                <ul class="rules-list">
+                    <li>
+                        <span class="rule-icon">🕐</span>
+                        <div>
+                            <span class="rule-label">Check-in / Check-out</span>
+                            Check-in od 14:00 — Check-out do 10:00. Molimo najavite dolazak unaprijed.
+                        </div>
+                    </li>
+                    <li>
+                        <span class="rule-icon">👶</span>
+                        <div>
+                            <span class="rule-label">Djeca</span>
+                            Dobrodošla djeca svih uzrasta. Djeca od 3 godine naplaćuju se kao odrasli. Krevetić nije dostupan.
+                        </div>
+                    </li>
+                    <li>
+                        <span class="rule-icon">🐾</span>
+                        <div>
+                            <span class="rule-label">Kućni ljubimci</span>
+                            Kućni ljubimci su dopušteni uz mogući dodatni trošak.
+                        </div>
+                    </li>
+                    <li>
+                        <span class="rule-icon">🚬</span>
+                        <div>
+                            <span class="rule-label">Pušenje</span>
+                            Zabranjeno unutar apartmana. Dozvoljeno isključivo na terasi.
+                        </div>
+                    </li>
+                    <li>
+                        <span class="rule-icon">💵</span>
+                        <div>
+                            <span class="rule-label">Plaćanje</span>
+                            Isključivo gotovinom. Puni iznos podmiriti prije dolaska.
+                        </div>
+                    </li>
+                    <li>
+                        <span class="rule-icon">🏡</span>
+                        <div>
+                            <span class="rule-label">O smještaju</span>
+                            Vlasnici žive u kući i uvijek su dostupni za pomoć gostima.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- LOKACIJA -->
+        <div class="apt-location-section">
+            <h2 class="apt-section-title">Lokacija</h2>
+            <div class="apt-location-grid">
+                <div>
+                    <p style="font-size:14px; color:#555; line-height:1.9; margin-bottom:25px;">
+                        Smješteni smo u Bašelovićima 12A, u mirnoj uvali Grebaštica okruženoj
+                        mediteranskom vegetacijom. Ispred kuće nalazi se prekrasan uređeni vrt.
+                        Grebaštica je malo turističko odredište 14 km južno od Šibenika,
+                        poznato po skrovitim plažama i kristalno čistom moru.
+                    </p>
+                    <ul class="distances-list">
+                        <li><span>🏖️ Plaža (Banovci)</span><span>15 min pješice</span></li>
+                        <li><span>🛒 Dućan</span><span>15 min pješice</span></li>
+                        <li><span>🍽️ Restorani</span><span>15 min pješice</span></li>
+                        <li><span>🏛️ Šibenik</span><span>14 km / 15 min vožnje</span></li>
+                        <li><span>💦 NP Krka</span><span>25 km / 25 min vožnje</span></li>
+                        <li><span>⛪ Primošten</span><span>6 km / 10 min vožnje</span></li>
+                        <li><span>✈️ Zračna luka Split</span><span>50 km / 45 min vožnje</span></li>
+                    </ul>
+                </div>
+                <div class="apt-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2639.183237917589!2d15.957384075860165!3d43.64168547110272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133523503eea7b17%3A0xbd230735e61d25b6!2sApartment%20TOJO!5e1!3m2!1shr!2shr!4v1773226132801!5m2!1shr!2shr"
+                        allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- RECENZIJE -->
+        <div class="apt-reviews-section">
+            <div class="reviews-header">
+                <div class="review-score">
+                    <span class="review-score-num">9.2</span>
+                    <span class="review-score-lbl">Izvrsno</span>
+                </div>
+                <div>
+                    <h2 class="apt-section-title" style="margin-bottom:5px; border:none; padding:0;">Što kažu gosti</h2>
+                    <p style="font-size:13px; color:#888;">Na temelju recenzija s Booking.com</p>
+                </div>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p>"Prekrasna terasa s pogledom na more. Gostoprimljivi domaćini — poklonili su nam bademe, suhe smokve i domaće vino. Osjećali smo se kao kod familije."</p>
+                    <span class="review-author">Gost iz Poljske</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p>"Fantastičan odmor! Mirno mjesto, bistro more. Apartman čist i uredan, sve na svom mjestu. Domaćini su bili iznimno ljubazni i dostupni."</p>
+                    <span class="review-author">Gost iz Mađarske</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p>"Preporučujem svima! Apartman u skladu sa slikama — čist, ugodan, kratka udaljenost do plaže i restorana. Definitivno se vraćamo."</p>
+                    <span class="review-author">Gost iz Hrvatske</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- OSTALI APARTMANI -->
+        <div style="padding-top:60px; border-top:1px solid #eee; margin-bottom:60px;">
+            <h2 class="apt-section-title">Pogledajte i ostale apartmane</h2>
+            <div class="other-apts-grid">
+                <a href="apartmana2.html" class="other-apt-card">
+                    <span class="apt-label">1. Kat • 5 Osoba</span>
+                    <strong>Apartman A2</strong>
+                    <p>Balkon s panoramskim pogledom na more.</p>
+                </a>
+                <a href="apartmana3.html" class="other-apt-card">
+                    <span class="apt-label">1. Kat • 4 Osobe</span>
+                    <strong>Apartman A3</strong>
+                    <p>Moderno uređen s balkonom i pogledom.</p>
+                </a>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="simple-footer">
+        <div class="footer-wrap">
+            <div class="footer-box">
+                <a href="index.html" class="f-logo">Apartmani TOJO</a>
+                <p>Bašelovići 12A, 22000 Šibenik</p>
+            </div>
+            <div class="footer-box">
+                <a href="tel:+385955502487">+385 95 550 2487</a>
+                <a href="/cdn-cgi/l/email-protection#14647166757a7066757375547379757d783a777b79"><span class="__cf_email__" data-cfemail="85f5e0f7e4ebe1f7e4e2e4c5e2e8e4ece9abe6eae8">[email&#160;protected]</span></a>
+            </div>
+            <div class="footer-box f-social">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">Booking.com</a>
+            </div>
+        </div>
+        <div class="f-bottom">
+            <p>&copy; 2026 Apartmani TOJO. Sva prava pridržana.</p>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Pošalji potražnju <i>direktno vlasniku</i></h2>
+            <div class="booking-form">
+                <label class="section-label">Odaberite apartmane:</label>
+                <div class="apt-checkbox-grid">
+                    <label class="apt-check">
+                        <input type="checkbox" name="apt" value="A1" onchange="calculatePrice()">
+                        <span class="box-label">A1 (1. Kat)</span>
+                    </label>
+                    <label class="apt-check">
+                        <input type="checkbox" name="apt" value="A2" onchange="calculatePrice()">
+                        <span class="box-label">A2 (1. Kat)</span>
+                    </label>
+                    <label class="apt-check">
+                        <input type="checkbox" name="apt" value="A3" onchange="calculatePrice()">
+                        <span class="box-label">A3 (1. Kat)</span>
+                    </label>
+                </div>
+                <div class="form-row">
+                    <div class="input-group">
+                        <label>Od:</label>
+                        <input type="date" id="check-in">
+                    </div>
+                    <div class="input-group">
+                        <label>Do:</label>
+                        <input type="date" id="check-out">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-group">
+                        <label>Odrasli:</label>
+                        <select id="adults">
+                            <option value="1">1 osoba</option>
+                            <option value="2" selected>2 osobe</option>
+                            <option value="3">3 osobe</option>
+                            <option value="4">4 osobe</option>
+                            <option value="5">5+ osoba</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label>Djeca:</label>
+                        <select id="children">
+                            <option value="0">Bez djece</option>
+                            <option value="1">1 dijete</option>
+                            <option value="2">2+ djece</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="guest-info-fields">
+                    <div class="input-group">
+                        <label>Ime i prezime:</label>
+                        <input type="text" id="guest-name" placeholder="Vaše ime">
+                    </div>
+                    <div class="input-group">
+                        <label>Vaš Email:</label>
+                        <input type="email" id="guest-email" placeholder="primjer@mail.com">
+                    </div>
+                    <div class="input-group">
+                        <label>Broj mobitela:</label>
+                        <input type="tel" id="guest-phone" placeholder="+385 9x xxx xxxx">
+                    </div>
+                </div>
+                <div class="result-box">
+                    <p>Noćenja: <span id="nights-count">0</span></p>
+                    <h3>Ukupno: <span id="total-price">0</span> €</h3>
+                </div>
+                <div class="send-options">
+                    <button onclick="sendToWhatsApp()" class="send-btn wa">WhatsApp Upit</button>
+                    <button onclick="sendToEmail()" class="send-btn mail">Pošalji Email</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="script.js"></script>
+    <script src="apartmani.js"></script>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var thumbsSw = new Swiper('.myThumb1', {
+                spaceBetween: 8,
+                slidesPerView: 4,
+                freeMode: true,
+                watchSlidesProgress: true,
+            });
+
+            var mainEl = document.querySelector('.mySwiper1');
+            if (mainEl && mainEl.swiper) { mainEl.swiper.destroy(true, true); }
+
+            var galleryImgs = [];
+            mainEl.querySelectorAll('.swiper-slide:not(.swiper-slide-duplicate) img').forEach(function(img) {
+                var src = img.getAttribute('src');
+                if (src && galleryImgs.indexOf(src) === -1) galleryImgs.push(src);
+            });
+
+            new Swiper('.mySwiper1', {
+                loop: true,
+                speed: 700,
+                navigation: { nextEl: '.n1', prevEl: '.p1' },
+                pagination: { el: '#pagination1', clickable: true, dynamicBullets: true },
+                thumbs: { swiper: thumbsSw },
+                keyboard: { enabled: true },
+                on: {
+                    click: function(swiper, event) {
+                        event.preventDefault();
+                        openGallery(galleryImgs, swiper.realIndex);
+                    }
+                }
+            });
+
+            // Postavi cursor na swiper
+            if (mainEl) mainEl.style.cursor = 'zoom-in';
+        });
+
+        var _gImgs = [], _gIdx = 0, _gOv = null;
+
+        function openGallery(imgs, startIdx) {
+            _gImgs = imgs; _gIdx = startIdx;
+            if (!_gOv) {
+                _gOv = document.createElement('div');
+                _gOv.style.cssText = 'position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.95);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px;box-sizing:border-box;';
+                _gOv.addEventListener('click', function(e) { if(e.target===_gOv) closeGallery(); });
+                document.body.appendChild(_gOv);
+                document.addEventListener('keydown', function(e) {
+                    if (e.key==='Escape') closeGallery();
+                    if (e.key==='ArrowRight') { _gIdx=(_gIdx+1)%_gImgs.length; renderGallery(); }
+                    if (e.key==='ArrowLeft') { _gIdx=(_gIdx-1+_gImgs.length)%_gImgs.length; renderGallery(); }
+                });
+            }
+            renderGallery();
+            _gOv.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function renderGallery() {
+            _gOv.innerHTML = '';
+
+            var xBtn = document.createElement('button');
+            xBtn.textContent = '×';
+            xBtn.style.cssText = 'position:fixed;top:15px;right:15px;z-index:10;width:40px;height:40px;border-radius:50%;background:rgba(0,0,0,0.7);color:#fff;border:none;cursor:pointer;font-size:24px;display:flex;align-items:center;justify-content:center;';
+            xBtn.onclick = closeGallery;
+            _gOv.appendChild(xBtn);
+
+            var cnt = document.createElement('div');
+            cnt.textContent = (_gIdx+1) + ' / ' + _gImgs.length;
+            cnt.style.cssText = 'color:rgba(255,255,255,0.5);font-size:12px;margin-bottom:10px;letter-spacing:1px;';
+            _gOv.appendChild(cnt);
+
+            var wrap = document.createElement('div');
+            wrap.style.cssText = 'position:relative;width:100%;max-width:1000px;background:#000;border-radius:4px;overflow:hidden;';
+
+            var prev = document.createElement('button');
+            prev.innerHTML = '&#8249;';
+            prev.style.cssText = 'position:absolute;left:10px;top:50%;transform:translateY(-50%);z-index:5;width:44px;height:44px;border-radius:50%;background:rgba(0,0,0,0.6);color:#fff;border:none;cursor:pointer;font-size:28px;display:flex;align-items:center;justify-content:center;';
+            prev.onclick = function() { _gIdx=(_gIdx-1+_gImgs.length)%_gImgs.length; renderGallery(); };
+            wrap.appendChild(prev);
+
+            var img = document.createElement('img');
+            img.src = _gImgs[_gIdx];
+            img.style.cssText = 'width:100%;max-height:75vh;object-fit:contain;display:block;';
+            var ts=0;
+            img.addEventListener('touchstart',function(e){ts=e.touches[0].clientX;},{passive:true});
+            img.addEventListener('touchend',function(e){
+                var d=ts-e.changedTouches[0].clientX;
+                if(Math.abs(d)>40){_gIdx=d>0?(_gIdx+1)%_gImgs.length:(_gIdx-1+_gImgs.length)%_gImgs.length;renderGallery();}
+            },{passive:true});
+            wrap.appendChild(img);
+
+            var next = document.createElement('button');
+            next.innerHTML = '&#8250;';
+            next.style.cssText = 'position:absolute;right:10px;top:50%;transform:translateY(-50%);z-index:5;width:44px;height:44px;border-radius:50%;background:rgba(0,0,0,0.6);color:#fff;border:none;cursor:pointer;font-size:28px;display:flex;align-items:center;justify-content:center;';
+            next.onclick = function() { _gIdx=(_gIdx+1)%_gImgs.length; renderGallery(); };
+            wrap.appendChild(next);
+            _gOv.appendChild(wrap);
+
+            var tr = document.createElement('div');
+            tr.style.cssText = 'display:flex;gap:6px;padding:12px 0 0;justify-content:center;flex-wrap:wrap;max-width:1000px;width:100%;';
+            _gImgs.forEach(function(src,i) {
+                var th = document.createElement('img');
+                th.src = src;
+                th.style.cssText = 'width:58px;height:42px;object-fit:cover;border-radius:3px;cursor:pointer;flex-shrink:0;opacity:'+(i===_gIdx?'1':'0.45')+';outline:'+(i===_gIdx?'2px solid #c5a47e':'none')+';transition:opacity 0.2s;';
+                th.onclick = function() { _gIdx=i; renderGallery(); };
+                tr.appendChild(th);
+            });
+            _gOv.appendChild(tr);
+        }
+
+        function closeGallery() { if(_gOv) _gOv.style.display='none'; document.body.style.overflow=''; }
+    </script>
+</body>
+</html>

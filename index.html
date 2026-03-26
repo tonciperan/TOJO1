@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartmani TOJO | Grebaštica</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="apartmani.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+<script type='text/javascript' src='https://api.netlify.com/yXrMYgeUEFm31Jpeau_pv5k7cSeA5aSD1CmrQ6W2GBZhdqpEjTcE1jwp2b66XcIMjSsnrjyVXS9WAWOcVG5_pMEwdBOwtYQ6pBJsq_0Y6eY1_tuaQ3gcW-sbPmcnhpWVQE-mH5T2pWDC_EhSOStbGhkBAx4q_Sgo2cQpKAqYaZMA3GXsHkGwBwAuVXyhcNi-uuYGLcqg5TlHbALK4ZtgzMVzOZe4qMvU68OFsyv8ozaDKlcuik6NTPeW00vq6FN85pvFsGZTY7ZJIb3OG415tlIaUfntN2flomz5NBnvC-MoGisg-FDpZzZgLIcQiNKtP5NjTVOHbAy-HMEsXVOKv4N7pSXnMUgQQ37D86I-yr-bTb05GLYoch_tZEaChDsd2Cf7UhJpauRudjFy2-sES5E08W-Rfyia-JBMQ-HtZLsGasb1eUibBnagYREA-L5SslHndKjvS7Wby5ukkB8vn1kK7ETX959eUh27p1elSHtnVq09Fv-fJvLaDGKjlRjSehkvyZNjBZ2235VHH5VB'></script>
+    <style>
+    /* Glitch/reveal efekt na scroll - mobilna verzija */
+    @media (max-width: 768px) {
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+                        transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">APARTMANI TOJO</a>
+        
+        <nav id="nav-menu">
+            <a href="index.html">Početna</a>
+            <div class="nav-dropdown">
+                <a href="#">Apartmani</a>
+                <div class="dropdown-menu">
+                    <a href="apartmana1.html">Apartman A1<span class="dropdown-sub">1. Kat • 4 osobe</span></a>
+                    <a href="apartmana2.html">Apartman A2<span class="dropdown-sub">1. Kat • 5 osoba</span></a>
+                    <a href="apartmana3.html">Apartman A3<span class="dropdown-sub">1. Kat • 4 osobe</span></a>
+                </div>
+            </div>
+            <a href="kontakt.html">Kontakt</a>
+            <a href="#" class="btn-book nav-cta-btn" id="nav-rezerviraj">REZERVIRAJ SAD</a>
+        </nav>
+
+        <div class="menu-toggle" id="mobile-menu">
+            <span></span><span></span><span></span>
+        </div>
+    </header>
+
+    <section class="hero-section" id="home">
+        <img src="images/UVALA.png" class="hero-img-fade" alt="Apartmani TOJO">
+    
+        <div class="hero-sidebar-content hero-reveal">
+            <div class="top-location-minimal">ŠIBENIK • GREBAŠTICA</div>
+            
+            <div class="main-title-side">
+                <h1>Doživite autentičnu Dalmaciju <br> 
+                <span>u modernom komforu</span></h1>
+                <a href="#apartmani" class="btn-minimal-link">ISTRAŽITE APARTMANE</a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="apartment-slider-section reveal" id="apartmani">
+        <div class="swiper mainSwiper">
+            <div class="swiper-wrapper">
+                
+                <div class="swiper-slide">
+                    <div class="apt-card">
+                        <div class="apt-card-image">
+                            <img src="images/A1/balkon (3).jpeg" alt="Apartman A1">
+                        </div>
+                        <div class="apt-card-info">
+                            <span class="category">1. Kat • 4 Osobe</span>
+                            <h2>Apartman A1</h2>
+                            <p>Prostran obiteljski apartman s privatnom terasom i pogledom na more. Idealno za miran odmor.</p>
+                            <a href="ApartmanA1.html" class="btn-more">DETALJI APARTMANA</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="apt-card">
+                        <div class="apt-card-image">
+                            <img src="images/A2/balkon.jpeg" alt="Apartman A2">
+                        </div>
+                        <div class="apt-card-info">
+                            <span class="category">1. Kat • 5 Osoba</span>
+                            <h2>Apartman A2</h2>
+                            <p>Prostran apartman s balkonom i nezaboravnim zalaskom sunca. Savršen za velike obitelji.</p>
+                            <a href="ApartmanA2.html" class="btn-more">DETALJI APARTMANA</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="apt-card">
+                        <div class="apt-card-image">
+                            <img src="images/A3/balkon.jpeg" alt="Apartman A3">
+                        </div>
+                        <div class="apt-card-info">
+                            <span class="category">1. Kat • 4 Osobe</span>
+                            <h2>Apartman A3</h2>
+                            <p>Mali ali prostran apartman sa svime potrebnim za vaš odmor.</p>
+                            <a href="ApartmanA3.html" class="btn-more">DETALJI APARTMANA</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-button-next main-apt-next"></div>
+            <div class="swiper-button-prev main-apt-prev"></div>
+            <div class="swiper-pagination main-apt-pagination"></div>
+        </div>
+    </section>
+
+    <section class="apt-row about-row reveal" style="margin-top:0px; border-top: 1px solid #eee; padding-top: 100px;">
+        <div class="apt-info-side">
+            <span class="label">Upoznajte nas</span>
+            <h2 class="about-title">Dalmacija – <br>srce Hrvatske <i>Apartmani Tojo</i></h2>
+            <p class="lead-text">Hedonističko srce Hrvatske – Dalmacija – poznata po hrani, plažama i kristalno čistom moru.</p>
+            <p>Grebaštica, dom naših apartmana, suština je svih hrvatskih atrakcija. Smješteni smo između Zadra i Splita, u mirnoj uvali.</p>
+            <a href="o-nama.html" class="btn-book" style="background: transparent; color: #1a1a1a; border: 1px solid #1a1a1a; padding: 12px 30px;">PROČITAJ VIŠE</a>
+        </div>
+    
+        <div class="apt-gallery-side about-gallery-grid">
+            <div class="main-about-img">
+                <a href="images/OKUCNICA/jug.JPG" class="gallery-trigger" data-gallery="about" data-caption="Apartmani TOJO - Pogled s juga">
+                    <img src="images/OKUCNICA/jug.JPG" alt="Apartmani Tojo">
+                </a>
+            </div>
+            <div class="mini-grid">
+                <a href="images/OKUCNICA/cvice.jpeg" class="gallery-trigger" data-gallery="about"><img src="images/OKUCNICA/cvice.jpeg" alt="Vrt"></a>
+                <a href="images/katedrala.jpg" class="gallery-trigger" data-gallery="about"><img src="images/katedrala.jpg" alt="Katedrala"></a>
+                <a href="images/UVALA.png" class="gallery-trigger" data-gallery="about"><img src="images/UVALA.png" alt="Uvala"></a>
+                <a href="images/vranskojezero.jpg" class="gallery-trigger" data-gallery="about"><img src="images/vranskojezero.jpg" alt="Vransko jezero"></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="products-section reveal">
+        <div class="products-grid">
+            <div class="products-text">
+                <span class="label">Okusi Dalmacije</span>
+                <h2>Naši domaći proizvodi <i>Darovi prirode</i></h2>
+                <p>Vjerujemo da odmor nije potpun bez autentičnih okusa. Svaki gost dobiva košaricu dobrodošlice.</p>
+            </div>
+            <div class="products-icons">
+                <div class="product-item">
+                    <div class="product-circle"><img src="images/maslinovo.jpg" alt="Ulje"></div>
+                    <span>Maslinovo ulje & Vino</span>
+                </div>
+                <div class="product-item">
+                    <div class="product-circle"><img src="images/smokve.jpg" alt="Smokve"></div>
+                    <span>Domaće smokve</span>
+                </div>
+                <div class="product-item">
+                    <div class="product-circle"><img src="images/pomidore.jpg" alt="Vrt"></div>
+                    <span>Sezonski vrt</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="location-map-section reveal">
+        <div class="location-container">
+            <div class="location-text">
+                <span class="label">Položaj</span>
+                <h2>Srce Jadranske obale <i>Hrvatska</i></h2>
+                <p>Apartmani Tojo smješteni su u Grebaštici, jednom od najljepših kutaka Dalmacije.</p>
+                <a href="https://maps.google.com" target="_blank" class="btn-line">Pronađite nas na Google Maps</a>
+            </div>
+            <div class="location-image">
+                <a href="images/karta.png" class="gallery-trigger" data-gallery="location">
+                    <img src="images/karta.png" alt="Karta" class="map-illustration">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="landmarks-section reveal">
+        <div class="swiper landmarksSwiper">
+            <div class="swiper-wrapper">
+                <!-- 1. Bedem Grebaštica — PRVO, lokalno! -->
+                <div class="swiper-slide landmark-item" style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('images/Znamenitosti/Bedem.jpg');">
+                    <div class="landmark-content">
+                        <span class="label">Grebaštica | Povijest</span>
+                        <h2>Bedem Oštrica</h2>
+                        <p>Sredniovjekni obrambeni zid iz 1497. — simbol Grebašice, sagrađen protiv Turaka.</p>
+                        <a href="javascript:void(0)" class="btn-more btn-landmark-open" data-modal="#modal-bedem">DETALJNIJE</a>
+                    </div>
+                </div>
+                <!-- 2. Krka -->
+                <div class="swiper-slide landmark-item" style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('images/Znamenitosti/Krka.jpg');">
+                    <div class="landmark-content">
+                        <span class="label">Priroda | Slapovi • 25 km</span>
+                        <h2>Nacionalni park Krka</h2>
+                        <p>Smaragdna rijeka sa sedam veličanstvenih slapova i franjevačkim samostanom na otočiću Visovac.</p>
+                        <a href="javascript:void(0)" class="btn-more btn-landmark-open" data-modal="#modal-krka">DETALJNIJE</a>
+                    </div>
+                </div>
+                <!-- 3. Katedrala -->
+                <div class="swiper-slide landmark-item" style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('images/Znamenitosti/Šibenik.jpg');">
+                    <div class="landmark-content">
+                        <span class="label">UNESCO • Šibenik • 14 km</span>
+                        <h2>Katedrala Sv. Jakova</h2>
+                        <p>Jedina katedrala na svijetu izgrađena isključivo od kamena — UNESCO svjetska baština.</p>
+                        <a href="javascript:void(0)" class="btn-more btn-landmark-open" data-modal="#modal-cathedral">DETALJNIJE</a>
+                    </div>
+                </div>
+                <!-- 4. Primošten + Gospa od Loreta -->
+                <div class="swiper-slide landmark-item" style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('images/Znamenitosti/Primošten.jpg');">
+                    <div class="landmark-content">
+                        <span class="label">Dalmacija • 6 km</span>
+                        <h2>Primošten</h2>
+                        <p>Slikovito mjesto na otočiću s vinogradima Babić i kipom Gospe od Loreta na vidikovcu Gaj.</p>
+                        <a href="javascript:void(0)" class="btn-more btn-landmark-open" data-modal="#modal-primosten">DETALJNIJE</a>
+                    </div>
+                </div>
+                <!-- 5. Kornati -->
+                <div class="swiper-slide landmark-item" style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('images/Znamenitosti/Kornati.jpg');">
+                    <div class="landmark-content">
+                        <span class="label">Nacionalni park | Otoci</span>
+                        <h2>Kornati</h2>
+                        <p>Arhipelag od 140 nenapučenih otoka — raj za jedriličare, ronioce i ljubitelje netaknute prirode.</p>
+                        <a href="javascript:void(0)" class="btn-more btn-landmark-open" data-modal="#modal-kornati">DETALJNIJE</a>
+                    </div>
+                </div>
+                <!-- 6. Tvrđava Barone -->
+                <div class="swiper-slide landmark-item" style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('images/Znamenitosti/Barone.jpg');">
+                    <div class="landmark-content">
+                        <span class="label">Povijest | Šibenik • 14 km</span>
+                        <h2>Tvrđava Barone</h2>
+                        <p>Renesansna utvrda iz 17. stoljeća s AR prikazom bitke i najljepšim zalaskom sunca u Šibeniku.</p>
+                        <a href="javascript:void(0)" class="btn-more btn-landmark-open" data-modal="#modal-barone">DETALJNIJE</a>
+                    </div>
+                </div>
+                <!-- 7. Šetnica kanala sv. Ante -->
+                <div class="swiper-slide landmark-item" style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('images/Znamenitosti/KanalSvAnte.jpg');">
+                    <div class="landmark-content">
+                        <span class="label">Priroda | Šetnja • Šibenik</span>
+                        <h2>Šetnica Kanala sv. Ante</h2>
+                        <p>4,5 km prekrasne staze uz more, s panoramskim pogledom na grad i tvrđavom sv. Nikole na kraju.</p>
+                        <a href="javascript:void(0)" class="btn-more btn-landmark-open" data-modal="#modal-kanal">DETALJNIJE</a>
+                    </div>
+                </div>
+                </div>
+            <div class="swiper-button-next landmarks-next"></div>
+            <div class="swiper-button-prev landmarks-prev"></div>
+            <div class="swiper-pagination landmarks-pagination"></div>
+        </div>
+    </section>
+
+    <!-- Modal: Bedem Grebaštica -->
+    <div id="modal-bedem" class="custom-modal" style="display:none;">
+        <div class="modal-wrapper">
+            <div class="modal-left">
+                <div class="swiper modalMainSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Bedem1.jpg" alt="Bedem Grebaštica 1"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Bedem2.jpg" alt="Bedem Grebaštica 2"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Bedem3.jpg" alt="Bedem Grebaštica 3"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+            <div class="modal-right">
+                <h3>BEDEM OŠTRICA</h3>
+                <div class="modal-text">
+                    <p>Impresivni obrambeni zid sagrađen 1497. godine na poluotoku Oštrica, tik do Grebašice — simbol mjesta i jedan od najljepših primjera srednjovjekovnih fortifikacija u Hrvatskoj. Gradnju je financijski potpomogao mletački dužd Agostino Barbarigo.</p>
+                    <p>Zid je visok 6–10 metara, a širok oko metar, s kruništima i puškarnicama. Stanovnici su se iza njega skrivali od turskih napada zajedno s blagom i stokom. Kasnije je korišten i kao karantena za plague, pa čak i kao zaštita od britanskih gusara za francuske vladavine.</p>
+                    <p>Lokalni ga narod zove "Kineski zid Grebašice". Poluotok je danas lovište poznato po muflonima.</p>
+                    <p><strong>Udaljenost:</strong> Odmah uz Grebašticu · <strong>Ulaz:</strong> Besplatno</p>
+                </div>
+            </div>
+            <button data-fancybox-close class="modal-close">×</button>
+        </div>
+    </div>
+
+    <!-- Modal: Krka -->
+    <div id="modal-krka" class="custom-modal" style="display:none;">
+        <div class="modal-wrapper">
+            <div class="modal-left">
+                <div class="swiper modalMainSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Krka.jpg" alt="NP Krka"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Krka2.jpg" alt="Skradinski buk"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Krka3.jpg" alt="Visovac"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Krka4.jpg" alt="Roški slap"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+            <div class="modal-right">
+                <h3>NACIONALNI PARK KRKA</h3>
+                <div class="modal-text">
+                    <p>Jedan od najljepših nacionalnih parkova Hrvatske, poznat po sedam veličanstvenih slapova rijeke Krke. Najposjećeniji slap Skradinski buk visok je 17 metara i čini ga 17 kaskada. Šetajte drvenim stazama iznad slapova, posjetite franjevački samostan na otočiću Visovac te uživajte u mirisu netaknute dalmatinske prirode.</p>
+                    <p><strong>Udaljenost:</strong> 25 km od Grebašice (25 min vožnje)</p>
+                    <p><strong>Ulaz:</strong> ~30 € (sezona) · Djeca do 7 god. besplatno</p>
+                </div>
+            </div>
+            <button data-fancybox-close class="modal-close">×</button>
+        </div>
+    </div>
+
+    <!-- Modal: Katedrala -->
+    <div id="modal-cathedral" class="custom-modal" style="display:none;">
+        <div class="modal-wrapper">
+            <div class="modal-left">
+                <div class="swiper modalMainSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Šibenik.jpg" alt="Katedrala Sv. Jakova"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Katedrala.jpg" alt="Katedrala detalj"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Šibenik2.jpg" alt="Šibenik stari grad"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Šibenik.jpg" alt="Portretni friz"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+            <div class="modal-right">
+                <h3>KATEDRALA SV. JAKOVA</h3>
+                <div class="modal-text">
+                    <p>Jedinstveni biser renesansne arhitekture i jedina katedrala na svijetu izgrađena isključivo od kamena — bez cigle ili drvene konstrukcije. Na UNESCO-vom popisu svjetske baštine od 2000. godine. Majstor Juraj Dalmatinac uklesao je 70-ak portreta suvremenika u kameni friz koji opasuje katedralu.</p>
+                    <p><strong>Udaljenost:</strong> 14 km od Grebašice (15 min vožnje)</p>
+                    <p><strong>Ulaz:</strong> 5 € za strance · Besplatno za domaće</p>
+                </div>
+            </div>
+            <button data-fancybox-close class="modal-close">×</button>
+        </div>
+    </div>
+
+    <!-- Modal: Primošten + Gospa od Loreta -->
+    <div id="modal-primosten" class="custom-modal" style="display:none;">
+        <div class="modal-wrapper">
+            <div class="modal-left">
+                <div class="swiper modalMainSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Primošten.jpg" alt="Primošten"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Primošten2.jpg" alt="Primošten iz zraka"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/GospaLoreta.jpg" alt="Gospa od Loreta"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Primošten3.jpg" alt="Vinograd Bucavac"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+            <div class="modal-right">
+                <h3>PRIMOŠTEN</h3>
+                <div class="modal-text">
+                    <p>Jedno od najslikovitijih mjesta na Jadranu — stara jezgra izgrađena na otočiću spojenim s kopnom, okružena vinogradima iz kojih se pravi čuveno vino Babić. Uske kaldrmom popločene uličice, bijele kamene kuće i panoramski pogled na more čine Primošten mjestom koje se ne zaboravlja.</p>
+                    <p><strong>Gospa od Loreta — Vidikovac Gaj:</strong> Na brdu Gaj (173 m) iznad Primoštena stoji impresivni kip visok 17 metara — najveći takve vrste na svijetu. Obložen mozaikom od zlata, srebra i obojenog stakla, s krunom od dragog kamenja. S vidikovca se pruža nezaboravan panoramski pogled na Primošten, okolne otoke i Šibenski arhipelag.</p>
+                    <p><strong>Udaljenost:</strong> 6 km od Grebašice (10 min vožnje)</p>
+                </div>
+            </div>
+            <button data-fancybox-close class="modal-close">×</button>
+        </div>
+    </div>
+
+    <!-- Modal: Kornati -->
+    <div id="modal-kornati" class="custom-modal" style="display:none;">
+        <div class="modal-wrapper">
+            <div class="modal-left">
+                <div class="swiper modalMainSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Kornati.jpg" alt="Kornati"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Kornati2.jpg" alt="Kornati otoci"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Kornati3.jpeg" alt="Telašćica"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+            <div class="modal-right">
+                <h3>NACIONALNI PARK KORNATI</h3>
+                <div class="modal-text">
+                    <p>Arhipelag od više od 140 nenapučenih otoka, otočića i grebena — pravo more u moru. Kornati su raj za jedriličare, ronioce i sve koji traže netaknutu prirodu. Georges Bernard Shaw rekao je: "Na posljednji dan stvaranja, Bog je htio okruniti svoje djelo i stvorio je Kornate."</p>
+                    <p>Izleti brodom organiziraju se iz Šibenika, Murtera i okolnih luka. Obično traju cijeli dan i uključuju plivanje u skritim uvalama i ručak na otoku.</p>
+                    <p><strong>Udaljenost:</strong> ~2 sata brodom iz Šibenika</p>
+                </div>
+            </div>
+            <button data-fancybox-close class="modal-close">×</button>
+        </div>
+    </div>
+
+    <!-- Modal: Tvrđava Barone -->
+    <div id="modal-barone" class="custom-modal" style="display:none;">
+        <div class="modal-wrapper">
+            <div class="modal-left">
+                <div class="swiper modalMainSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Barone.jpg" alt="Tvrđava Barone"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Barone2.jpg" alt="Šibenik s Baronea"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Barone3.jpg" alt="Zalazak sunca"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+            <div class="modal-right">
+                <h3>TVRĐAVA BARONE</h3>
+                <div class="modal-text">
+                    <p>Impresivna renesansna utvrda iz 17. stoljeća, izgrađena za svega tri tjedna pred napad Osmanlija 1646. godine. Obnovljena 2016., nudi jedinstven AR (augmented reality) prikaz bitke iz 1647. Smještena na brdu iznad Šibenika s panoramskim pogledom na grad, more i otoke.</p>
+                    <p>Šibenčani kažu da je ovo mjesto s najljepšim zalaskom sunca u gradu. Ulaz uključuje i susjednu tvrđavu Sv. Ivana.</p>
+                    <p><strong>Udaljenost:</strong> 14 km · <strong>Ulaz:</strong> 10 € (uključuje tvrđavu Sv. Ivana)</p>
+                </div>
+            </div>
+            <button data-fancybox-close class="modal-close">×</button>
+        </div>
+    </div>
+
+    <!-- Modal: Šetnica Kanala sv. Ante -->
+    <div id="modal-kanal" class="custom-modal" style="display:none;">
+        <div class="modal-wrapper">
+            <div class="modal-left">
+                <div class="swiper modalMainSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/Znamenitosti/KanalSvAnte.jpg" alt="Kanal sv. Ante"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/KanalSvAnte2.jpg" alt="Tvrđava sv. Nikole"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/KanalSvAnte3.jpg" alt="Panorama Šibenika"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+            <div class="modal-right">
+                <h3>ŠETNICA KANALA SV. ANTE</h3>
+                <div class="modal-text">
+                    <p>Jedinstvena 4,5 km duga šetnica uz jugoistočnu obalu Kanala sv. Ante u Šibeniku — noću osvijetljena solarnim svjetiljkama, idealna za romantične šetnje u suton. Proteže se od uvale Panikovac do tvrđave sv. Nikole (UNESCO) na ulazu u kanal.</p>
+                    <p>Putem se pruža panoramski pogled od 360° na cijeli Šibenik, šibenski arhipelag i okolna mjesta. Staza prolazi kroz borovu i hrastovu šumu, a krije i špilju sv. Ante s podzemnom kapelicom te vidikovac s kojeg puca nevjerojatan pogled.</p>
+                    <p>Pogodna za obiteljske šetnje, biciklizam i rekreativno trčanje.</p>
+                    <p><strong>Udaljenost:</strong> 14 km od Grebašice · <strong>Ulaz:</strong> Besplatno</p>
+                </div>
+            </div>
+            <button data-fancybox-close class="modal-close">×</button>
+        </div>
+    </div>
+
+    <footer class="simple-footer" id="kontakt">
+        <div class="footer-wrap">
+            <div class="footer-box">
+                <a href="index.html" class="f-logo">Apartmani TOJO</a>
+                <p>Bašelovići 12A, 22000 Šibenik</p>
+            </div>
+            <div class="footer-box">
+                <a href="tel:+385955502487">+385 95 550 2487</a>
+                <a href="/cdn-cgi/l/email-protection#88f8edfae9e6ecfae9efe9c8efe5e9e1e4a6ebe7e5"><span class="__cf_email__" data-cfemail="ccbca9beada2a8beadabad8caba1ada5a0e2afa3a1"><span class="__cf_email__" data-cfemail="681c07060b0146180d1a0906280f05090104460b0705">[email&#160;protected]</span></span></a>
+            </div>
+            <div class="footer-box f-social">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">Booking.com</a>
+            </div>
+        </div>
+        <div class="f-bottom">
+            <p>© 2026 Apartmani TOJO. Sva prava pridržana.</p>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="apartmani.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+    // ============================================================
+    // VLASTITI MODAL SUSTAV — galerije i znamenitosti
+    // ============================================================
+
+    // ── POMOĆNE FUNKCIJE ──────────────────────────────────────
+    function buildOverlay() {
+        var ov = document.createElement('div');
+        ov.id = 'tojo-overlay';
+        ov.innerHTML = '<div id="tojo-modal"></div>';
+        document.body.appendChild(ov);
+        ov.addEventListener('click', function(e) {
+            if (e.target === ov) closeModal();
+        });
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeModal();
+        });
+        return ov;
+    }
+
+    var overlay = buildOverlay();
+    var modal   = document.getElementById('tojo-modal');
+
+    function openModal(html) {
+        modal.innerHTML = html;
+        overlay.classList.add('open');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+        overlay.classList.remove('open');
+        document.body.style.overflow = '';
+        // Uništi Swiper ako postoji
+        modal.querySelectorAll('.modalMainSwiper').forEach(function(el) {
+            if (el.swiper) el.swiper.destroy(true, true);
+        });
+        setTimeout(function() { modal.innerHTML = ''; }, 300);
+    }
+
+    // Gumb za zatvaranje
+    document.addEventListener('click', function(e) {
+        if (e.target.closest('.tojo-close')) closeModal();
+    });
+
+    // ── 1. PHOTO GALERIJA (o nama + lokacija) ────────────────
+    // Prikupimo sve grupe galerija
+    var galleries = {};
+    document.querySelectorAll('.gallery-trigger').forEach(function(el) {
+        var g = el.dataset.gallery;
+        if (!galleries[g]) galleries[g] = [];
+        galleries[g].push({ src: el.getAttribute('href'), caption: el.dataset.caption || '' });
+    });
+
+    document.addEventListener('click', function(e) {
+        var trigger = e.target.closest('.gallery-trigger');
+        if (!trigger) return;
+        e.preventDefault();
+
+        var group   = trigger.dataset.gallery;
+        var items   = galleries[group] || [];
+        var clicked = trigger.getAttribute('href');
+        var idx     = items.findIndex(function(i) { return i.src === clicked; });
+        if (idx < 0) idx = 0;
+
+        showPhotoGallery(items, idx);
+    });
+
+    function showPhotoGallery(items, startIdx) {
+        var current = startIdx;
+
+        function render() {
+            var item = items[current];
+            var thumbs = items.map(function(it, i) {
+                return '<img src="' + it.src + '" class="pg-thumb' + (i === current ? ' active' : '') + '" data-idx="' + i + '">';
+            }).join('');
+
+            openModal(
+                '<div class="pg-wrap">' +
+                  '<button class="tojo-close">&#x2715;</button>' +
+                  '<div class="pg-counter">' + (current+1) + ' / ' + items.length + '</div>' +
+                  '<div class="pg-main">' +
+                    '<button class="pg-nav pg-prev">&#8249;</button>' +
+                    '<img class="pg-img" src="' + item.src + '" alt="">' +
+                    '<button class="pg-nav pg-next">&#8250;</button>' +
+                  '</div>' +
+                  (item.caption ? '<div class="pg-caption">' + item.caption + '</div>' : '') +
+                  '<div class="pg-thumbs">' + thumbs + '</div>' +
+                '</div>'
+            );
+
+            // Navigacija
+            modal.querySelector('.pg-prev').onclick = function() {
+                current = (current - 1 + items.length) % items.length;
+                render();
+            };
+            modal.querySelector('.pg-next').onclick = function() {
+                current = (current + 1) % items.length;
+                render();
+            };
+            modal.querySelectorAll('.pg-thumb').forEach(function(th) {
+                th.onclick = function() {
+                    current = parseInt(th.dataset.idx);
+                    render();
+                };
+            });
+        }
+        render();
+    }
+
+    // ── 2. ZNAMENITOSTI — modal sa slikama + opis ─────────────
+    document.addEventListener('click', function(e) {
+        var btn = e.target.closest('.btn-landmark-open');
+        if (!btn) return;
+        e.preventDefault();
+
+        var modalEl = document.querySelector(btn.dataset.modal);
+        if (!modalEl) return;
+
+        // Pokupi slike iz modalMainSwiper
+        var slides = modalEl.querySelectorAll('.swiper-slide img');
+        var imgs   = Array.from(slides).map(function(img) {
+            return { src: img.getAttribute('src'), alt: img.getAttribute('alt') || '' };
+        });
+        var title  = modalEl.querySelector('h3') ? modalEl.querySelector('h3').textContent : '';
+        var textHTML = modalEl.querySelector('.modal-text') ? modalEl.querySelector('.modal-text').innerHTML : '';
+
+        var current = 0;
+
+        function renderLandmark() {
+            var thumbs = imgs.map(function(it, i) {
+                return '<img src="' + it.src + '" class="pg-thumb' + (i === current ? ' active' : '') + '" data-idx="' + i + '">';
+            }).join('');
+
+            openModal(
+                '<div class="lm-wrap">' +
+                  '<button class="tojo-close">&#x2715;</button>' +
+                  '<div class="lm-left">' +
+                    '<div class="lm-main">' +
+                      '<button class="pg-nav pg-prev">&#8249;</button>' +
+                      '<img class="lm-img" src="' + imgs[current].src + '" alt="' + imgs[current].alt + '">' +
+                      '<button class="pg-nav pg-next">&#8250;</button>' +
+                    '</div>' +
+                    '<div class="pg-thumbs">' + thumbs + '</div>' +
+                  '</div>' +
+                  '<div class="lm-right">' +
+                    '<h3 class="lm-title">' + title + '</h3>' +
+                    '<div class="lm-text">' + textHTML + '</div>' +
+                  '</div>' +
+                '</div>'
+            );
+
+            modal.querySelector('.pg-prev').onclick = function() {
+                current = (current - 1 + imgs.length) % imgs.length;
+                renderLandmark();
+            };
+            modal.querySelector('.pg-next').onclick = function() {
+                current = (current + 1) % imgs.length;
+                renderLandmark();
+            };
+            modal.querySelectorAll('.pg-thumb').forEach(function(th) {
+                th.onclick = function() {
+                    current = parseInt(th.dataset.idx);
+                    renderLandmark();
+                };
+            });
+        }
+
+        if (imgs.length > 0) renderLandmark();
+    });
+
+    </script>
+
+     <!-- Booking Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Pošalji potražnju <i>direktno vlasniku</i></h2>
+            <div class="booking-form">
+                <label class="section-label">Odaberite apartmane:</label>
+                <div class="apt-checkbox-grid">
+                    <label class="apt-check">
+                        <input type="checkbox" name="apt" value="A1" onchange="calculatePrice()">
+                        <span class="box-label">A1 (1. Kat)</span>
+                    </label>
+                    <label class="apt-check">
+                        <input type="checkbox" name="apt" value="A2" onchange="calculatePrice()">
+                        <span class="box-label">A2 (1. Kat)</span>
+                    </label>
+                    <label class="apt-check">
+                        <input type="checkbox" name="apt" value="A3" onchange="calculatePrice()">
+                        <span class="box-label">A3 (1. Kat)</span>
+                    </label>
+                </div>
+                <div class="form-row">
+                    <div class="input-group">
+                        <label>Od:</label>
+                        <input type="date" id="check-in">
+                    </div>
+                    <div class="input-group">
+                        <label>Do:</label>
+                        <input type="date" id="check-out">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-group">
+                        <label>Odrasli:</label>
+                        <select id="adults">
+                            <option value="1">1 osoba</option>
+                            <option value="2" selected>2 osobe</option>
+                            <option value="3">3 osobe</option>
+                            <option value="4">4 osobe</option>
+                            <option value="5">5+ osoba</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label>Djeca:</label>
+                        <select id="children">
+                            <option value="0">Bez djece</option>
+                            <option value="1">1 dijete</option>
+                            <option value="2">2+ djece</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="guest-info-fields">
+                    <div class="input-group">
+                        <label>Ime i prezime:</label>
+                        <input type="text" id="guest-name" placeholder="Vaše ime">
+                    </div>
+                    <div class="input-group">
+                        <label>Vaš Email:</label>
+                        <input type="email" id="guest-email" placeholder="primjer@mail.com">
+                    </div>
+                    <div class="input-group">
+                        <label>Broj mobitela:</label>
+                        <input type="tel" id="guest-phone" placeholder="+385 9x xxx xxxx">
+                    </div>
+                </div>
+                <div class="result-box">
+                    <p>Noćenja: <span id="nights-count">0</span></p>
+                    <h3>Ukupno: <span id="total-price">0</span> €</h3>
+                </div>
+                <div class="send-options">
+                    <button onclick="sendToWhatsApp()" class="send-btn wa">WhatsApp Upit</button>
+                    <button onclick="sendToEmail()" class="send-btn mail">Pošalji Email</button>
+                </div>
+            </div>
+        </div>
+    </div>

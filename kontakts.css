@@ -1,0 +1,127 @@
+/* RESET I OSNOVE */
+body, html { 
+    height: 100%; 
+    margin: 0; 
+    font-family: 'Montserrat', sans-serif; 
+    overflow-x: hidden;
+}
+
+/* GLAVNI KONTEJNER */
+.contact-wrapper {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 80px); /* Oduzimamo visinu navigacije od ukupne visine ekrana */
+    margin-top: 80px; /* TOČNA VISINA TVOJE NAVIGACIJE - ako je veća, stavi npr. 100px */
+    display: flex;
+    align-items: center; 
+    justify-content: flex-end; /* Pomiče karticu na DESNU stranu */
+    padding-right: 8%; 
+    box-sizing: border-box;
+}
+
+/* KARTA - Smanjena da ne bježi ispod headera */
+.map-container {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    z-index: 1;
+}
+
+/* KARTICA S PODACIMA */
+.contact-card {
+    position: relative;
+    z-index: 10;
+    background: #fff;
+    padding: 50px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+    text-align: left;
+    border-radius: 4px; /* Blago zaobljeni rubovi za moderniji izgled */
+}
+
+.contact-card h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    margin-bottom: 25px;
+    font-weight: 400;
+    color: #1a1a1a;
+}
+
+.contact-card .label {
+    color: #c5a47e;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 10px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.contact-item { margin-bottom: 20px; }
+.contact-item p { line-height: 1.6; font-size: 14px; color: #555; margin: 0; }
+.contact-item strong { 
+    color: #1a1a1a; 
+    font-weight: 600; 
+    text-transform: uppercase; 
+    font-size: 10px; 
+    letter-spacing: 1px; 
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-item a { text-decoration: none; color: #c5a47e; transition: 0.3s; }
+.contact-item a:hover { color: #1a1a1a; }
+
+hr { border: 0; border-top: 1px solid #f0f0f0; margin: 25px 0; }
+
+.social-links { display: flex; gap: 15px; }
+.social-links a {
+    font-size: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #999;
+    letter-spacing: 1px;
+}
+
+/* MOBITEL PRILAGODBA */
+@media (max-width: 768px) {
+    .contact-wrapper {
+        margin-top: 70px; /* Nešto manji razmak za mobitele */
+        height: auto;
+        padding: 0;
+        display: block;
+    }
+    .map-container {
+        position: relative;
+        height: 300px;
+    }
+    .contact-card {
+        max-width: 100%;
+        padding: 40px 20px;
+        box-shadow: none;
+    }
+}
+/* Osiguranje da booking modal ostane sakriven na kontakt stranici */
+#bookingModal.modal {
+    display: none; 
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+}
+
+/* Stil za sadržaj modala na kontakt stranici */
+#bookingModal .modal-content {
+    background: #fff;
+    margin: 5% auto;
+    padding: 30px;
+    max-width: 500px;
+    border-radius: 4px;
+    position: relative;
+    color: #1a1a1a; /* Da tekst ne bude bijel kao pozadina */
+}
