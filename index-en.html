@@ -181,7 +181,7 @@
                 </div>
                 <div class="product-item">
                     <div class="product-circle"><img src="images/smokve.webp" alt="Smokve"></div>
-                    <span>Homemade figs</span>
+                    <span>Locally grown figs</span>
                 </div>
                 <div class="product-item">
                     <div class="product-circle"><img src="images/pomidore.webp" alt="Garden"></div>
@@ -242,7 +242,7 @@
                     <div class="landmark-content">
                         <span class="label">Dalmacija • 6 km</span>
                         <h2>Primošten</h2>
-                        <p>Picturesque town on a small islet with Babić vineyards and the statue of Our Lady of Loreto on Gaj viewpoint.</p>
+                        <p>Picturesque town on a small peninsula with Babić vineyards in the backcounty and the statue of Our Lady of Loreto on Gaj viewpoint.</p>
                         <a href="javascript:void(0)" class="btn-more btn-landmark-open" data-modal="#modal-primosten">MORE DETAILS</a>
                     </div>
                 </div>
@@ -258,9 +258,9 @@
                 <!-- 6. Tvrđava Barone -->
                 <div class="swiper-slide landmark-item" style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('images/Znamenitosti/Barone.webp');">
                     <div class="landmark-content">
-                        <span class="label">Povijest | Šibenik • 14 km</span>
+                        <span class="label">History | Šibenik • 14 km</span>
                         <h2>Barone Fortress</h2>
-                        <p>Renesansna utvrda iz 17. stoljeća s AR prikazom bitke i najljepšim zalaskom sunca u Šibeniku.</p>
+                        <p>A 17th-century Renaissance fortress featuring an AR (Augmented Reality) battle simulation and the most beautiful sunset view in Šibenik.</p>
                         <a href="javascript:void(0)" class="btn-more btn-landmark-open" data-modal="#modal-barone">MORE DETAILS</a>
                     </div>
                 </div>
@@ -379,7 +379,7 @@
             <div class="modal-right">
                 <h3>PRIMOŠTEN</h3>
                 <div class="modal-text">
-                    <p>One of the most picturesque places on the Adriatic — the old town built on a small islet connected to the mainland, surrounded by vineyards producing the famous Babić wine. Narrow cobblestone streets, white stone houses and panoramic sea views make Primošten unforgettable.</p>
+                    <p>One of the most picturesque spots on the Adriatic — an old town core nestled on a peninsula, surrounded by crystal-clear waters and nearby vineyards home to the famous Babić wine. Narrow stone-paved alleys, white stone houses, and panoramic sea views make Primošten an unforgettable destination.</p>
                     <p><strong>Our Lady of Loreto — Gaj Viewpoint:</strong> On Gaj hill (173 m) above Primošten stands an impressive 17-metre statue — the largest of its kind in the world. Covered in mosaic of gold, silver and coloured glass, with a crown of precious stones. Unforgettable panoramic views of Primošten and the Šibenik archipelago.</p>
                     <p><strong>Distance:</strong> 6 km from Grebaštica (10 min drive)</p>
                 </div>
@@ -689,6 +689,7 @@
     </script>
 
     <!-- BOOKING MODAL -->
+    <     <!-- Booking Modal -->
     <div id="bookingModal" class="modal">
         <div class="modal-content">
             <span class="close-modal">&times;</span>
@@ -755,3 +756,128 @@
                 </div>
                 <div class="result-box">
                     <p>Nights: <span id="nights-count">0</span></p>
+                    <h3>Total: <span id="total-price">0</span> €</h3>
+                </div>
+                <div class="send-options">
+                    <button onclick="sendToWhatsApp()" class="send-btn wa">WhatsApp Inquiry</button>
+                    <button onclick="sendToEmail()" class="send-btn mail">Send Email</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="script.js"></script>
+    <script src="apartmani.js"></script>
+              <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var thumbsSw = new Swiper('.myThumb2', {
+                spaceBetween: 8,
+                slidesPerView: 4,
+                freeMode: true,
+                watchSlidesProgress: true,
+            });
+
+            var mainEl = document.querySelector('.mySwiper2');
+            if (mainEl && mainEl.swiper) { mainEl.swiper.destroy(true, true); }
+
+            var galleryImgs = [];
+            mainEl.querySelectorAll('.swiper-slide:not(.swiper-slide-duplicate) img').forEach(function(img) {
+                var src = img.getAttribute('src');
+                if (src && galleryImgs.indexOf(src) === -1) galleryImgs.push(src);
+            });
+
+            new Swiper('.mySwiper2', {
+                loop: true,
+                speed: 700,
+                navigation: { nextEl: '.n2', prevEl: '.p2' },
+                pagination: { el: '#pagination2', clickable: true, dynamicBullets: true },
+                thumbs: { swiper: thumbsSw },
+                keyboard: { enabled: true },
+                on: {
+                    click: function(swiper, event) {
+                        event.preventDefault();
+                        openGallery(galleryImgs, swiper.realIndex);
+                    }
+                }
+            });
+
+            // Postavi cursor na swiper
+            if (mainEl) mainEl.style.cursor = 'zoom-in';
+        });
+
+        var _gImgs = [], _gIdx = 0, _gOv = null;
+
+        function openGallery(imgs, startIdx) {
+            _gImgs = imgs; _gIdx = startIdx;
+            if (!_gOv) {
+                _gOv = document.createElement('div');
+                _gOv.style.cssText = 'position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.95);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px;box-sizing:border-box;';
+                _gOv.addEventListener('click', function(e) { if(e.target===_gOv) closeGallery(); });
+                document.body.appendChild(_gOv);
+                document.addEventListener('keydown', function(e) {
+                    if (e.key==='Escape') closeGallery();
+                    if (e.key==='ArrowRight') { _gIdx=(_gIdx+1)%_gImgs.length; renderGallery(); }
+                    if (e.key==='ArrowLeft') { _gIdx=(_gIdx-1+_gImgs.length)%_gImgs.length; renderGallery(); }
+                });
+            }
+            renderGallery();
+            _gOv.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function renderGallery() {
+            _gOv.innerHTML = '';
+
+            var xBtn = document.createElement('button');
+            xBtn.textContent = '×';
+            xBtn.style.cssText = 'position:fixed;top:15px;right:15px;z-index:10;width:40px;height:40px;border-radius:50%;background:rgba(0,0,0,0.7);color:#fff;border:none;cursor:pointer;font-size:24px;display:flex;align-items:center;justify-content:center;';
+            xBtn.onclick = closeGallery;
+            _gOv.appendChild(xBtn);
+
+            var cnt = document.createElement('div');
+            cnt.textContent = (_gIdx+1) + ' / ' + _gImgs.length;
+            cnt.style.cssText = 'color:rgba(255,255,255,0.5);font-size:12px;margin-bottom:10px;letter-spacing:1px;';
+            _gOv.appendChild(cnt);
+
+            var wrap = document.createElement('div');
+            wrap.style.cssText = 'position:relative;width:100%;max-width:1000px;background:#000;border-radius:4px;overflow:hidden;';
+
+            var prev = document.createElement('button');
+            prev.innerHTML = '&#8249;';
+            prev.style.cssText = 'position:absolute;left:10px;top:50%;transform:translateY(-50%);z-index:5;width:44px;height:44px;border-radius:50%;background:rgba(0,0,0,0.6);color:#fff;border:none;cursor:pointer;font-size:28px;display:flex;align-items:center;justify-content:center;';
+            prev.onclick = function() { _gIdx=(_gIdx-1+_gImgs.length)%_gImgs.length; renderGallery(); };
+            wrap.appendChild(prev);
+
+            var img = document.createElement('img');
+            img.src = _gImgs[_gIdx];
+            img.style.cssText = 'width:100%;max-height:75vh;object-fit:contain;display:block;';
+            var ts=0;
+            img.addEventListener('touchstart',function(e){ts=e.touches[0].clientX;},{passive:true});
+            img.addEventListener('touchend',function(e){
+                var d=ts-e.changedTouches[0].clientX;
+                if(Math.abs(d)>40){_gIdx=d>0?(_gIdx+1)%_gImgs.length:(_gIdx-1+_gImgs.length)%_gImgs.length;renderGallery();}
+            },{passive:true});
+            wrap.appendChild(img);
+
+            var next = document.createElement('button');
+            next.innerHTML = '&#8250;';
+            next.style.cssText = 'position:absolute;right:10px;top:50%;transform:translateY(-50%);z-index:5;width:44px;height:44px;border-radius:50%;background:rgba(0,0,0,0.6);color:#fff;border:none;cursor:pointer;font-size:28px;display:flex;align-items:center;justify-content:center;';
+            next.onclick = function() { _gIdx=(_gIdx+1)%_gImgs.length; renderGallery(); };
+            wrap.appendChild(next);
+            _gOv.appendChild(wrap);
+
+            var tr = document.createElement('div');
+            tr.style.cssText = 'display:flex;gap:6px;padding:12px 0 0;justify-content:center;flex-wrap:wrap;max-width:1000px;width:100%;';
+            _gImgs.forEach(function(src,i) {
+                var th = document.createElement('img');
+                th.src = src;
+                th.style.cssText = 'width:58px;height:42px;object-fit:cover;border-radius:3px;cursor:pointer;flex-shrink:0;opacity:'+(i===_gIdx?'1':'0.45')+';outline:'+(i===_gIdx?'2px solid #c5a47e':'none')+';transition:opacity 0.2s;';
+                th.onclick = function() { _gIdx=i; renderGallery(); };
+                tr.appendChild(th);
+            });
+            _gOv.appendChild(tr);
+        }
+
+        function closeGallery() { if(_gOv) _gOv.style.display='none'; document.body.style.overflow=''; }
+    </script>

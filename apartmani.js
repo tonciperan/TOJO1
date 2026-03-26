@@ -121,7 +121,82 @@ document.addEventListener('DOMContentLoaded', () => {
         cb.addEventListener('change', calculatePrice);
     });
 
-    // --- 4. FANCYBOX (Galerije u pop-upu) ---
+    // --- 4. SCROLL REVEAL ---
+    const revealObs = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                revealObs.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
+
+    const revealGroups = [
+        { selector: '.apt-section-title',               stagger: false },
+        { selector: '.amenities-grid .amenity-item',    stagger: true  },
+        { selector: '.rules-list li',                   stagger: true  },
+        { selector: '.distances-list li',               stagger: true  },
+        { selector: '.apt-map',                         stagger: false },
+        { selector: '.reviews-header',                  stagger: false },
+        { selector: '.review-card',                     stagger: true  },
+        { selector: '.other-apt-card',                  stagger: true  },
+    ];
+
+    revealGroups.forEach(({ selector, stagger }) => {
+        document.querySelectorAll(selector).forEach((el, i) => {
+            el.classList.add('reveal');
+            if (stagger && i >= 1 && i <= 5) el.classList.add('delay-' + i);
+            revealObs.observe(el);
+        });
+    });
+
+    // --- 4b. COUNTER ANIMATION ---
+    function animateCounter(el, duration) {
+        duration = duration || 1300;
+        const target = parseFloat(el.dataset.target);
+        if (isNaN(target)) return;
+        const isDecimal = String(target).includes('.');
+        const startTime = performance.now();
+        const tick = function(now) {
+            const elapsed = now - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            const ease = 1 - Math.pow(1 - progress, 3);
+            const value = target * ease;
+            el.textContent = isDecimal ? value.toFixed(1) : Math.round(value);
+            if (progress < 1) requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+    }
+
+    // Stats u hero sekciji — počni nakon entrance animacije
+    document.querySelectorAll('.apt-stat-num').forEach(function(el) {
+        const val = parseFloat(el.textContent);
+        if (!isNaN(val) && val > 0) {
+            el.dataset.target = val;
+            el.textContent = '0';
+            setTimeout(function() { animateCounter(el); }, 850);
+        }
+    });
+
+    // Review score — scroll triggered
+    const counterObs = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+            if (!entry.isIntersecting) return;
+            animateCounter(entry.target, 1500);
+            counterObs.unobserve(entry.target);
+        });
+    }, { threshold: 0.6 });
+
+    document.querySelectorAll('.review-score-num').forEach(function(el) {
+        const val = parseFloat(el.textContent);
+        if (!isNaN(val) && val > 0) {
+            el.dataset.target = val;
+            el.textContent = '0';
+            counterObs.observe(el);
+        }
+    });
+
+    // --- 5. FANCYBOX (Galerije u pop-upu) ---
     if (typeof Fancybox !== 'undefined') {
         Fancybox.bind('[data-fancybox]', {
             on: {

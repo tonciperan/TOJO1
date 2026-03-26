@@ -242,7 +242,7 @@
                     <div class="landmark-content">
                         <span class="label">Dalmacija • 6 km</span>
                         <h2>Primošten</h2>
-                        <p>Slikovito mjesto na otočiću s vinogradima Babić i kipom Gospe od Loreta na vidikovcu Gaj.</p>
+                        <p>Slikovito mjesto na poluotoku s vinogradima Babić u zaleđu i kipom Gospe od Loreta na vidikovcu Gaj.</p>
                         <a href="javascript:void(0)" class="btn-more btn-landmark-open" data-modal="#modal-primosten">DETALJNIJE</a>
                     </div>
                 </div>
@@ -379,7 +379,7 @@
             <div class="modal-right">
                 <h3>PRIMOŠTEN</h3>
                 <div class="modal-text">
-                    <p>Jedno od najslikovitijih mjesta na Jadranu — stara jezgra izgrađena na otočiću spojenim s kopnom, okružena vinogradima iz kojih se pravi čuveno vino Babić. Uske kaldrmom popločene uličice, bijele kamene kuće i panoramski pogled na more čine Primošten mjestom koje se ne zaboravlja.</p>
+                    <p>Jedno od najslikovitijih mjesta na Jadranu — stara jezgra smještena na poluotoku, okružena kristalnim morem i obližnjim vinogradima od kojih se pravi čuveno vino Babić. Uske kamenom popločane uličice, bijele kamene kuće i panoramski vidici čine Primošten mjestom koje se ne zaboravlja.</p>
                     <p><strong>Gospa od Loreta — Vidikovac Gaj:</strong> Na brdu Gaj (173 m) iznad Primoštena stoji impresivni kip visok 17 metara — najveći takve vrste na svijetu. Obložen mozaikom od zlata, srebra i obojenog stakla, s krunom od dragog kamenja. S vidikovca se pruža nezaboravan panoramski pogled na Primošten, okolne otoke i Šibenski arhipelag.</p>
                     <p><strong>Udaljenost:</strong> 6 km od Grebašice (10 min vožnje)</p>
                 </div>
@@ -691,69 +691,119 @@
     </script>
 
     <!-- BOOKING MODAL -->
-    <div id="bookingModal" class="modal">
-        <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <h2>Pošalji potražnju <i>direktno vlasniku</i></h2>
-            <div class="booking-form">
-                <label class="section-label">Odaberite apartmane:</label>
-                <div class="apt-checkbox-grid">
-                    <label class="apt-check">
-                        <input type="checkbox" name="apt" value="A1" onchange="calculatePrice()">
-                        <span class="box-label">A1 (1. Kat)</span>
-                    </label>
-                    <label class="apt-check">
-                        <input type="checkbox" name="apt" value="A2" onchange="calculatePrice()">
-                        <span class="box-label">A2 (1. Kat)</span>
-                    </label>
-                    <label class="apt-check">
-                        <input type="checkbox" name="apt" value="A3" onchange="calculatePrice()">
-                        <span class="box-label">A3 (1. Kat)</span>
-                    </label>
-                </div>
-                <div class="form-row">
-                    <div class="input-group">
-                        <label>Od:</label>
-                        <input type="date" id="check-in">
-                    </div>
-                    <div class="input-group">
-                        <label>Do:</label>
-                        <input type="date" id="check-out">
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="input-group">
-                        <label>Odrasli:</label>
-                        <select id="adults">
-                            <option value="1">1 osoba</option>
-                            <option value="2" selected>2 osobe</option>
-                            <option value="3">3 osobe</option>
-                            <option value="4">4 osobe</option>
-                            <option value="5">5+ osoba</option>
-                        </select>
-                    </div>
-                    <div class="input-group">
-                        <label>Djeca:</label>
-                        <select id="children">
-                            <option value="0">Bez djece</option>
-                            <option value="1">1 dijete</option>
-                            <option value="2">2+ djece</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="guest-info-fields">
-                    <div class="input-group">
-                        <label>Ime i prezime:</label>
-                        <input type="text" id="guest-name" placeholder="Vaše ime">
-                    </div>
-                    <div class="input-group">
-                        <label>Vaš Email:</label>
-                        <input type="email" id="guest-email" placeholder="primjer@mail.com">
-                    </div>
-                    <div class="input-group">
-                        <label>Broj mobitela:</label>
-                        <input type="tel" id="guest-phone" placeholder="+385 9x xxx xxxx">
-                    </div>
-                </div>
-                <div class="result-box">
-                    <p>Noćenja: <span id="nights-count">0</span></p>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="script.js"></script>
+    <script src="apartmani.js"></script>
+              <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var thumbsSw = new Swiper('.myThumb2', {
+                spaceBetween: 8,
+                slidesPerView: 4,
+                freeMode: true,
+                watchSlidesProgress: true,
+            });
+
+            var mainEl = document.querySelector('.mySwiper2');
+            if (mainEl && mainEl.swiper) { mainEl.swiper.destroy(true, true); }
+
+            var galleryImgs = [];
+            mainEl.querySelectorAll('.swiper-slide:not(.swiper-slide-duplicate) img').forEach(function(img) {
+                var src = img.getAttribute('src');
+                if (src && galleryImgs.indexOf(src) === -1) galleryImgs.push(src);
+            });
+
+            new Swiper('.mySwiper2', {
+                loop: true,
+                speed: 700,
+                navigation: { nextEl: '.n2', prevEl: '.p2' },
+                pagination: { el: '#pagination2', clickable: true, dynamicBullets: true },
+                thumbs: { swiper: thumbsSw },
+                keyboard: { enabled: true },
+                on: {
+                    click: function(swiper, event) {
+                        event.preventDefault();
+                        openGallery(galleryImgs, swiper.realIndex);
+                    }
+                }
+            });
+
+            // Postavi cursor na swiper
+            if (mainEl) mainEl.style.cursor = 'zoom-in';
+        });
+
+        var _gImgs = [], _gIdx = 0, _gOv = null;
+
+        function openGallery(imgs, startIdx) {
+            _gImgs = imgs; _gIdx = startIdx;
+            if (!_gOv) {
+                _gOv = document.createElement('div');
+                _gOv.style.cssText = 'position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.95);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px;box-sizing:border-box;';
+                _gOv.addEventListener('click', function(e) { if(e.target===_gOv) closeGallery(); });
+                document.body.appendChild(_gOv);
+                document.addEventListener('keydown', function(e) {
+                    if (e.key==='Escape') closeGallery();
+                    if (e.key==='ArrowRight') { _gIdx=(_gIdx+1)%_gImgs.length; renderGallery(); }
+                    if (e.key==='ArrowLeft') { _gIdx=(_gIdx-1+_gImgs.length)%_gImgs.length; renderGallery(); }
+                });
+            }
+            renderGallery();
+            _gOv.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function renderGallery() {
+            _gOv.innerHTML = '';
+
+            var xBtn = document.createElement('button');
+            xBtn.textContent = '×';
+            xBtn.style.cssText = 'position:fixed;top:15px;right:15px;z-index:10;width:40px;height:40px;border-radius:50%;background:rgba(0,0,0,0.7);color:#fff;border:none;cursor:pointer;font-size:24px;display:flex;align-items:center;justify-content:center;';
+            xBtn.onclick = closeGallery;
+            _gOv.appendChild(xBtn);
+
+            var cnt = document.createElement('div');
+            cnt.textContent = (_gIdx+1) + ' / ' + _gImgs.length;
+            cnt.style.cssText = 'color:rgba(255,255,255,0.5);font-size:12px;margin-bottom:10px;letter-spacing:1px;';
+            _gOv.appendChild(cnt);
+
+            var wrap = document.createElement('div');
+            wrap.style.cssText = 'position:relative;width:100%;max-width:1000px;background:#000;border-radius:4px;overflow:hidden;';
+
+            var prev = document.createElement('button');
+            prev.innerHTML = '&#8249;';
+            prev.style.cssText = 'position:absolute;left:10px;top:50%;transform:translateY(-50%);z-index:5;width:44px;height:44px;border-radius:50%;background:rgba(0,0,0,0.6);color:#fff;border:none;cursor:pointer;font-size:28px;display:flex;align-items:center;justify-content:center;';
+            prev.onclick = function() { _gIdx=(_gIdx-1+_gImgs.length)%_gImgs.length; renderGallery(); };
+            wrap.appendChild(prev);
+
+            var img = document.createElement('img');
+            img.src = _gImgs[_gIdx];
+            img.style.cssText = 'width:100%;max-height:75vh;object-fit:contain;display:block;';
+            var ts=0;
+            img.addEventListener('touchstart',function(e){ts=e.touches[0].clientX;},{passive:true});
+            img.addEventListener('touchend',function(e){
+                var d=ts-e.changedTouches[0].clientX;
+                if(Math.abs(d)>40){_gIdx=d>0?(_gIdx+1)%_gImgs.length:(_gIdx-1+_gImgs.length)%_gImgs.length;renderGallery();}
+            },{passive:true});
+            wrap.appendChild(img);
+
+            var next = document.createElement('button');
+            next.innerHTML = '&#8250;';
+            next.style.cssText = 'position:absolute;right:10px;top:50%;transform:translateY(-50%);z-index:5;width:44px;height:44px;border-radius:50%;background:rgba(0,0,0,0.6);color:#fff;border:none;cursor:pointer;font-size:28px;display:flex;align-items:center;justify-content:center;';
+            next.onclick = function() { _gIdx=(_gIdx+1)%_gImgs.length; renderGallery(); };
+            wrap.appendChild(next);
+            _gOv.appendChild(wrap);
+
+            var tr = document.createElement('div');
+            tr.style.cssText = 'display:flex;gap:6px;padding:12px 0 0;justify-content:center;flex-wrap:wrap;max-width:1000px;width:100%;';
+            _gImgs.forEach(function(src,i) {
+                var th = document.createElement('img');
+                th.src = src;
+                th.style.cssText = 'width:58px;height:42px;object-fit:cover;border-radius:3px;cursor:pointer;flex-shrink:0;opacity:'+(i===_gIdx?'1':'0.45')+';outline:'+(i===_gIdx?'2px solid #c5a47e':'none')+';transition:opacity 0.2s;';
+                th.onclick = function() { _gIdx=i; renderGallery(); };
+                tr.appendChild(th);
+            });
+            _gOv.appendChild(tr);
+        }
+
+        function closeGallery() { if(_gOv) _gOv.style.display='none'; document.body.style.overflow=''; }
+    </script>
