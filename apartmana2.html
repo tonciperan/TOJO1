@@ -616,6 +616,24 @@
 
         var _gImgs = [], _gIdx = 0, _gOv = null;
 
+        function openGallery(imgs, startIdx) {
+            _gImgs = imgs; _gIdx = startIdx;
+            if (!_gOv) {
+                _gOv = document.createElement('div');
+                _gOv.style.cssText = 'position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.95);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px;box-sizing:border-box;';
+                _gOv.addEventListener('click', function(e) { if(e.target===_gOv) closeGallery(); });
+                document.body.appendChild(_gOv);
+                document.addEventListener('keydown', function(e) {
+                    if (e.key==='Escape') closeGallery();
+                    if (e.key==='ArrowRight') { _gIdx=(_gIdx+1)%_gImgs.length; renderGallery(); }
+                    if (e.key==='ArrowLeft') { _gIdx=(_gIdx-1+_gImgs.length)%_gImgs.length; renderGallery(); }
+                });
+            }
+            renderGallery();
+            _gOv.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
         function renderGallery() {
             _gOv.innerHTML = '';
 
