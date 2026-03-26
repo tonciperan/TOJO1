@@ -2954,3 +2954,49 @@ nav::before {
         z-index: 10001;
     }
 }
+/* ── JEZIČNI PREKIDAČ ── */
+.lang-switch {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: 35px;
+    padding-left: 25px;
+    border-left: 1px solid rgba(0,0,0,0.1);
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+}
+
+.lang-switch span {
+    color: #ddd;
+    font-weight: 300;
+}
+
+.lang-switch a {
+    text-decoration: none;
+    color: #aaa;
+    transition: color 0.2s;
+}
+
+.lang-switch a:hover {
+    color: #1a1a1a;
+}
+
+.lang-switch .lang-active {
+    color: #1a1a1a;
+}
+
+@media (max-width: 768px) {
+    .lang-switch {
+        margin-top: 35px;
+        margin-left: 0;
+        padding: 18px 0 0;
+        border-left: none;
+        border-top: 1px solid rgba(0,0,0,0.08);
+        width: 100%;
+        justify-content: center;
+        font-size: 13px;
+        letter-spacing: 3px;
+        gap: 10px;
+    }
+}

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="hr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontakt | APARTMANI TOJO</title>
+    <title>Contact | TOJO Apartments Grebaštica</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="apartmani.css">
@@ -13,33 +13,29 @@
 <body>
 
     <header>
-        <a href="index.html" class="logo">APARTMANI TOJO</a>
+        <a href="index-en.html" class="logo">APARTMANI TOJO</a>
         <nav id="nav-menu">
-            <a href="index.html">Početna</a>
+            <a href="index-en.html">Home</a>
             <div class="nav-dropdown">
-                <a href="#">Apartmani</a>
+                <a href="#">Apartments</a>
                 <div class="dropdown-menu">
-                    <a href="apartmana1.html">
-                        Apartman A1
-                        <span class="dropdown-sub">1. Kat • 4 osobe</span>
+                    <a href="apartmana1-en.html">
+                        Apartment A1
+                        <span class="dropdown-sub">1st Floor • 4 persons</span>
                     </a>
-                    <a href="apartmana2.html">
-                        Apartman A2
-                        <span class="dropdown-sub">1. Kat • 5 osoba</span>
+                    <a href="apartmana2-en.html">
+                        Apartment A2
+                        <span class="dropdown-sub">1st Floor • 5 persons</span>
                     </a>
-                    <a href="apartmana3.html">
-                        Apartman A3
-                        <span class="dropdown-sub">1. Kat • 4 osobe</span>
+                    <a href="apartmana3-en.html">
+                        Apartment A3
+                        <span class="dropdown-sub">1st Floor • 4 persons</span>
                     </a>
                 </div>
             </div>
-            <a href="kontakt.html">Kontakt</a>
-            <a href="#" class="btn-book nav-cta-btn" id="nav-rezerviraj">REZERVIRAJ SAD</a>
-                     <div class="lang-switch">
-                <a href="#" class="lang-active">HR</a>
-                <span>|</span>
-                <a href="#">EN</a>
-            </div>
+            <a href="kontakt-en.html">Contact</a>
+            <a href="#" class="btn-book nav-cta-btn" id="nav-rezerviraj">BOOK NOW</a>
+                     <div class="lang-switch"><a href="kontakt.html">HR</a><span>|</span><a href="kontakt-en.html" class="lang-active">EN</a></div>
         </nav>
         <div class="menu-toggle" id="mobile-menu">
             <span></span><span></span><span></span>
@@ -54,23 +50,23 @@
             </iframe>
         </div>
         <div class="contact-card">
-            <span class="label">Pronađite nas</span>
-            <h1>Kontaktirajte nas</h1>
+            <span class="label">Find us</span>
+            <h1>Contact us</h1>
             
             <div class="contact-item">
-                <p><strong>Adresa:</strong><br>Bašelovići 12A, 22010 Grebaštica, Šibenik</p>
+                <p><strong>Address:</strong><br>Bašelovići 12A, 22010 Grebaštica, Šibenik</p>
             </div>
             <div class="contact-item">
-                <p><strong>Telefon:</strong><br><a href="tel:+385955502487">+385 95 550 2487</a></p>
+                <p><strong>Phone:</strong><br><a href="tel:+385955502487">+385 95 550 2487</a></p>
             </div>
             <div class="contact-item">
-                <p><strong>Email:</strong><br><a href="/cdn-cgi/l/email-protection#186c77767b7136687d6a7976587f75797174367b7775"><span class="__cf_email__" data-cfemail="0f7b60616c66217f6a7d6e614f68626e6663216c6062">tonci.peran@gmail.com</span></a></p>
+                <p><strong>Email:</strong><br><a href="/cdn-cgi/l/email-protection#186c77767b7136687d6a7976587f75797174367b7775"><span class="__cf_email__" data-cfemail="0f7b60616c66217f6a7d6e614f68626e6663216c6062"><span class="__cf_email__" data-cfemail="20544f4e43490e504552414e60474d41494c0e434f4d">[email&#160;protected]</span></span></a></p>
             </div>
 
             <hr>
 
             <div class="contact-item">
-                <p><strong>Radno vrijeme (Sezona):</strong><br>Svaki dan 08:00 - 22:00</p>
+                <p><strong>Opening hours (Season):</strong><br>Every day 08:00 - 22:00</p>
             </div>
             <div class="social-links">
                 <a href="#">Instagram</a>
@@ -83,82 +79,77 @@
     <div id="bookingModal" class="modal">
         <div class="modal-content">
             <span class="close-modal">&times;</span>
-            <h2>Pošalji potražnju <i>direktno vlasniku</i></h2>
+            <h2>Send inquiry <i>directly to owner</i></h2>
             <div class="booking-form">
-                <label class="section-label">Odaberite apartmane:</label>
+                <label class="section-label">Select apartments:</label>
                 <div class="apt-checkbox-grid">
                     <label class="apt-check">
                         <input type="checkbox" name="apt" value="A1" onchange="calculatePrice()">
-                        <span class="box-label">A1 (1. Kat)</span>
+                        <span class="box-label">A1 (1st Floor)</span>
                     </label>
                     <label class="apt-check">
                         <input type="checkbox" name="apt" value="A2" onchange="calculatePrice()">
-                        <span class="box-label">A2 (1. Kat)</span>
+                        <span class="box-label">A2 (1st Floor)</span>
                     </label>
                     <label class="apt-check">
                         <input type="checkbox" name="apt" value="A3" onchange="calculatePrice()">
-                        <span class="box-label">A3 (1. Kat)</span>
+                        <span class="box-label">A3 (1st Floor)</span>
                     </label>
                 </div>
                 <div class="form-row">
                     <div class="input-group">
-                        <label>Od:</label>
+                        <label>From:</label>
                         <input type="date" id="check-in">
                     </div>
                     <div class="input-group">
-                        <label>Do:</label>
+                        <label>To:</label>
                         <input type="date" id="check-out">
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="input-group">
-                        <label>Odrasli:</label>
+                        <label>Adults:</label>
                         <select id="adults">
-                            <option value="1">1 osoba</option>
-                            <option value="2" selected>2 osobe</option>
-                            <option value="3">3 osobe</option>
-                            <option value="4">4 osobe</option>
-                            <option value="5">5+ osoba</option>
+                            <option value="1">1 person</option>
+                            <option value="2" selected>2 persons</option>
+                            <option value="3">3 persons</option>
+                            <option value="4">4 persons</option>
+                            <option value="5">5+ persons</option>
                         </select>
                     </div>
                     <div class="input-group">
-                        <label>Djeca:</label>
+                        <label>Children:</label>
                         <select id="children">
-                            <option value="0">Bez djece</option>
-                            <option value="1">1 dijete</option>
-                            <option value="2">2+ djece</option>
+                            <option value="0">No children</option>
+                            <option value="1">1 child</option>
+                            <option value="2">2+ children</option>
                         </select>
                     </div>
                 </div>
                 <div class="guest-info-fields">
                     <div class="input-group">
-                        <label>Ime i prezime:</label>
-                        <input type="text" id="guest-name" placeholder="Vaše ime">
+                        <label>Full name:</label>
+                        <input type="text" id="guest-name" placeholder="Your name">
                     </div>
                     <div class="input-group">
-                        <label>Vaš Email:</label>
-                        <input type="email" id="guest-email" placeholder="primjer@mail.com">
+                        <label>Your Email:</label>
+                        <input type="email" id="guest-email" placeholder="example@mail.com">
                     </div>
                     <div class="input-group">
-                        <label>Broj mobitela:</label>
+                        <label>Phone number:</label>
                         <input type="tel" id="guest-phone" placeholder="+385 9x xxx xxxx">
                     </div>
                 </div>
                 <div class="result-box">
-                    <p>Noćenja: <span id="nights-count">0</span></p>
-                    <h3>Ukupno: <span id="total-price">0</span> €</h3>
+                    <p>Nights: <span id="nights-count">0</span></p>
+                    <h3>Total: <span id="total-price">0</span> €</h3>
                 </div>
                 <div class="send-options">
-                    <button onclick="sendToWhatsApp()" class="send-btn wa">WhatsApp Upit</button>
-                    <button onclick="sendToEmail()" class="send-btn mail">Pošalji Email</button>
+                    <button onclick="sendToWhatsApp()" class="send-btn wa">WhatsApp Inquiry</button>
+                    <button onclick="sendToEmail()" class="send-btn mail">Send Email</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-    <script src="script.js"></script>
-    <script src="apartmani.js"></script>
-</body>
-</html>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
