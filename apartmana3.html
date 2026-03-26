@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apartman A3 | Apartmani TOJO – Grebaštica</title>
+    <title>Apartman A2 | Apartmani TOJO – Grebaštica</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -50,7 +50,18 @@
         .btn-whatsapp { flex: 1; display: inline-block; padding: 18px 20px; background: #25D366; color: #fff; text-align: center; text-decoration: none; font-size: 12px; letter-spacing: 2px; font-weight: 600; transition: 0.3s; }
         .btn-whatsapp:hover { background: #1ebe5b; transform: translateY(-2px); }
 
-        .apt-badge { display: inline-block; background: #c5a47e; color: #fff; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; padding: 5px 14px; border-radius: 2px; margin-bottom: 12px; }
+        /* Highlight badge za najtraženiji apartman */
+        .apt-badge {
+            display: inline-block;
+            background: #c5a47e;
+            color: #fff;
+            font-size: 10px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 5px 14px;
+            border-radius: 2px;
+            margin-bottom: 12px;
+        }
 
         .apt-details-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; margin-bottom: 80px; padding-top: 60px; border-top: 1px solid #eee; }
         .apt-section-title { font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 400; margin-bottom: 30px; padding-bottom: 12px; border-bottom: 1px solid #eee; }
@@ -87,14 +98,17 @@
         .other-apts-grid { display: flex; gap: 20px; flex-wrap: wrap; }
         .other-apt-card { flex: 1; min-width: 200px; display: block; padding: 25px; background: #f9f9f9; text-decoration: none; color: #1a1a1a; border-bottom: 2px solid #c5a47e; transition: background 0.3s; }
         .other-apt-card:hover { background: #f0ebe4; }
-        .other-apt-card .apt-label { margin-bottom: 8px; font-size: 11px; letter-spacing: 3px; color: #c5a47e; text-transform: uppercase; display: block; }
+        .other-apt-card .apt-label { margin-bottom: 8px; }
         .other-apt-card strong { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 400; display: block; }
         .other-apt-card p { font-size: 13px; color: #888; margin-top: 8px; }
 
-        .apt-highlight-box { background: #fdfaf7; border-left: 3px solid #c5a47e; padding: 20px 25px; margin-bottom: 30px; display: flex; align-items: center; gap: 18px; }
-        .apt-highlight-box .highlight-icon { font-size: 30px; flex-shrink: 0; }
-        .apt-highlight-box h3 { font-family: 'Playfair Display', serif; font-size: 17px; font-weight: 400; margin-bottom: 4px; color: #1a1a1a; }
-        .apt-highlight-box p { font-size: 13px; color: #666; line-height: 1.6; margin: 0; }
+        /* Sobe highlight sekcija */
+        .rooms-section { margin-bottom: 80px; padding-top: 60px; border-top: 1px solid #eee; }
+        .rooms-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 25px; margin-top: 30px; }
+        .room-card { padding: 25px; background: #f9f9f9; border-radius: 2px; }
+        .room-card h4 { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 400; margin-bottom: 10px; }
+        .room-card p { font-size: 13px; color: #666; line-height: 1.7; }
+        .room-icon { font-size: 28px; margin-bottom: 12px; display: block; }
 
         @media (max-width: 1024px) {
             .apt-hero-top { flex-direction: column; gap: 30px; }
@@ -104,6 +118,7 @@
             .apt-details-grid { grid-template-columns: 1fr; gap: 40px; }
             .apt-location-grid { grid-template-columns: 1fr; }
             .reviews-grid { grid-template-columns: 1fr; }
+            .rooms-grid { grid-template-columns: 1fr; }
         }
         @media (max-width: 768px) {
             .apt-detail-hero { padding: 100px 4% 40px; }
@@ -170,81 +185,117 @@
         <!-- GORNJI DIO: galerija + info -->
         <div class="apt-hero-top">
 
-            <div class="apt-gallery-col">
-                <div class="swiper mySwiper3 apt-main-swiper">
+                    <div class="apt-gallery-col">
+                       <div class="swiper mySwiper2 apt-main-swiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="images/A3/balkon.jpeg" alt="Apartman A3 – balkon s pogledom na more"></div>
-                        <div class="swiper-slide"><img src="images/A3/balkon (2).jpeg" alt="Apartman A3 – terasa"></div>
-                        <div class="swiper-slide"><img src="images/A3/balkon (3).jpeg" alt="Apartman A3 – interijer"></div>
+                        <div class="swiper-slide"><img src="images/A2/balkon.jpeg" alt="Apartman A2 – balkon s pogledom na more"></div>
+                        <div class="swiper-slide"><img src="images/A2/balkon (2).jpeg" alt="Apartman A2 – interijer"></div>
+                        <div class="swiper-slide"><img src="images/A2/balkon (3).jpeg" alt="Apartman A2 – spavaća soba"></div>
+                        <div class="swiper-slide"><img src="images/A2/wc.jpg" alt="Apartman A2 – kupaonica"></div>
+                        <div class="swiper-slide"><img src="images/A2/wc.jpg" alt="Apartman A2 – kupaonica"></div>
+                        <div class="swiper-slide"><img src="images/A2/wc (1).jpeg" alt="Apartman A2 – kupaonica"></div>
+                        <div class="swiper-slide"><img src="images/A2/wc (2).jpeg" alt="Apartman A2 – kupaonica"></div>
+                        <div class="swiper-slide"><img src="images/A2/wc (3).jpg" alt="Apartman A2 – kupaonica"></div>
+                        <div class="swiper-slide"><img src="images/A2/wc (4).jpeg" alt="Apartman A2 – kupaonica"></div>
+                        <div class="swiper-slide"><img src="images/A2/kuhinja (6).jpg" alt="Apartman A2 – kuhinja"></div>
+                        <div class="swiper-slide"><img src="images/A2/kuhinja (3).jpg" alt="Apartman A2 – kuhinja"></div>
+                        <div class="swiper-slide"><img src="images/A2/kuhinja (4).jpg" alt="Apartman A2 – kuhinja"></div>
+                        <div class="swiper-slide"><img src="images/A2/kuhinja (5).jpg" alt="Apartman A2 – kuhinja"></div>
+                        <div class="swiper-slide"><img src="images/A2/pred.jpg" alt="Apartman A2 – hodnik"></div>
+                        <div class="swiper-slide"><img src="images/A2/pred1.jpg" alt="Apartman A2 – hodnik"></div>
+                        <div class="swiper-slide"><img src="images/A2/pred (2).jpg" alt="Apartman A2 – hodnik"></div>
+                        <div class="swiper-slide"><img src="images/A2/soba1 (2).jpg" alt="Apartman A2 – Soba 1"></div>
+                        <div class="swiper-slide"><img src="images/A2/soba1 (3).jpg" alt="Apartman A2 – Soba 1"></div>
+                        <div class="swiper-slide"><img src="images/A2/soba1 (4).jpg" alt="Apartman A2 – Soba 1"></div>
+                        <div class="swiper-slide"><img src="images/A2/soba2 (3).jpg" alt="Apartman A2 – Soba 2"></div>
+                        <div class="swiper-slide"><img src="images/A2/soba2 (4).jpg" alt="Apartman A2 – Soba 2"></div>
+                        <div class="swiper-slide"><img src="images/A2/soba2 (5).jpg" alt="Apartman A2 – Soba 2"></div>
+                        <div class="swiper-slide"><img src="images/A2/soba2 (6).jpg" alt="Apartman A2 – Soba 2"></div>
+                        <div class="swiper-slide"><img src="images/A2/soba2 (8).jpg" alt="Apartman A2 – Soba 2"></div>  
                     </div>
-                    <div class="swiper-button-next n1"></div>
-                    <div class="swiper-button-prev p1"></div>
-                    <div class="swiper-pagination" id="pagination3"></div>
+                    <div class="swiper-button-next n2"></div>
+                    <div class="swiper-button-prev p2"></div>
+                    <div class="swiper-pagination" id="pagination2"></div>
                 </div>
-                <div class="swiper myThumb3 apt-thumb-swiper">
+                <div class="swiper myThumb2 apt-thumb-swiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="images/A3/balkon.jpeg" alt="thumb 1"></div>
-                        <div class="swiper-slide"><img src="images/A3/balkon (2).jpeg" alt="thumb 2"></div>
-                        <div class="swiper-slide"><img src="images/A3/balkon (3).jpeg" alt="thumb 3"></div>
+                        <div class="swiper-slide"><img src="images/A2/balkon.jpeg" alt="thumb 1"></div>
+                        <div class="swiper-slide"><img src="images/A2/wc.jpg" alt="thumb 2"></div>
+                        <div class="swiper-slide"><img src="images/A2/balkon (2).jpeg" alt="thumb 3"></div>
+                        <div class="swiper-slide"><img src="images/A2/balkon (3).jpeg" alt="thumb 4"></div>
                     </div>
                 </div>
             </div>
 
             <div class="apt-info-col">
-                <span class="apt-badge">🌅 Najljepši pogled na uvalu</span>
+                <span class="apt-badge">★ Najprostraniji apartman</span>
                 <span class="apt-label">1. Kat • Apartmani TOJO</span>
-                <h1>Apartman A3</h1>
+                <h1>Apartman A2</h1>
 
                 <div class="apt-quick-stats">
                     <div class="apt-stat">
-                        <span class="apt-stat-num">4</span>
-                        <span class="apt-stat-lbl">Osobe</span>
+                        <span class="apt-stat-num">5</span>
+                        <span class="apt-stat-lbl">Osoba</span>
+                    </div>
+                    <div class="apt-stat">
+                        <span class="apt-stat-num">75</span>
+                        <span class="apt-stat-lbl">m²</span>
                     </div>
                     <div class="apt-stat">
                         <span class="apt-stat-num">2</span>
-                        <span class="apt-stat-lbl">Kreveta</span>
+                        <span class="apt-stat-lbl">Spavaće</span>
                     </div>
                     <div class="apt-stat">
                         <span class="apt-stat-num">1</span>
                         <span class="apt-stat-lbl">Kupaonica</span>
                     </div>
-                    <div class="apt-stat">
-                        <span class="apt-stat-num">1</span>
-                        <span class="apt-stat-lbl">Balkon</span>
-                    </div>
-                </div>
-
-                <div class="apt-highlight-box">
-                    <span class="highlight-icon">🌊</span>
-                    <div>
-                        <h3>Panoramski pogled na cijelu Grebašticu</h3>
-                        <p>Smješten na prvom katu, A3 pruža najširi pogled na uvalu — savršen za jutarnju kavu uz zvuk mora.</p>
-                    </div>
                 </div>
 
                 <p class="apt-desc">
-                    Prostran apartman na prvom katu s balkonom i pogledom na more.
-                    Sastoji se od opremljene kuhinje s blagovaonicom,
-                    kupaonice te spavaće sobe. Ispred kuće nalazi se uređeni vrt s namještajem
-                    za sjedenje, a cijela kuća je okružena mediteranskim zelenilom.
-                    WiFi i parking su besplatni, kućni ljubimci su dobrodošli.
+                    Najprostrananiji apartman u kompleksu — 75 m² na prvom katu s panoramskim pogledom
+                    na more i uvalu Grebaštica. Sastoji se od opremljene kuhinje s blagovaonicom, sa 
+                    satelitskim TV-om, kupaonice s tušem te dvije spavaće sobe:
+                    jedne s bračnim krevetom i jedne s tri odvojena ležaja. Obje spavaće sobe imaju
+                    pristup balkonu s namještajem za sjedenje i nezaboravnim pogledom na more.
                 </p>
 
                 <div class="apt-price-box">
                     <p>Cijena po noći</p>
                     <div class="apt-price-row">
                         <span>Pred/post sezona</span>
-                        <span>od 60 €</span>
+                        <span>od 80 €</span>
                     </div>
                     <div class="apt-price-row">
                         <span>Visoka sezona (srpanj – kolovoz)</span>
-                        <span>od 80 €</span>
+                        <span>od 110 €</span>
                     </div>
                 </div>
 
                 <div class="apt-cta-btns">
-                    <a href="javascript:void(0)" class="btn-book" data-apt="A3">REZERVIRAJ SAD</a>
-                    <a href="https://wa.me/385955502487?text=Zanima%20me%20Apartman%20A3" target="_blank" class="btn-whatsapp">WHATSAPP</a>
+                    <a href="javascript:void(0)" class="btn-book" data-apt="A2">REZERVIRAJ SAD</a>
+                    <a href="https://wa.me/385955502487?text=Zanima%20me%20Apartman%20A2" target="_blank" class="btn-whatsapp">WHATSAPP</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- RASPORED SOBA -->
+        <div class="rooms-section">
+            <h2 class="apt-section-title">Raspored prostorija</h2>
+            <div class="rooms-grid">
+                <div class="room-card">
+                    <span class="room-icon">🛏️</span>
+                    <h4>Spavaća soba 1</h4>
+                    <p>Bračni krevet s izlazom na balkon i pogledom na more. Pristup balkonu s pogledom na more.</p>
+                </div>
+                <div class="room-card">
+                    <span class="room-icon">🛏️</span>
+                    <h4>Spavaća soba 2</h4>
+                    <p>Dva odvojena ležaja — idealno za djecu ili veće grupe. Klima uređaj i prirodna ventilacija.</p>
+                </div>
+                <div class="room-card">
+                    <span class="room-icon">🍳</span>
+                    <h4>Kuhinja</h4>
+                    <p>Potpuno opremljena kuhinja s blagovaonicom. Satelitski TV, hladnjak, štednjak, mikrovalna.</p>
                 </div>
             </div>
         </div>
@@ -254,20 +305,18 @@
             <div>
                 <h2 class="apt-section-title">Sadržaji apartmana</h2>
                 <div class="amenities-grid">
-                    <div class="amenity-item"><div class="amenity-icon">🌊</div><span>Pogled na more s balkona</span></div>
-                    <div class="amenity-item"><div class="amenity-icon">🏖️</div><span>Balkon s vrtnim namještajem</span></div>
-                    <div class="amenity-item"><div class="amenity-icon">📶</div><span>Besplatni WiFi internet</span></div>
+                    <div class="amenity-item"><div class="amenity-icon">🌊</div><span>Panoramski pogled na more</span></div>
+                    <div class="amenity-item"><div class="amenity-icon">🏖️</div><span>Balkon s namještajem</span></div>
+                    <div class="amenity-item"><div class="amenity-icon">📶</div><span>Besplatni WiFi</span></div>
                     <div class="amenity-item"><div class="amenity-icon">❄️</div><span>Klima uređaj</span></div>
-                    <div class="amenity-item"><div class="amenity-icon">📺</div><span>Televizor</span></div>
-                    <div class="amenity-item"><div class="amenity-icon">🚗</div><span>Besplatan parking</span></div>
-                    <div class="amenity-item"><div class="amenity-icon">🍳</div><span>Opremljena kuhinja sa štednjakom</span></div>
-                    <div class="amenity-item"><div class="amenity-icon">🧊</div><span>Hladnjak</span></div>
-                    <div class="amenity-item"><div class="amenity-icon">☕</div><span>Kuhalo za vodu</span></div>
-                    <div class="amenity-item"><div class="amenity-icon">🛁</div><span>Kupaonica s kadom</span></div>
+                    <div class="amenity-item"><div class="amenity-icon">🚗</div><span>Besplatan parking u ograđenom dvorištu</span></div>
+                    <div class="amenity-item"><div class="amenity-icon">📺</div><span>Satelitski TV</span></div>
+                    <div class="amenity-item"><div class="amenity-icon">🍳</div><span>Potpuno opremljena kuhinja</span></div>
+                    <div class="amenity-item"><div class="amenity-icon">☕</div><span>Kuhalo za vodu & aparat za kavu</span></div>
+                    <div class="amenity-item"><div class="amenity-icon">🚿</div><span>Kupaonica s tušem & sušilom za kosu</span></div>
                     <div class="amenity-item"><div class="amenity-icon">🛏️</div><span>Posteljina i ručnici</span></div>
-                    <div class="amenity-item"><div class="amenity-icon">🌿</div><span>Uređeni vrt oko kuće</span></div>
-                    <div class="amenity-item"><div class="amenity-icon">🪑</div><span>Vanjski namještaj za sjedenje</span></div>
-                    <div class="amenity-item"><div class="amenity-icon">🐾</div><span>Kućni ljubimci dopušteni</span></div>
+                    <div class="amenity-item"><div class="amenity-icon">🍖</div><span>Roštilj & vanjski kamin u dvorištu</span></div>
+                    <div class="amenity-item"><div class="amenity-icon">🔒</div><span>Ograđeno privatno dvorište</span></div>
                 </div>
             </div>
 
@@ -285,7 +334,7 @@
                         <span class="rule-icon">👶</span>
                         <div>
                             <span class="rule-label">Djeca</span>
-                            Dobrodošla djeca svih uzrasta. Djeca od 3 godine naplaćuju se kao odrasli.
+                            Dobrodošla djeca svih uzrasta. Djeca od 3 godine naplaćuju se kao odrasli. Krevetić nije dostupan.
                         </div>
                     </li>
                     <li>
@@ -299,7 +348,7 @@
                         <span class="rule-icon">🚬</span>
                         <div>
                             <span class="rule-label">Pušenje</span>
-                            Pušenje je zabranjeno unutar apartmana. Dozvoljeno isključivo na balkonu.
+                            Zabranjeno unutar apartmana. Dozvoljeno isključivo na balkonu.
                         </div>
                     </li>
                     <li>
@@ -331,7 +380,7 @@
                         Grebaštica je malo turističko odredište 14 km južno od Šibenika,
                         poznato po skrovitim plažama i kristalno čistom moru.
                     </p>
-                      <ul class="distances-list">
+               <ul class="distances-list">
                         <li><span>🏖️ Plaža (Banovci)</span><span>15 min pješice</span></li>
                         <li><span>🛒 Dućan</span><span>15 min pješice</span></li>
                         <li><span>🍽️ Restorani</span><span>15 min pješice</span></li>
@@ -354,7 +403,7 @@
         <div class="apt-reviews-section">
             <div class="reviews-header">
                 <div class="review-score">
-                    <span class="review-score-num">9.2</span>
+                    <span class="review-score-num">9.8</span>
                     <span class="review-score-lbl">Izvrsno</span>
                 </div>
                 <div>
@@ -365,18 +414,18 @@
             <div class="reviews-grid">
                 <div class="review-card">
                     <div class="review-stars">★★★★★</div>
-                    <p>"Mirno i tiho mjesto s fantastičnom uvalon i toplim, bistrim morem. Apartman čist i uredan, domaćini iznimno ljubazni. Pogled s balkona je nevjerojatan!"</p>
-                    <span class="review-author">Gost iz Češke</span>
+                    <p>"Fantastičan odmor! Putovali smo u Grebašticu s dozom brige, ali dočekao nas je odličan domaćin Joso i sve brige su nestale. Sjajni uvjeti, super čistoća i puno ljubaznosti."</p>
+                    <span class="review-author">Gost iz Poljske, kolovoz 2020.</span>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p>"Proveli smo fantastičan odmor! Mirno, tiho mjesto s fantastičnom uvalon i toplim, bistrim morem. Nadam se da ćemo se vratiti s većom grupom. Hvala cijeloj obitelji!"</p>
+                    <span class="review-author">Gost iz Poljske, kolovoz 2020.</span>
                 </div>
                 <div class="review-card">
                     <div class="review-stars">★★★★★</div>
                     <p>"Sve pohvale za čist, uredan i lijep apartman te ljubazne domaćine. Preporučujem za miran odmor, obitelji s djecom i sve koji traže autentičnu Dalmaciju."</p>
                     <span class="review-author">Gost iz Hrvatske</span>
-                </div>
-                <div class="review-card">
-                    <div class="review-stars">★★★★★</div>
-                    <p>"Preporučujem svima! Gostoprimljivi domaćini koji su nam poklonili domaće bademe, smokve i vino. Osjećali smo se kao kod familije. Definitivno se vraćamo."</p>
-                    <span class="review-author">Gost iz Poljske</span>
                 </div>
             </div>
         </div>
@@ -390,10 +439,10 @@
                     <strong>Apartman A1</strong>
                     <p>Natkrivena terasa s direktnim izlazom u vrt.</p>
                 </a>
-                <a href="apartmana2.html" class="other-apt-card">
-                    <span class="apt-label">1. Kat • 5 Osoba</span>
-                    <strong>Apartman A2</strong>
-                    <p>Najveći apartman — 2 spavaće sobe, balkon s panoramskim pogledom.</p>
+                <a href="apartmana3.html" class="other-apt-card">
+                    <span class="apt-label">1. Kat • 4 Osobe</span>
+                    <strong>Apartman A3</strong>
+                    <p>Moderno uređen s balkonom i pogledom na more.</p>
                 </a>
             </div>
         </div>
@@ -408,7 +457,7 @@
             </div>
             <div class="footer-box">
                 <a href="tel:+385955502487">+385 95 550 2487</a>
-                <a href="/cdn-cgi/l/email-protection#34445146555a5046555355745359555d581a575b59"><span class="__cf_email__" data-cfemail="abdbced9cac5cfd9cacccaebccc6cac2c785c8c4c6">[email&#160;protected]</span></a>
+                <a href="/cdn-cgi/l/email-protection#572732253639332536303617303a363e3b7934383a"><span class="__cf_email__" data-cfemail="067663746768627467616746616b676f6a2865696b">[email&#160;protected]</span></a>
             </div>
             <div class="footer-box f-social">
                 <a href="#">Instagram</a>
@@ -504,14 +553,14 @@
     <script src="apartmani.js"></script>
         <script>
         document.addEventListener('DOMContentLoaded', function() {
-            var thumbsSw = new Swiper('.myThumb3', {
+            var thumbsSw = new Swiper('.myThumb2', {
                 spaceBetween: 8,
                 slidesPerView: 4,
                 freeMode: true,
                 watchSlidesProgress: true,
             });
 
-            var mainEl = document.querySelector('.mySwiper3');
+            var mainEl = document.querySelector('.mySwiper2');
             if (mainEl && mainEl.swiper) { mainEl.swiper.destroy(true, true); }
 
             var galleryImgs = [];
@@ -520,11 +569,11 @@
                 if (src && galleryImgs.indexOf(src) === -1) galleryImgs.push(src);
             });
 
-            new Swiper('.mySwiper3', {
+            new Swiper('.mySwiper2', {
                 loop: true,
                 speed: 700,
-                navigation: { nextEl: '.n3', prevEl: '.p3' },
-                pagination: { el: '#pagination3', clickable: true, dynamicBullets: true },
+                navigation: { nextEl: '.n2', prevEl: '.p2' },
+                pagination: { el: '#pagination2', clickable: true, dynamicBullets: true },
                 thumbs: { swiper: thumbsSw },
                 keyboard: { enabled: true },
                 on: {
