@@ -1,0 +1,10 @@
+[[redirects]]
+  from = "/"
+  to = "/index-en.html"
+  status = 302
+  conditions = {Language = ["en", "en-US", "en-GB", "en-AU", "en-CA"]}
+
+[[redirects]]
+  from = "/"
+  to = "/index.html"
+  status = 302
