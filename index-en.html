@@ -54,13 +54,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link rel="apple-touch-icon" href="images/favicon-32x32.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apartments TOJO Grebaštica | Accommodation with Sea Views, Šibenik</title>
+    <!-- Preload hero image for fast LCP -->
+    <link rel="preload" as="image" href="images/UVALA-mobile.webp" media="(max-width: 800px)" fetchpriority="high">
+    <link rel="preload" as="image" href="images/UVALA.webp" media="(min-width: 801px)" fetchpriority="high">
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400;600&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400;600&display=swap" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400;600&display=swap"></noscript>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="apartmani.css"> 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <link rel="stylesheet" href="apartmani.css">
+    <!-- Fancybox CSS deferred — only needed when user opens gallery -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"></noscript>
 
     <style>
     /* Glitch/reveal efekt na scroll - mobilna verzija */
@@ -253,10 +258,12 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
     </header>
 
     <section class="hero-section" id="home">
-        <picture>
-            <source media="(max-width: 800px)" srcset="images/UVALA-mobile.webp">
-            <img src="images/UVALA.webp" class="hero-img-fade" alt="Apartments TOJO" fetchpriority="high">
-        </picture>
+        <img src="images/UVALA.webp"
+             srcset="images/UVALA-mobile.webp 800w, images/UVALA.webp 1920w"
+             sizes="(max-width: 800px) 800px, 1920px"
+             class="hero-img-fade"
+             alt="Apartments TOJO"
+             fetchpriority="high">
     
         <div class="hero-sidebar-content hero-reveal">
             <div class="top-location-minimal">ŠIBENIK • GREBAŠTICA</div>
@@ -667,10 +674,11 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
         </div>
     </footer>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
-    <script src="apartmani.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="apartmani.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js" defer></script>
     <script>
     // ============================================================
     // VLASTITI MODAL SUSTAV — galerije i znamenitosti
