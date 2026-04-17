@@ -235,7 +235,7 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
         <nav id="nav-menu">
             <a href="index-en.html">Home</a>
             <div class="nav-dropdown">
-                <a href="#">Apartments</a>
+                <a href="apartmani.html">Apartments</a>
                 <div class="dropdown-menu">
                     <a href="apartmana1-en.html">Apartment A1<span class="dropdown-sub">1st Floor • 4 persons</span></a>
                     <a href="apartmana2-en.html">Apartment A2<span class="dropdown-sub">1st Floor • 5 persons</span></a>
@@ -244,7 +244,7 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
             </div>
                 <a href="kontakt-en.html">Contact</a>
                 <a href="#" class="btn-book nav-cta-btn" id="nav-rezerviraj">BOOK NOW</a>
-            <div class="lang-switch"><a href="index.html">HR</a><span>|</span><a href="#" class="lang-active">EN</a></div>
+            <div class="lang-switch"><a href="index.html">HR</a><span>|</span><a href="index-en.html" class="lang-active" aria-current="page">EN</a></div>
         </nav>
 
         <div class="menu-toggle" id="mobile-menu" role="button" aria-label="Otvori izbornik" aria-expanded="false" tabindex="0">
@@ -253,7 +253,10 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
     </header>
 
     <section class="hero-section" id="home">
-        <img src="images/UVALA.webp" class="hero-img-fade" alt="Apartments TOJO" fetchpriority="high" width="1920" height="1080">
+        <picture>
+            <source media="(max-width: 800px)" srcset="images/UVALA-mobile.webp">
+            <img src="images/UVALA.webp" class="hero-img-fade" alt="Apartments TOJO" fetchpriority="high">
+        </picture>
     
         <div class="hero-sidebar-content hero-reveal">
             <div class="top-location-minimal">ŠIBENIK • GREBAŠTICA</div>
@@ -287,7 +290,7 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
                 <div class="swiper-slide">
                     <div class="apt-card">
                         <div class="apt-card-image">
-                            <img src="images/A2/balkon.webp" alt="Apartment A2" loading="lazy" width="5712" height="4284">
+                            <img src="images/A2/balkon.webp" alt="Apartment A2" loading="lazy">
                         </div>
                         <div class="apt-card-info">
                             <span class="category">1st Floor • 5 Persons</span>
@@ -301,7 +304,7 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
                 <div class="swiper-slide">
                     <div class="apt-card">
                         <div class="apt-card-image">
-                            <img src="images/A3/balkon.webp" alt="Apartment A3" loading="lazy" width="5455" height="4141">
+                            <img src="images/A3/balkon.webp" alt="Apartment A3" loading="lazy">
                         </div>
                         <div class="apt-card-info">
                             <span class="category">1st Floor • 4 Persons</span>
@@ -335,10 +338,10 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
                 </a>
             </div>
             <div class="mini-grid">
-                <a href="images/OKUCNICA/cvice.webp" class="gallery-trigger" data-gallery="about"><img src="images/OKUCNICA/cvice.webp" alt="Garden" loading="lazy" width="4284" height="5712"></a>
-                <a href="images/OKUCNICA/ljulja.webp" class="gallery-trigger" data-gallery="about"><img src="images/OKUCNICA/ljulja.webp" alt="Swing" loading="lazy" width="5712" height="4284"></a>
-                <a href="images/OKUCNICA/jug.webp" class="gallery-trigger" data-gallery="about"><img src="images/OKUCNICA/jug.webp" alt="South" loading="lazy" width="4032" height="2268"></a>
-                <a href="images/OKUCNICA/zapad.webp" class="gallery-trigger" data-gallery="about"><img src="images/OKUCNICA/zapad.webp" alt="West" loading="lazy" width="1685" height="2247"></a>
+                <a href="images/OKUCNICA/cvice.webp" class="gallery-trigger" data-gallery="about"><img src="images/OKUCNICA/cvice.webp" alt="Garden" loading="lazy"></a>
+                <a href="images/OKUCNICA/ljulja.webp" class="gallery-trigger" data-gallery="about"><img src="images/OKUCNICA/ljulja.webp" alt="Swing" loading="lazy"></a>
+                <a href="images/OKUCNICA/jug.webp" class="gallery-trigger" data-gallery="about"><img src="images/OKUCNICA/jug.webp" alt="South" loading="lazy"></a>
+                <a href="images/OKUCNICA/zapad.webp" class="gallery-trigger" data-gallery="about"><img src="images/OKUCNICA/zapad.webp" alt="West" loading="lazy"></a>
             </div>
         </div>
     </section>
@@ -352,15 +355,15 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
             </div>
             <div class="products-icons">
                 <div class="product-item">
-                    <div class="product-circle"><img src="images/maslinovo.webp" alt="Ulje" loading="lazy" width="920" height="689"></div>
+                    <div class="product-circle"><img src="images/maslinovo.webp" alt="Ulje" loading="lazy"></div>
                     <span>Olive oil & Wine</span>
                 </div>
                 <div class="product-item">
-                    <div class="product-circle"><img src="images/smokve.webp" alt="Smokve" loading="lazy" width="1920" height="1280"></div>
+                    <div class="product-circle"><img src="images/smokve.webp" alt="Smokve" loading="lazy"></div>
                     <span>Locally grown figs</span>
                 </div>
                 <div class="product-item">
-                    <div class="product-circle"><img src="images/pomidore.webp" alt="Garden" loading="lazy" width="1280" height="670"></div>
+                    <div class="product-circle"><img src="images/pomidore.webp" alt="Garden" loading="lazy"></div>
                     <span>Seasonal garden</span>
                 </div>
             </div>
@@ -377,7 +380,7 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
             </div>
             <div class="location-image">
                 <a href="images/karta.webp" class="gallery-trigger" data-gallery="location">
-                    <img src="images/karta.webp" alt="Map" class="map-illustration" loading="lazy" width="1493" height="1432">
+                    <img src="images/karta.webp" alt="Map" class="map-illustration" loading="lazy">
                 </a>
             </div>
         </div>
@@ -392,61 +395,61 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
                         <span class="label">Grebaštica | History</span>
                         <h2>Bedem Oštrica</h2>
                         <p>Medieval defensive wall from 1497 — symbol of Grebaštica, built against the Turks.</p>
-                        <a href="javascript:void(0)" class="btn-more btn-landmark-open" data-modal="#modal-bedem">MORE DETAILS</a>
+                        <a href="#modal-bedem" class="btn-more btn-landmark-open" data-modal="#modal-bedem">MORE DETAILS</a>
                     </div>
                 </div>
                 <!-- 2. Krka -->
-                <div class="swiper-slide landmark-item" style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('images/Znamenitosti/Krka.webp');">
+                <div class="swiper-slide landmark-item" data-bg="images/Znamenitosti/Krka.webp" style="background-image: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45));">
                     <div class="landmark-content">
                         <span class="label">Nature | Waterfalls • 25 km</span>
                         <h2>Krka National Park</h2>
                         <p>Emerald river with seven magnificent waterfalls and a Franciscan monastery on the islet of Visovac.</p>
-                        <a href="javascript:void(0)" class="btn-more btn-landmark-open" data-modal="#modal-krka">MORE DETAILS</a>
+                        <a href="#modal-krka" class="btn-more btn-landmark-open" data-modal="#modal-krka">MORE DETAILS</a>
                     </div>
                 </div>
                 <!-- 3. Katedrala -->
-                <div class="swiper-slide landmark-item" style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('images/Znamenitosti/Šibenik.webp');">
+                <div class="swiper-slide landmark-item" data-bg="images/Znamenitosti/%C5%A0ibenik.webp" style="background-image: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45));">
                     <div class="landmark-content">
                         <span class="label">UNESCO • Šibenik • 14 km</span>
                         <h2>St. James Cathedral</h2>
                         <p>The only cathedral in the world built entirely of stone — UNESCO World Heritage Site.</p>
-                        <a href="javascript:void(0)" class="btn-more btn-landmark-open" data-modal="#modal-cathedral">MORE DETAILS</a>
+                        <a href="#modal-cathedral" class="btn-more btn-landmark-open" data-modal="#modal-cathedral">MORE DETAILS</a>
                     </div>
                 </div>
                 <!-- 4. Primošten + Gospa od Loreta -->
-                <div class="swiper-slide landmark-item" style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('images/Znamenitosti/Primošten.webp');">
+                <div class="swiper-slide landmark-item" data-bg="images/Znamenitosti/Primo%C5%A1ten.webp" style="background-image: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45));">
                     <div class="landmark-content">
                         <span class="label">Dalmacija • 6 km</span>
                         <h2>Primošten</h2>
                         <p>Picturesque town on a small peninsula with Babić vineyards in the backcounty and the statue of Our Lady of Loreto on Gaj viewpoint.</p>
-                        <a href="javascript:void(0)" class="btn-more btn-landmark-open" data-modal="#modal-primosten">MORE DETAILS</a>
+                        <a href="#modal-primosten" class="btn-more btn-landmark-open" data-modal="#modal-primosten">MORE DETAILS</a>
                     </div>
                 </div>
                 <!-- 5. Kornati -->
-                <div class="swiper-slide landmark-item" style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('images/Znamenitosti/Kornati.webp');">
+                <div class="swiper-slide landmark-item" data-bg="images/Znamenitosti/Kornati.webp" style="background-image: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45));">
                     <div class="landmark-content">
                         <span class="label">National Park | Islands</span>
                         <h2>Kornati</h2>
                         <p>Archipelago of 140 uninhabited islands — paradise for sailors, divers and lovers of untouched nature.</p>
-                        <a href="javascript:void(0)" class="btn-more btn-landmark-open" data-modal="#modal-kornati">MORE DETAILS</a>
+                        <a href="#modal-kornati" class="btn-more btn-landmark-open" data-modal="#modal-kornati">MORE DETAILS</a>
                     </div>
                 </div>
                 <!-- 6. Tvrđava Barone -->
-                <div class="swiper-slide landmark-item" style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('images/Znamenitosti/Barone.webp');">
+                <div class="swiper-slide landmark-item" data-bg="images/Znamenitosti/Barone.webp" style="background-image: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45));">
                     <div class="landmark-content">
                         <span class="label">History | Šibenik • 14 km</span>
                         <h2>Barone Fortress</h2>
                         <p>A 17th-century Renaissance fortress featuring an AR (Augmented Reality) battle simulation and the most beautiful sunset view in Šibenik.</p>
-                        <a href="javascript:void(0)" class="btn-more btn-landmark-open" data-modal="#modal-barone">MORE DETAILS</a>
+                        <a href="#modal-barone" class="btn-more btn-landmark-open" data-modal="#modal-barone">MORE DETAILS</a>
                     </div>
                 </div>
                 <!-- 7. Šetnica kanala sv. Ante -->
-                <div class="swiper-slide landmark-item" style="background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('images/Znamenitosti/KanalSvAnte.webp');">
+                <div class="swiper-slide landmark-item" data-bg="images/Znamenitosti/KanalSvAnte.webp" style="background-image: linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45));">
                     <div class="landmark-content">
                         <span class="label">Nature | Walk • Šibenik</span>
                         <h2>St. Anthony Channel Promenade</h2>
                         <p>4.5 km of beautiful coastal path with panoramic views of the city and St. Nicholas Fortress at the end.</p>
-                        <a href="javascript:void(0)" class="btn-more btn-landmark-open" data-modal="#modal-kanal">MORE DETAILS</a>
+                        <a href="#modal-kanal" class="btn-more btn-landmark-open" data-modal="#modal-kanal">MORE DETAILS</a>
                     </div>
                 </div>
                 </div>
@@ -462,9 +465,9 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
             <div class="modal-left">
                 <div class="swiper modalMainSwiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="images/Znamenitosti/Bedem1.webp" alt="Bedem Grebaštica 1" loading="lazy" width="300" height="168"></div>
-                        <div class="swiper-slide"><img src="images/Znamenitosti/Bedem2.webp" alt="Bedem Grebaštica 2" loading="lazy" width="300" height="168"></div>
-                        <div class="swiper-slide"><img src="images/Znamenitosti/Bedem3.webp" alt="Bedem Grebaštica 3" loading="lazy" width="1920" height="1280"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Bedem1.webp" alt="Bedem Grebaštica 1" loading="lazy"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Bedem2.webp" alt="Bedem Grebaštica 2" loading="lazy"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Bedem3.webp" alt="Bedem Grebaštica 3" loading="lazy"></div>
                     </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
@@ -489,10 +492,10 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
             <div class="modal-left">
                 <div class="swiper modalMainSwiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="images/Znamenitosti/Krka.webp" alt="NP Krka" loading="lazy" width="1600" height="2000"></div>
-                        <div class="swiper-slide"><img src="images/Znamenitosti/Krka2.webp" alt="Skradinski buk" loading="lazy" width="276" height="183"></div>
-                        <div class="swiper-slide"><img src="images/Znamenitosti/Krka3.webp" alt="Visovac" loading="lazy" width="1120" height="747"></div>
-                        <div class="swiper-slide"><img src="images/Znamenitosti/Krka4.webp" alt="Roški slap" loading="lazy" width="1600" height="800"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Krka.webp" alt="NP Krka" loading="lazy"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Krka2.webp" alt="Skradinski buk" loading="lazy"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Krka3.webp" alt="Visovac" loading="lazy"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Krka4.webp" alt="Roški slap" loading="lazy"></div>
                     </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
@@ -516,10 +519,10 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
             <div class="modal-left">
                 <div class="swiper modalMainSwiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="images/Znamenitosti/Šibenik.webp" alt="Katedrala Sv. Jakova" loading="lazy" width="1120" height="747"></div>
-                        <div class="swiper-slide"><img src="images/Znamenitosti/Katedrala.webp" alt="Katedrala detalj" loading="lazy" width="1200" height="800"></div>
-                        <div class="swiper-slide"><img src="images/Znamenitosti/Šibenik2.webp" alt="Šibenik stari grad" loading="lazy" width="1120" height="747"></div>
-                        <div class="swiper-slide"><img src="images/Znamenitosti/Šibenik.webp" alt="Portretni friz" loading="lazy" width="1120" height="747"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Šibenik.webp" alt="Katedrala Sv. Jakova" loading="lazy"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Katedrala.webp" alt="Katedrala detalj" loading="lazy"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Šibenik2.webp" alt="Šibenik stari grad" loading="lazy"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Šibenik.webp" alt="Portretni friz" loading="lazy"></div>
                     </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
@@ -543,10 +546,10 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
             <div class="modal-left">
                 <div class="swiper modalMainSwiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="images/Znamenitosti/Primošten.webp" alt="Primošten" loading="lazy" width="1200" height="900"></div>
-                        <div class="swiper-slide"><img src="images/Znamenitosti/Primošten2.webp" alt="Primošten iz zraka" loading="lazy" width="1920" height="1280"></div>
-                        <div class="swiper-slide"><img src="images/Znamenitosti/GospaLoreta.webp" alt="Gospa od Loreta" loading="lazy" width="1200" height="675"></div>
-                        <div class="swiper-slide"><img src="images/Znamenitosti/Primošten3.webp" alt="Vinograd Bucavac" loading="lazy" width="1401" height="1600"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Primošten.webp" alt="Primošten" loading="lazy"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Primošten2.webp" alt="Primošten iz zraka" loading="lazy"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/GospaLoreta.webp" alt="Gospa od Loreta" loading="lazy"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Primošten3.webp" alt="Vinograd Bucavac" loading="lazy"></div>
                     </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
@@ -570,9 +573,9 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
             <div class="modal-left">
                 <div class="swiper modalMainSwiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="images/Znamenitosti/Kornati.webp" alt="Kornati" loading="lazy" width="1920" height="1280"></div>
-                        <div class="swiper-slide"><img src="images/Znamenitosti/Kornati2.webp" alt="Kornati otoci" loading="lazy" width="300" height="168"></div>
-                        <div class="swiper-slide"><img src="images/Znamenitosti/Kornati3.webp" alt="Telašćica" loading="lazy" width="800" height="600"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Kornati.webp" alt="Kornati" loading="lazy"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Kornati2.webp" alt="Kornati otoci" loading="lazy"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Kornati3.webp" alt="Telašćica" loading="lazy"></div>
                     </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
@@ -596,9 +599,9 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
             <div class="modal-left">
                 <div class="swiper modalMainSwiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="images/Znamenitosti/Barone.webp" alt="Tvrđava Barone" loading="lazy" width="1920" height="1080"></div>
-                        <div class="swiper-slide"><img src="images/Znamenitosti/Barone2.webp" alt="Šibenik s Baronea" loading="lazy" width="300" height="168"></div>
-                        <div class="swiper-slide"><img src="images/Znamenitosti/Barone3.webp" alt="Zalazak sunca" loading="lazy" width="800" height="534"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Barone.webp" alt="Tvrđava Barone" loading="lazy"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Barone2.webp" alt="Šibenik s Baronea" loading="lazy"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Barone3.webp" alt="Zalazak sunca" loading="lazy"></div>
                     </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
@@ -622,9 +625,9 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
             <div class="modal-left">
                 <div class="swiper modalMainSwiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="images/Znamenitosti/KanalSvAnte.webp" alt="Kanal sv. Ante" loading="lazy" width="2048" height="1365"></div>
-                        <div class="swiper-slide"><img src="images/Znamenitosti/KanalSvAnte2.webp" alt="Tvrđava sv. Nikole" loading="lazy" width="1080" height="1349"></div>
-                        <div class="swiper-slide"><img src="images/Znamenitosti/KanalSvAnte3.webp" alt="Panorama Šibenika" loading="lazy" width="2560" height="1707"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/KanalSvAnte.webp" alt="Kanal sv. Ante" loading="lazy"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/KanalSvAnte2.webp" alt="Tvrđava sv. Nikole" loading="lazy"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/KanalSvAnte3.webp" alt="Panorama Šibenika" loading="lazy"></div>
                     </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
@@ -1052,4 +1055,18 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
         }
 
         function closeGallery() { if(_gOv) _gOv.style.display='none'; document.body.style.overflow=''; }
+    </script>
+    <script>
+    (function(){
+      var section=document.querySelector('.landmarks-section');
+      if(!section)return;
+      function loadBgs(){
+        section.querySelectorAll('[data-bg]').forEach(function(el){
+          el.style.backgroundImage='linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),url("'+el.getAttribute('data-bg')+'")';
+        });
+      }
+      if('IntersectionObserver' in window){
+        new IntersectionObserver(function(e,o){if(e[0].isIntersecting){loadBgs();o.disconnect();}},{rootMargin:'300px'}).observe(section);
+      } else { loadBgs(); }
+    })();
     </script>
