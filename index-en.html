@@ -27,7 +27,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta name="robots" content="index, follow">
     <link rel="sitemap" type="application/xml" href="https://www.apartments-tojo.com/sitemap.xml">
     <link rel="canonical" href="https://www.apartments-tojo.com/index-en.html">
-    <link rel="alternate" hreflang="hr" href="https://www.apartments-tojo.com/index.html">
+    <link rel="alternate" hreflang="hr" href="https://www.apartments-tojo.com/">
     <link rel="alternate" hreflang="en" href="https://www.apartments-tojo.com/index-en.html">
     <link rel="alternate" hreflang="x-default" href="https://www.apartments-tojo.com/">
     <!-- Open Graph -->
@@ -60,7 +60,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400;600&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400;600&display=swap" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400;600&display=swap"></noscript>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"></noscript>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="apartmani.css">
     <!-- Fancybox CSS deferred — only needed when user opens gallery -->
@@ -335,7 +336,7 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
             <h2 class="about-title">Dalmatia – <br>heart of Croatia <i>Tojo Apartments</i></h2>
             <p class="lead-text">The hedonistic heart of Croatia – Dalmatia – known for its food, beaches and crystal clear sea.</p>
             <p>Grebaštica, home of our apartments, is the essence of all Croatian attractions. We are located between Zadar and Split, in a peaceful bay.</p>
-            <a href="o-nama.html" class="btn-book" style="background: transparent; color: #1a1a1a; border: 1px solid #1a1a1a; padding: 12px 30px;">READ MORE</a>
+            <a href="kontakt-en.html" class="btn-book" style="background: transparent; color: #1a1a1a; border: 1px solid #1a1a1a; padding: 12px 30px;">READ MORE</a>
         </div>
     
         <div class="apt-gallery-side about-gallery-grid">
@@ -386,9 +387,16 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
                 <a href="https://maps.app.goo.gl/3skmqbvgE931PrCUA" target="_blank" class="btn-line">Find us on Google Maps</a>
             </div>
             <div class="location-image">
-                <a href="images/karta.webp" class="gallery-trigger" data-gallery="location">
-                    <img src="images/karta.webp" alt="Map" class="map-illustration" loading="lazy">
-                </a>
+                <iframe
+                    src="https://maps.google.com/maps?q=43.634,15.963&output=embed&z=14&t=m"
+                    width="100%"
+                    height="420"
+                    style="border:0;border-radius:4px;display:block;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Apartments TOJO location, Grebaštica">
+                </iframe>
             </div>
         </div>
     </section>
@@ -675,9 +683,9 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
     </footer>
 
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
-    <script src="script.js" defer></script>
-    <script src="apartmani.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="apartmani.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js" defer></script>
     <script>
     // ============================================================
