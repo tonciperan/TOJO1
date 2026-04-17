@@ -1,0 +1,60 @@
+
+=== index.html ===
+  desc: <meta name="description" content="Apartmani u Grebaštici, 14 km od Šibenika. Terasa s pogledom na more, WiFi i parking besplatno. Ocjena 9.2/10 – rezervirajte direktno!">
+  kw: <meta name="keywords" content="apartmani Grebaštica, smještaj Šibenik, apartmani Šibenik, apartmani Dalmacija, privatni smještaj Dalmacija, ljetovanje Grebaštica, apartments Grebaštica, apartments Šibenik, holiday apartments Dalmatia, smještaj blizu NP Krka">
+  og_desc: <meta property="og:description" content="Apartmani u Grebaštici, 14 km od Šibenika. Terasa s pogledom na more, WiFi i parking besplatno. Ocjena 9.2/10 – rezervirajte direktno!">
+  title: <title>Apartmani TOJO Grebaštica | Smještaj uz more, Šibenik</title>
+
+=== apartmana2-en.html ===
+  desc: <meta name="description" content="Spacious apartment A2 in Grebaštica, Dalmatia – 75 m², 5 persons, 2 bedrooms, panoramic sea-view balcony. 14 km from Šibenik. Free WiFi &amp; parking. Book directly from €75/night.">
+  kw: <meta name="keywords" content="apartment Grebaštica 5 persons, spacious apartment Šibenik Croatia, apartments Šibenik, Dalmatia holiday apartment, sea view apartment Croatia, apartments Grebaštica Dalmatia, holiday rental Croatia">
+  og_desc: <meta property="og:description" content="Spacious apartment A2 in Grebaštica, Dalmatia – 75 m², 5 persons, 2 bedrooms, panoramic sea-view balcony. 14 km from Šibenik. Free WiFi &amp; parking. Book directly from €75/night.">
+  title: <title>Apartment A2 | TOJO Apartments Grebaštica – 5 persons</title>
+
+=== apartmana2.html ===
+  desc: <meta name="description" content="Apartman A2 Grebaštica, Dalmacija – 75 m², 5 osoba, 2 spavaće sobe, balkon s panoramskim pogledom na more. 14 km od Šibenika. WiFi i parking besplatno. Od 75 €/noć.">
+  kw: <meta name="keywords" content="apartman Grebaštica 5 osoba, smještaj Šibenik, apartmani Šibenik, privatni smještaj Dalmacija, apartmani Dalmacija, prostrani apartman Grebaštica, ljetovanje Šibenik, apartmani TOJO">
+  og_desc: <meta property="og:description" content="Apartman A2 Grebaštica, Dalmacija – 75 m², 5 osoba, 2 spavaće sobe, balkon s panoramskim pogledom na more. 14 km od Šibenika. WiFi i parking besplatno. Od 75 €/noć.">
+  title: <title>Apartman A2 | Apartmani TOJO Grebaštica – 5 osoba</title>
+
+=== apartmana3.html ===
+  desc: <meta name="description" content="Apartman A3 Grebaštica, Dalmacija – 4 osobe, balkon s pogledom na uvalu Grebaštica. 14 km od Šibenika. Klima, WiFi i parking besplatno. Rezervirajte direktno.">
+  kw: <meta name="keywords" content="apartman Grebaštica 4 osobe, smještaj Šibenik, apartmani Šibenik, privatni smještaj Dalmacija, apartmani Dalmacija, apartman balkon pogled more, apartmani Grebaštica, ljetovanje Šibenik">
+  og_desc: <meta property="og:description" content="Apartman A3 Grebaštica, Dalmacija – 4 osobe, balkon s pogledom na uvalu Grebaštica. 14 km od Šibenika. Klima, WiFi i parking besplatno. Rezervirajte direktno.">
+  title: <title>Apartman A3 | Apartmani TOJO Grebaštica – 4 osobe</title>
+
+=== apartmana3-en.html ===
+  desc: <meta name="description" content="Apartment A3 in Grebaštica, Dalmatia – 4 persons, balcony with stunning views of Grebaštica bay. 14 km from Šibenik. Free WiFi &amp; parking. Book directly.">
+  kw: <meta name="keywords" content="apartment Grebaštica bay view, accommodation Šibenik Croatia, apartments Šibenik, Dalmatia holiday apartment, sea view apartment Croatia, apartments Grebaštica Dalmatia">
+  og_desc: <meta property="og:description" content="Apartment A3 in Grebaštica, Dalmatia – 4 persons, balcony with stunning views of Grebaštica bay. 14 km from Šibenik. Free WiFi &amp; parking. Book directly.">
+  title: <title>Apartment A3 | TOJO Apartments Grebaštica – 4 persons</title>
+
+=== apartmani.html ===
+  desc: <meta name="description" content="Svi apartmani TOJO u Grebaštici, Dalmacija – A1, A2 i A3, svi s pogledom na more. 14 km od Šibenika. WiFi i parking besplatno. Ocjena 9.2/10 – rezervirajte direktno!">
+  kw: <meta name="keywords" content="apartmani Grebaštica, apartmani Šibenik, privatni smještaj Dalmacija, apartmani Dalmacija, ljetovanje Grebaštica, TOJO apartmani Šibenik, smještaj s pogledom na more Šibenik">
+  og_desc: <meta property="og:description" content="Svi apartmani TOJO u Grebaštici, Dalmacija – A1, A2 i A3, svi s pogledom na more. 14 km od Šibenika. WiFi i parking besplatno. Ocjena 9.2/10 – rezervirajte direktno!">
+  title: <title>Naši Apartmani | Apartmani TOJO Grebaštica</title>
+
+=== kontakt.html ===
+  desc: <meta name="description" content="Kontakt i rezervacija – Apartmani TOJO Grebaštica, Dalmacija. 14 km od Šibenika. Tel: +385 95 550 2487. Rezervirajte direktno bez provizije!">
+  kw: <meta name="keywords" content="kontakt apartmani Grebaštica, rezervacija smještaj Šibenik, direktna rezervacija apartmani Dalmacija, apartmani TOJO kontakt, smještaj Grebaštica rezervacija">
+  og_desc: <meta property="og:description" content="Kontakt i rezervacija – Apartmani TOJO Grebaštica, Dalmacija. 14 km od Šibenika. Tel: +385 95 550 2487. Rezervirajte direktno bez provizije!">
+  title: <title>Kontakt | Apartmani TOJO Grebaštica</title>
+
+=== kontakt-en.html ===
+  desc: <meta name="description" content="Contact &amp; booking – TOJO Apartments Grebaštica, Dalmatia. 14 km from Šibenik. Tel: +385 95 550 2487. Book directly, no commission!">
+  kw: <meta name="keywords" content="contact apartments Grebaštica, booking accommodation Šibenik Croatia, direct booking apartments Dalmatia, TOJO apartments contact, Grebaštica accommodation booking">
+  og_desc: <meta property="og:description" content="Contact &amp; booking – TOJO Apartments Grebaštica, Dalmatia. 14 km from Šibenik. Tel: +385 95 550 2487. Book directly, no commission!">
+  title: <title>Contact | TOJO Apartments Grebaštica</title>
+
+=== index-en.html ===
+  desc: <meta name="description" content="Apartments in Grebaštica with sea views, 14 km from Šibenik. Private terrace, free parking & WiFi. Rated 9.2/10 – book directly, no commission!">
+  kw: <meta name="keywords" content="apartments Grebaštica, apartments Šibenik, holiday apartments Dalmatia, sea view apartments Croatia, accommodation Šibenik, apartments Dalmatia Croatia, Grebaštica Croatia accommodation, apartments near Krka National Park, Šibenik area holiday rental">
+  og_desc: <meta property="og:description" content="Apartments in Grebaštica with sea views, 14 km from Šibenik. Private terrace, free parking & WiFi. Rated 9.2/10 – book directly, no commission!">
+  title: <title>Apartments TOJO Grebaštica | Accommodation with Sea Views, Šibenik</title>
+
+=== apartmana1-en.html ===
+  desc: <meta name="description" content="Apartment A1 in Grebaštica, Dalmatia – 50 m², 4 persons. Terrace with sea views, 14 km from Šibenik. Free WiFi &amp; parking. Book directly from €60/night.">
+  kw: <meta name="keywords" content="apartment Grebaštica 4 persons, accommodation Šibenik Croatia, apartments Šibenik, Dalmatia holiday apartment, sea view apartment Croatia, apartments Grebaštica, holiday apartment Dalmatia Croatia, apartments Dalmatia">
+  og_desc: <meta property="og:description" content="Apartment A1 in Grebaštica, Dalmatia – 50 m², 4 persons. Terrace with sea views, 14 km from Šibenik. Free WiFi &amp; parking. Book directly from €60/night.">
+  title: <title>Apartment A1 | TOJO Apartments Grebaštica – 4 persons</title>

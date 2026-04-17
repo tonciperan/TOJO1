@@ -1,0 +1,44 @@
+  L22: <meta name="description" content="Apartment A1 in Grebaštica for 4 persons. Private terrace, sea view, fully equipped kitchen. Direct booking.">
+  L23: <meta name="keywords" content="apartmani Grebaštica, smještaj Šibenik, apartments Grebaštica, accommodation Šibenik, sea view Croatia">
+  L49: <title>Apartment A1 | TOJO Apartments Grebaštica – 4 persons</title>
+FILE: apartmana1-en.html
+  L22: <meta name="description" content="Apartman A1 Grebaštica – 50 m², 4 osobe, natkrivena terasa s pogledom na more. 14 km od Šibenika, 6 km od Primoštena. Besplatni WiFi i parking. Od 60 €/noć.">
+  L23: <meta name="keywords" content="apartman Grebaštica 4 osobe, smještaj Šibenik uz more, privatni apartman terasa more, Grebaštica smještaj, apartman A1 TOJO, privatni smještaj Dalmacija Šibenik">
+  L49: <title>Apartman A1 Grebaštica | 4 osobe, 50 m², terasa – Apartmani TOJO</title>
+FILE: apartmana1.html
+  L22: <meta name="description" content="Spacious apartment A2 in Grebaštica for 5 persons. Two bedrooms, balcony with panoramic sea view.">
+  L23: <meta name="keywords" content="apartmani Grebaštica, smještaj Šibenik, apartments Grebaštica, accommodation Šibenik, sea view Croatia">
+  L49: <title>Apartment A1 | TOJO Apartments Grebaštica – 4 persons</title>
+FILE: apartmana2-en.html
+  L22: <meta name="description" content="Najprostraniji apartman A2 u Grebaštici za 5 osoba. Dvije spavaće sobe, balkon s panoramskim pogledom.">
+  L23: <meta name="keywords" content="apartmani Grebaštica, smještaj Šibenik, apartments Grebaštica, accommodation Šibenik, sea view Croatia">
+  L49: <title>Apartman A2 | Apartmani TOJO Grebaštica – 5 osoba</title>
+FILE: apartmana2.html
+  L22: <meta name="description" content="Apartment A3 with stunning views of Grebaštica bay. For 4 persons, balcony, fully equipped.">
+  L23: <meta name="keywords" content="apartmani Grebaštica, smještaj Šibenik, apartments Grebaštica, accommodation Šibenik, sea view Croatia">
+  L49: <title>Apartment A3 | TOJO Apartments Grebaštica – 4 persons</title>
+FILE: apartmana3-en.html
+  L22: <meta name="description" content="Apartman A3 s pogledom na uvalu Grebaštica. Za 4 osobe, balkon, potpuno opremljen.">
+  L23: <meta name="keywords" content="apartmani Grebaštica, smještaj Šibenik, apartments Grebaštica, accommodation Šibenik, sea view Croatia">
+  L49: <title>Apartman A3 | Apartmani TOJO Grebaštica – 4 osobe</title>
+FILE: apartmana3.html
+  L23: <meta name="description" content="Pogledajte sve apartmane TOJO u Grebaštici. A1, A2 i A3 — svi s pogledom na more, WiFi, klima, parking.">
+  L24: <meta name="keywords" content="apartmani Grebaštica, smještaj Šibenik, apartments Grebaštica, accommodation Šibenik, sea view Croatia">
+  L50: <title>Naši Apartmani | Apartmani TOJO Grebaštica</title>
+FILE: apartmani.html
+  L22: <meta name="description" content="Sea-view apartments in Grebaštica, 14 km from Šibenik. Private terrace, free parking & WiFi. Rated 9.2/10 – book directly, no commission!">
+  L23: <meta name="keywords" content="apartments Grebaštica, accommodation Šibenik, holiday apartments Croatia Adriatic, sea view apartments Dalmatia, Grebaštica Croatia rental, apartments near Krka National Park, Šibenik area accommodation">
+  L53: <title>Apartments TOJO Grebaštica | Sea-view Apartments, Šibenik</title>
+FILE: index-en.html
+  L22: <meta name="description" content="Apartmani uz more u Grebaštici, 14 km od Šibenika. Terasa s pogledom na more, WiFi i parking besplatno. Ocjena 9.2/10 – rezervirajte direktno!">
+  L23: <meta name="keywords" content="apartmani Grebaštica, smještaj Šibenik, apartmani uz more Šibenik, privatni smještaj Dalmacija, holiday apartments Croatia, Grebaštica accommodation, smještaj blizu NP Krka, apartmani Primošten okolica">
+  L53: <title>Apartmani TOJO Grebaštica | Smještaj uz more, Šibenik</title>
+FILE: index.html
+  L15: <meta name="description" content="Contact TOJO Apartments in Grebaštica. Address: Bašelovići 12A, 22010 Grebaštica. Tel: +385 95 550 2487.">
+  L16: <meta name="keywords" content="apartmani Grebaštica, smještaj Šibenik, apartments Grebaštica, accommodation Šibenik, sea view Croatia">
+  L42: <title>Contact | TOJO Apartments Grebaštica</title>
+FILE: kontakt-en.html
+  L15: <meta name="description" content="Kontaktirajte Apartmane TOJO u Grebaštici. Adresa: Bašelovići 12A, 22010 Grebaštica. Tel: +385 95 550 2487.">
+  L16: <meta name="keywords" content="apartmani Grebaštica, smještaj Šibenik, apartments Grebaštica, accommodation Šibenik, sea view Croatia">
+  L42: <title>Kontakt | Apartmani TOJO Grebaštica</title>
+FILE: kontakt.html
