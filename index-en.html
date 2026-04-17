@@ -18,6 +18,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   gtag('config', 'G-V9QC0CBE6R');
 </script>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
     <!-- SEO -->
     <meta name="description" content="Apartments in Grebaštica with sea views, 14 km from Šibenik. Private terrace, free parking & WiFi. Rated 9.2/10 – book directly, no commission!">
     <meta name="keywords" content="apartments Grebaštica, apartments Šibenik, holiday apartments Dalmatia, sea view apartments Croatia, accommodation Šibenik, apartments Dalmatia Croatia, Grebaštica Croatia accommodation, apartments near Krka National Park, Šibenik area holiday rental">
@@ -49,9 +52,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="apple-touch-icon" href="images/favicon-32x32.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apartments TOJO Grebaštica | Accommodation with Sea Views, Šibenik</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400;600&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400;600&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400;600&display=swap"></noscript>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="apartmani.css"> 
@@ -92,7 +97,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             "streetAddress": "Bašelovići 12A",
             "addressLocality": "Grebaštica",
             "addressRegion": "Šibensko-kninska županija",
-            "postalCode": "22000",
+            "postalCode": "22010",
             "addressCountry": "HR"
           },
           "geo": {
@@ -108,8 +113,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           ],
           "priceRange": "€€",
           "numberOfRooms": 3,
-          "checkinTime": "T14:00",
-          "checkoutTime": "T10:00",
+          "checkinTime": "14:00",
+          "checkoutTime": "10:00",
           "petsAllowed": true,
           "amenityFeature": [
             {"@type": "LocationFeatureSpecification", "name": "Free WiFi", "value": true},
@@ -220,7 +225,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <body>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K7LV622H"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Manager"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
 
@@ -242,13 +247,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="lang-switch"><a href="index.html">HR</a><span>|</span><a href="#" class="lang-active">EN</a></div>
         </nav>
 
-        <div class="menu-toggle" id="mobile-menu">
+        <div class="menu-toggle" id="mobile-menu" role="button" aria-label="Otvori izbornik" aria-expanded="false" tabindex="0">
             <span></span><span></span><span></span>
         </div>
     </header>
 
     <section class="hero-section" id="home">
-        <img src="images/UVALA.webp" class="hero-img-fade" alt="Apartments TOJO">
+        <img src="images/UVALA.webp" class="hero-img-fade" alt="Apartments TOJO" fetchpriority="high" width="1920" height="1080">
     
         <div class="hero-sidebar-content hero-reveal">
             <div class="top-location-minimal">ŠIBENIK • GREBAŠTICA</div>
@@ -268,7 +273,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="swiper-slide">
                     <div class="apt-card">
                         <div class="apt-card-image">
-                            <img src="images/A1/balkon (3).webp" alt="Apartment A1">
+                            <img src="images/A1/balkon (3).webp" alt="Apartment A1" loading="lazy">
                         </div>
                         <div class="apt-card-info">
                             <span class="category">1st Floor • 4 Persons</span>
@@ -282,7 +287,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="swiper-slide">
                     <div class="apt-card">
                         <div class="apt-card-image">
-                            <img src="images/A2/balkon.webp" alt="Apartment A2">
+                            <img src="images/A2/balkon.webp" alt="Apartment A2" loading="lazy" width="5712" height="4284">
                         </div>
                         <div class="apt-card-info">
                             <span class="category">1st Floor • 5 Persons</span>
@@ -296,7 +301,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="swiper-slide">
                     <div class="apt-card">
                         <div class="apt-card-image">
-                            <img src="images/A3/balkon.webp" alt="Apartment A3">
+                            <img src="images/A3/balkon.webp" alt="Apartment A3" loading="lazy" width="5455" height="4141">
                         </div>
                         <div class="apt-card-info">
                             <span class="category">1st Floor • 4 Persons</span>
@@ -308,8 +313,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
 
             </div>
-            <div class="swiper-button-next main-apt-next"></div>
-            <div class="swiper-button-prev main-apt-prev"></div>
+            <div class="swiper-button-next main-apt-next" role="button" aria-label="Sljedeci apartman" tabindex="0"></div>
+            <div class="swiper-button-prev main-apt-prev" role="button" aria-label="Prethodni apartman" tabindex="0"></div>
             <div class="swiper-pagination main-apt-pagination"></div>
         </div>
     </section>
@@ -326,14 +331,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="apt-gallery-side about-gallery-grid">
             <div class="main-about-img">
                 <a href="images/OKUCNICA/jug.webp" class="gallery-trigger" data-gallery="about" data-caption="Apartments TOJO - Pogled s juga">
-                    <img src="images/OKUCNICA/jug (2).webp" alt="Apartments TOJO">
+                    <img src="images/OKUCNICA/jug (2).webp" alt="Apartments TOJO" loading="lazy">
                 </a>
             </div>
             <div class="mini-grid">
-                <a href="images/OKUCNICA/cvice.webp" class="gallery-trigger" data-gallery="about"><img src="images/OKUCNICA/cvice.webp" alt="Garden"></a>
-                <a href="images/OKUCNICA/ljulja.webp" class="gallery-trigger" data-gallery="about"><img src="images/OKUCNICA/ljulja.webp" alt="Swing"></a>
-                <a href="images/OKUCNICA/jug.webp" class="gallery-trigger" data-gallery="about"><img src="images/OKUCNICA/jug.webp" alt="South"></a>
-                <a href="images/OKUCNICA/zapad.webp" class="gallery-trigger" data-gallery="about"><img src="images/OKUCNICA/zapad.webp" alt="West"></a>
+                <a href="images/OKUCNICA/cvice.webp" class="gallery-trigger" data-gallery="about"><img src="images/OKUCNICA/cvice.webp" alt="Garden" loading="lazy" width="4284" height="5712"></a>
+                <a href="images/OKUCNICA/ljulja.webp" class="gallery-trigger" data-gallery="about"><img src="images/OKUCNICA/ljulja.webp" alt="Swing" loading="lazy" width="5712" height="4284"></a>
+                <a href="images/OKUCNICA/jug.webp" class="gallery-trigger" data-gallery="about"><img src="images/OKUCNICA/jug.webp" alt="South" loading="lazy" width="4032" height="2268"></a>
+                <a href="images/OKUCNICA/zapad.webp" class="gallery-trigger" data-gallery="about"><img src="images/OKUCNICA/zapad.webp" alt="West" loading="lazy" width="1685" height="2247"></a>
             </div>
         </div>
     </section>
@@ -347,15 +352,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
             <div class="products-icons">
                 <div class="product-item">
-                    <div class="product-circle"><img src="images/maslinovo.webp" alt="Ulje"></div>
+                    <div class="product-circle"><img src="images/maslinovo.webp" alt="Ulje" loading="lazy" width="920" height="689"></div>
                     <span>Olive oil & Wine</span>
                 </div>
                 <div class="product-item">
-                    <div class="product-circle"><img src="images/smokve.webp" alt="Smokve"></div>
+                    <div class="product-circle"><img src="images/smokve.webp" alt="Smokve" loading="lazy" width="1920" height="1280"></div>
                     <span>Locally grown figs</span>
                 </div>
                 <div class="product-item">
-                    <div class="product-circle"><img src="images/pomidore.webp" alt="Garden"></div>
+                    <div class="product-circle"><img src="images/pomidore.webp" alt="Garden" loading="lazy" width="1280" height="670"></div>
                     <span>Seasonal garden</span>
                 </div>
             </div>
@@ -372,7 +377,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
             <div class="location-image">
                 <a href="images/karta.webp" class="gallery-trigger" data-gallery="location">
-                    <img src="images/karta.webp" alt="Map" class="map-illustration">
+                    <img src="images/karta.webp" alt="Map" class="map-illustration" loading="lazy" width="1493" height="1432">
                 </a>
             </div>
         </div>
@@ -457,9 +462,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="modal-left">
                 <div class="swiper modalMainSwiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="images/Znamenitosti/Bedem1.webp" alt="Bedem Grebaštica 1"></div>
-                        <div class="swiper-slide"><img src="images/Znamenitosti/Bedem2.webp" alt="Bedem Grebaštica 2"></div>
-                        <div class="swiper-slide"><img src="images/Znamenitosti/Bedem3.webp" alt="Bedem Grebaštica 3"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Bedem1.webp" alt="Bedem Grebaštica 1" loading="lazy" width="300" height="168"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Bedem2.webp" alt="Bedem Grebaštica 2" loading="lazy" width="300" height="168"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Bedem3.webp" alt="Bedem Grebaštica 3" loading="lazy" width="1920" height="1280"></div>
                     </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
@@ -484,10 +489,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="modal-left">
                 <div class="swiper modalMainSwiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="images/Znamenitosti/Krka.webp" alt="NP Krka"></div>
-                        <div class="swiper-slide"><img src="images/Znamenitosti/Krka2.webp" alt="Skradinski buk"></div>
-                        <div class="swiper-slide"><img src="images/Znamenitosti/Krka3.webp" alt="Visovac"></div>
-                        <div class="swiper-slide"><img src="images/Znamenitosti/Krka4.webp" alt="Roški slap"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Krka.webp" alt="NP Krka" loading="lazy" width="1600" height="2000"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Krka2.webp" alt="Skradinski buk" loading="lazy" width="276" height="183"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Krka3.webp" alt="Visovac" loading="lazy" width="1120" height="747"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Krka4.webp" alt="Roški slap" loading="lazy" width="1600" height="800"></div>
                     </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
@@ -511,10 +516,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="modal-left">
                 <div class="swiper modalMainSwiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="images/Znamenitosti/Šibenik.webp" alt="Katedrala Sv. Jakova"></div>
-                        <div class="swiper-slide"><img src="images/Znamenitosti/Katedrala.webp" alt="Katedrala detalj"></div>
-                        <div class="swiper-slide"><img src="images/Znamenitosti/Šibenik2.webp" alt="Šibenik stari grad"></div>
-                        <div class="swiper-slide"><img src="images/Znamenitosti/Šibenik.webp" alt="Portretni friz"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Šibenik.webp" alt="Katedrala Sv. Jakova" loading="lazy" width="1120" height="747"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Katedrala.webp" alt="Katedrala detalj" loading="lazy" width="1200" height="800"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Šibenik2.webp" alt="Šibenik stari grad" loading="lazy" width="1120" height="747"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Šibenik.webp" alt="Portretni friz" loading="lazy" width="1120" height="747"></div>
                     </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
@@ -538,10 +543,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="modal-left">
                 <div class="swiper modalMainSwiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="images/Znamenitosti/Primošten.webp" alt="Primošten"></div>
-                        <div class="swiper-slide"><img src="images/Znamenitosti/Primošten2.webp" alt="Primošten iz zraka"></div>
-                        <div class="swiper-slide"><img src="images/Znamenitosti/GospaLoreta.webp" alt="Gospa od Loreta"></div>
-                        <div class="swiper-slide"><img src="images/Znamenitosti/Primošten3.webp" alt="Vinograd Bucavac"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Primošten.webp" alt="Primošten" loading="lazy" width="1200" height="900"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Primošten2.webp" alt="Primošten iz zraka" loading="lazy" width="1920" height="1280"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/GospaLoreta.webp" alt="Gospa od Loreta" loading="lazy" width="1200" height="675"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Primošten3.webp" alt="Vinograd Bucavac" loading="lazy" width="1401" height="1600"></div>
                     </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
@@ -565,9 +570,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="modal-left">
                 <div class="swiper modalMainSwiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="images/Znamenitosti/Kornati.webp" alt="Kornati"></div>
-                        <div class="swiper-slide"><img src="images/Znamenitosti/Kornati2.webp" alt="Kornati otoci"></div>
-                        <div class="swiper-slide"><img src="images/Znamenitosti/Kornati3.webp" alt="Telašćica"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Kornati.webp" alt="Kornati" loading="lazy" width="1920" height="1280"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Kornati2.webp" alt="Kornati otoci" loading="lazy" width="300" height="168"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Kornati3.webp" alt="Telašćica" loading="lazy" width="800" height="600"></div>
                     </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
@@ -591,9 +596,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="modal-left">
                 <div class="swiper modalMainSwiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="images/Znamenitosti/Barone.webp" alt="Tvrđava Barone"></div>
-                        <div class="swiper-slide"><img src="images/Znamenitosti/Barone2.webp" alt="Šibenik s Baronea"></div>
-                        <div class="swiper-slide"><img src="images/Znamenitosti/Barone3.webp" alt="Zalazak sunca"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Barone.webp" alt="Tvrđava Barone" loading="lazy" width="1920" height="1080"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Barone2.webp" alt="Šibenik s Baronea" loading="lazy" width="300" height="168"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/Barone3.webp" alt="Zalazak sunca" loading="lazy" width="800" height="534"></div>
                     </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
@@ -617,9 +622,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="modal-left">
                 <div class="swiper modalMainSwiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="images/Znamenitosti/KanalSvAnte.webp" alt="Kanal sv. Ante"></div>
-                        <div class="swiper-slide"><img src="images/Znamenitosti/KanalSvAnte2.webp" alt="Tvrđava sv. Nikole"></div>
-                        <div class="swiper-slide"><img src="images/Znamenitosti/KanalSvAnte3.webp" alt="Panorama Šibenika"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/KanalSvAnte.webp" alt="Kanal sv. Ante" loading="lazy" width="2048" height="1365"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/KanalSvAnte2.webp" alt="Tvrđava sv. Nikole" loading="lazy" width="1080" height="1349"></div>
+                        <div class="swiper-slide"><img src="images/Znamenitosti/KanalSvAnte3.webp" alt="Panorama Šibenika" loading="lazy" width="2560" height="1707"></div>
                     </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
@@ -659,7 +664,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
     </footer>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
     <script src="apartmani.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
@@ -736,7 +741,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         function render() {
             var item = items[current];
             var thumbs = items.map(function(it, i) {
-                return '<img src="' + it.src + '" class="pg-thumb' + (i === current ? ' active' : '') + '" data-idx="' + i + '">';
+                return '<img src="' + it.src + '" class="pg-thumb' + (i === current ? ' active' : '') + '" data-idx="' + i + '" loading="lazy">';
             }).join('');
 
             openModal(
@@ -745,7 +750,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   '<div class="pg-counter">' + (current+1) + ' / ' + items.length + '</div>' +
                   '<div class="pg-main">' +
                     '<button class="pg-nav pg-prev">&#8249;</button>' +
-                    '<img class="pg-img" src="' + item.src + '" alt="">' +
+                    '<img class="pg-img" src="' + item.src + '" alt="" loading="lazy">' +
                     '<button class="pg-nav pg-next">&#8250;</button>' +
                   '</div>' +
                   (item.caption ? '<div class="pg-caption">' + item.caption + '</div>' : '') +
@@ -805,7 +810,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         function renderLandmark() {
             var thumbs = imgs.map(function(it, i) {
-                return '<img src="' + it.src + '" class="pg-thumb' + (i === current ? ' active' : '') + '" data-idx="' + i + '">';
+                return '<img src="' + it.src + '" class="pg-thumb' + (i === current ? ' active' : '') + '" data-idx="' + i + '" loading="lazy">';
             }).join('');
 
             openModal(
@@ -814,7 +819,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   '<div class="lm-left">' +
                     '<div class="lm-main">' +
                       '<button class="pg-nav pg-prev">&#8249;</button>' +
-                      '<img class="lm-img" src="' + imgs[current].src + '" alt="' + imgs[current].alt + '">' +
+                      '<img class="lm-img" src="' + imgs[current].src + '" alt="' + imgs[current].alt + '" loading="lazy">' +
                       '<button class="pg-nav pg-next">&#8250;</button>' +
                     '</div>' +
                     '<div class="pg-thumbs">' + thumbs + '</div>' +
