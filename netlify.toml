@@ -4,18 +4,25 @@
   status = 302
   conditions = {Language = ["en", "en-US", "en-GB", "en-AU", "en-CA"]}
 
+# Security + performance headers on all pages
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(self), payment=()"
+    X-XSS-Protection = "1; mode=block"
+
+# HTML: always revalidate so updates are visible immediately
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# Images: immutable (filename contains no hash, but webp files rarely change)
 [[headers]]
   for = "/images/*"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
-
-[[headers]]
-  for = "/*.css"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
-
-[[headers]]
-  for = "/*.js"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
@@ -24,6 +31,28 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
+[[headers]]
+  for = "/*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.ico"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# CSS/JS: 1 week (not immutable — files have no content hash in filename)
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=604800, stale-while-revalidate=86400"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=604800, stale-while-revalidate=86400"
+
+# Fonts: 1 year immutable
 [[headers]]
   for = "/*.woff2"
   [headers.values]
