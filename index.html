@@ -348,10 +348,10 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
                 </a>
             </div>
             <div class="mini-grid">
-                <a href="images/OKUCNICA/cvice.webp" class="gallery-trigger" data-gallery="about"><img srcset="images/OKUCNICA/cvice-sm.webp 600w, images/OKUCNICA/cvice.webp 1200w" sizes="(max-width: 768px) 25vw, 275px" src="images/OKUCNICA/cvice.webp" alt="Vrt Apartmani TOJO" loading="lazy"></a>
-                <a href="images/OKUCNICA/ljulja.webp" class="gallery-trigger" data-gallery="about"><img srcset="images/OKUCNICA/ljulja-sm.webp 600w, images/OKUCNICA/ljulja.webp 1200w" sizes="(max-width: 768px) 25vw, 275px" src="images/OKUCNICA/ljulja.webp" alt="Ljuljačka u vrtu" loading="lazy"></a>
-                <a href="images/OKUCNICA/jug.webp" class="gallery-trigger" data-gallery="about"><img srcset="images/OKUCNICA/jug-sm.webp 600w, images/OKUCNICA/jug.webp 1200w" sizes="(max-width: 768px) 25vw, 275px" src="images/OKUCNICA/jug.webp" alt="Pogled na more s juga" loading="lazy"></a>
-                <a href="images/OKUCNICA/zapad.webp" class="gallery-trigger" data-gallery="about"><img srcset="images/OKUCNICA/zapad-sm.webp 600w, images/OKUCNICA/zapad.webp 1200w" sizes="(max-width: 768px) 25vw, 275px" src="images/OKUCNICA/zapad.webp" alt="Zapad sunca Grebaštica" loading="lazy"></a>
+                <a href="images/OKUCNICA/cvice.webp" class="gallery-trigger" data-gallery="about"><img srcset="images/OKUCNICA/cvice-xs.webp 200w, images/OKUCNICA/cvice-sm.webp 600w, images/OKUCNICA/cvice.webp 1200w" sizes="(max-width: 768px) 25vw, 275px" src="images/OKUCNICA/cvice.webp" alt="Vrt Apartmani TOJO" loading="lazy"></a>
+                <a href="images/OKUCNICA/ljulja.webp" class="gallery-trigger" data-gallery="about"><img srcset="images/OKUCNICA/ljulja-xs.webp 200w, images/OKUCNICA/ljulja-sm.webp 600w, images/OKUCNICA/ljulja.webp 1200w" sizes="(max-width: 768px) 25vw, 275px" src="images/OKUCNICA/ljulja.webp" alt="Ljuljačka u vrtu" loading="lazy"></a>
+                <a href="images/OKUCNICA/jug.webp" class="gallery-trigger" data-gallery="about"><img srcset="images/OKUCNICA/jug-xs.webp 200w, images/OKUCNICA/jug-sm.webp 600w, images/OKUCNICA/jug.webp 1200w" sizes="(max-width: 768px) 25vw, 275px" src="images/OKUCNICA/jug.webp" alt="Pogled na more s juga" loading="lazy"></a>
+                <a href="images/OKUCNICA/zapad.webp" class="gallery-trigger" data-gallery="about"><img srcset="images/OKUCNICA/zapad-xs.webp 200w, images/OKUCNICA/zapad-sm.webp 600w, images/OKUCNICA/zapad.webp 1200w" sizes="(max-width: 768px) 25vw, 275px" src="images/OKUCNICA/zapad.webp" alt="Zapad sunca Grebaštica" loading="lazy"></a>
             </div>
         </div>
     </section>
@@ -389,16 +389,32 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
                 <a href="https://maps.app.goo.gl/3skmqbvgE931PrCUA" target="_blank" class="btn-line">Pronađite nas na Google Maps</a>
             </div>
             <div class="location-image">
-                <iframe
-                    src="https://maps.google.com/maps?q=43.634,15.963&output=embed&z=14&t=m"
-                    width="100%"
-                    height="420"
-                    style="border:0;border-radius:4px;display:block;"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                    title="Lokacija Apartmani TOJO, Grebaštica">
-                </iframe>
+                <div id="map-placeholder" style="width:100%;height:420px;background:#e8eaed;border-radius:4px;display:flex;align-items:center;justify-content:center;cursor:pointer;" onclick="loadMap()" aria-label="Učitaj kartu">
+                    <span style="font-size:13px;color:#666;letter-spacing:1px;text-transform:uppercase;">Klikni za prikaz karte</span>
+                </div>
+                <script>
+                (function(){
+                    var loaded=false;
+                    function loadMap(){
+                        if(loaded)return;loaded=true;
+                        var ph=document.getElementById('map-placeholder');
+                        if(!ph)return;
+                        var f=document.createElement('iframe');
+                        f.src='https://maps.google.com/maps?q=43.634,15.963&output=embed&z=14&t=m';
+                        f.width='100%';f.height='420';
+                        f.style.cssText='border:0;border-radius:4px;display:block;';
+                        f.allowFullscreen=true;f.loading='lazy';
+                        f.referrerPolicy='no-referrer-when-downgrade';
+                        f.title='Lokacija Apartmani TOJO, Grebaštica';
+                        ph.replaceWith(f);
+                    }
+                    window.loadMap=loadMap;
+                    if('IntersectionObserver' in window){
+                        var ph=document.getElementById('map-placeholder');
+                        new IntersectionObserver(function(e,o){if(e[0].isIntersecting){loadMap();o.disconnect();}},{rootMargin:'300px'}).observe(ph);
+                    }
+                })();
+                </script>
             </div>
         </div>
     </section>
