@@ -8,7 +8,7 @@
     <xhtml:link rel="alternate" hreflang="hr" href="https://www.apartments-tojo.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.apartments-tojo.com/index-en.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.apartments-tojo.com/"/>
-    <lastmod>2026-04-17</lastmod>
+    <lastmod>2026-04-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -17,9 +17,29 @@
     <xhtml:link rel="alternate" hreflang="hr" href="https://www.apartments-tojo.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.apartments-tojo.com/index-en.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.apartments-tojo.com/"/>
-    <lastmod>2026-04-17</lastmod>
+    <lastmod>2026-04-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+  </url>
+
+  <!-- Grebaštica -->
+  <url>
+    <loc>https://www.apartments-tojo.com/grebastica.html</loc>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://www.apartments-tojo.com/grebastica.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.apartments-tojo.com/grebastica-en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.apartments-tojo.com/grebastica-en.html"/>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.apartments-tojo.com/grebastica-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://www.apartments-tojo.com/grebastica.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.apartments-tojo.com/grebastica-en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.apartments-tojo.com/grebastica-en.html"/>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
 
   <!-- Apartman A1 -->
@@ -28,7 +48,7 @@
     <xhtml:link rel="alternate" hreflang="hr" href="https://www.apartments-tojo.com/apartmana1.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.apartments-tojo.com/apartmana1-en.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.apartments-tojo.com/apartmana1-en.html"/>
-    <lastmod>2026-04-17</lastmod>
+    <lastmod>2026-04-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -37,7 +57,7 @@
     <xhtml:link rel="alternate" hreflang="hr" href="https://www.apartments-tojo.com/apartmana1.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.apartments-tojo.com/apartmana1-en.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.apartments-tojo.com/apartmana1-en.html"/>
-    <lastmod>2026-04-17</lastmod>
+    <lastmod>2026-04-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -48,7 +68,7 @@
     <xhtml:link rel="alternate" hreflang="hr" href="https://www.apartments-tojo.com/apartmana2.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.apartments-tojo.com/apartmana2-en.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.apartments-tojo.com/apartmana2-en.html"/>
-    <lastmod>2026-04-17</lastmod>
+    <lastmod>2026-04-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -57,7 +77,7 @@
     <xhtml:link rel="alternate" hreflang="hr" href="https://www.apartments-tojo.com/apartmana2.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.apartments-tojo.com/apartmana2-en.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.apartments-tojo.com/apartmana2-en.html"/>
-    <lastmod>2026-04-17</lastmod>
+    <lastmod>2026-04-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -68,7 +88,7 @@
     <xhtml:link rel="alternate" hreflang="hr" href="https://www.apartments-tojo.com/apartmana3.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.apartments-tojo.com/apartmana3-en.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.apartments-tojo.com/apartmana3-en.html"/>
-    <lastmod>2026-04-17</lastmod>
+    <lastmod>2026-04-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -77,7 +97,7 @@
     <xhtml:link rel="alternate" hreflang="hr" href="https://www.apartments-tojo.com/apartmana3.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.apartments-tojo.com/apartmana3-en.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.apartments-tojo.com/apartmana3-en.html"/>
-    <lastmod>2026-04-17</lastmod>
+    <lastmod>2026-04-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -86,8 +106,18 @@
   <url>
     <loc>https://www.apartments-tojo.com/apartmani.html</loc>
     <xhtml:link rel="alternate" hreflang="hr" href="https://www.apartments-tojo.com/apartmani.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.apartments-tojo.com/apartmani.html"/>
-    <lastmod>2026-04-17</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.apartments-tojo.com/apartmani-en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.apartments-tojo.com/apartmani-en.html"/>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.apartments-tojo.com/apartmani-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="hr" href="https://www.apartments-tojo.com/apartmani.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.apartments-tojo.com/apartmani-en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.apartments-tojo.com/apartmani-en.html"/>
+    <lastmod>2026-04-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -98,7 +128,7 @@
     <xhtml:link rel="alternate" hreflang="hr" href="https://www.apartments-tojo.com/kontakt.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.apartments-tojo.com/kontakt-en.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.apartments-tojo.com/kontakt-en.html"/>
-    <lastmod>2026-04-17</lastmod>
+    <lastmod>2026-04-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -107,7 +137,7 @@
     <xhtml:link rel="alternate" hreflang="hr" href="https://www.apartments-tojo.com/kontakt.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.apartments-tojo.com/kontakt-en.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.apartments-tojo.com/kontakt-en.html"/>
-    <lastmod>2026-04-17</lastmod>
+    <lastmod>2026-04-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
