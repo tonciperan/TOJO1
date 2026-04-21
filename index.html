@@ -58,15 +58,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link rel="preload" as="image" href="images/UVALA-mobile.webp" media="(max-width: 800px)" fetchpriority="high">
     <link rel="preload" as="image" href="images/UVALA.webp" media="(min-width: 801px)" fetchpriority="high">
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400;600&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400;600&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400;600&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400;600&display=swap"></noscript>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"></noscript>
     <!-- Critical CSS: header + hero + slider + about — loaded synchronously -->
-    <style>*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:'Montserrat',sans-serif;background:#fff;color:#1a1a1a;overflow-x:hidden;animation:pageIn 0.4s ease}@keyframes pageIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}header{position:fixed;top:0;width:100%;display:flex;justify-content:space-between;align-items:center;padding:20px 10%;z-index:1000;background:transparent!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;box-shadow:none!important;transition:background 0.35s ease,box-shadow 0.35s ease}header.scrolled{background:rgba(255,255,255,0.97)!important;backdrop-filter:blur(12px)!important;-webkit-backdrop-filter:blur(12px)!important;box-shadow:0 1px 0 rgba(0,0,0,0.06)!important}header:not(.scrolled){background:linear-gradient(to bottom,rgba(0,0,0,0.42) 0%,transparent 100%)!important}header:not(.scrolled) .logo{color:#fff}header:not(.scrolled) nav>a{color:#fff}header:not(.scrolled) .nav-dropdown>a{color:#fff}header:not(.scrolled) .nav-cta-btn{background:transparent!important;border-color:rgba(255,255,255,0.55)!important;color:#fff!important}header:not(.scrolled) .menu-toggle span{background-color:#fff!important}header:not(.scrolled) .lang-switch a{color:rgba(255,255,255,0.7)!important}header:not(.scrolled) .lang-switch .lang-active{color:#fff!important}header:not(.scrolled) .lang-switch{border-left-color:rgba(255,255,255,0.2)!important}.logo{font-family:'Playfair Display',serif;font-size:20px;text-decoration:none;color:#000;letter-spacing:2px;font-weight:600;text-transform:uppercase;position:relative}nav{display:flex;align-items:center;height:100%}nav>a{text-decoration:none;color:#1a1a1a;margin-left:20px;font-size:12px;text-transform:uppercase;letter-spacing:1.5px;font-weight:400;line-height:1;display:inline-flex;align-items:center;height:100%}.nav-dropdown{display:inline-flex;align-items:center;margin-left:30px;position:relative}.nav-dropdown>a{text-decoration:none;color:#1a1a1a;font-size:12px;text-transform:uppercase;letter-spacing:1.5px;font-weight:400;line-height:1;display:inline-flex;align-items:center}.nav-cta-btn{background-color:#1a1a1a;color:#fff!important;padding:12px 25px;display:inline-flex;align-items:center;justify-content:center;text-decoration:none;font-size:12px;font-weight:600;letter-spacing:1px;border-radius:2px;border:1px solid #1a1a1a;min-width:140px;margin-left:30px}.lang-switch{display:flex;align-items:center;gap:6px;margin-left:35px;padding-left:25px;border-left:1px solid rgba(0,0,0,0.1);font-size:12px;letter-spacing:1.5px;font-weight:600}.lang-switch span{color:#ddd;font-weight:300}.lang-switch a{text-decoration:none;color:#aaa}.lang-switch .lang-active{color:#1a1a1a}.menu-toggle{display:none;flex-direction:column;justify-content:center;align-items:center;cursor:pointer;z-index:10000;width:36px;height:36px;position:relative}.menu-toggle span{width:22px;height:1.5px;background-color:#1d1d1f;display:block;border-radius:2px;margin:3.5px 0}.hero-section{position:relative;height:100vh;width:100%;display:flex;align-items:center;justify-content:flex-start;padding-left:10%;background:#fff}.hero-img-fade{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:1;filter:brightness(0.9) contrast(1.1);-webkit-mask-image:linear-gradient(to bottom,black 60%,transparent 100%);mask-image:linear-gradient(to bottom,black 60%,transparent 100%)}.hero-sidebar-content{z-index:10;max-width:600px;display:flex;flex-direction:column;align-items:flex-start;height:80vh;justify-content:center;position:relative}.top-location-minimal{position:absolute;top:30px;left:0;font-size:11px;letter-spacing:6px;color:#c5a47e;font-weight:500;text-transform:uppercase}.main-title-side{margin-top:150px;text-align:left}.main-title-side h1{font-family:'Playfair Display',serif;font-size:clamp(24px,3vw,36px);color:#fff;line-height:1.4;font-weight:400;text-align:left}.btn-minimal-link{display:inline-block;margin-top:50px;text-decoration:none;color:#fff;font-size:12px;letter-spacing:4px;border-bottom:1px solid rgba(197,164,126,0.4);padding-bottom:5px}.hero-reveal{animation:fadeInUp 2s ease-out forwards}@keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}#scroll-progress{position:fixed;top:0;left:0;height:2px;width:0%;background:linear-gradient(90deg,#c5a47e,#e8c99a,#c5a47e);z-index:10000;pointer-events:none}.apartment-slider-section{background:#fff;padding:80px 0 110px;min-height:100vh;display:flex;align-items:center;justify-content:center;position:relative}.apt-card{display:flex;align-items:center;max-width:1100px;margin:0 auto;gap:60px;padding:20px}.apt-card-image{flex:1.4;height:480px;overflow:hidden}.apt-card-image img{width:100%;height:100%;object-fit:cover}.apt-card-info{flex:1}.about-row{display:flex;align-items:center;gap:60px;max-width:1100px;margin:0 auto;padding:100px 20px}.apt-info-side{flex:1;min-width:0}.apt-gallery-side{flex:1.3;height:500px;min-width:0}.about-gallery-grid{display:flex;flex-direction:column;gap:10px;flex:1}.main-about-img{flex:1}.main-about-img img{width:100%;height:300px;object-fit:cover}.mini-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.mini-grid img{width:100%;aspect-ratio:1/1;object-fit:cover}.swiper{overflow:hidden;position:relative}.swiper-wrapper{display:flex;width:100%;height:100%;box-sizing:content-box}.swiper-slide{flex-shrink:0;width:100%;height:100%;position:relative}.apartmani-container{padding:160px 10% 80px;max-width:1400px;margin:0 auto}.apt-row{display:flex;gap:80px;align-items:center}.swiper-slide img{width:100%;height:100%;object-fit:cover}.apt-row-bottom{padding-bottom:80px;border-bottom:1px solid #eee}.apt-row-middle{padding-top:80px;padding-bottom:80px;border-bottom:1px solid #eee}.apt-row-last{padding-top:80px}.about-section-spacing{margin-top:150px;border-top:1px solid #eee;padding-top:100px}.btn-ghost{background:transparent!important;color:#1a1a1a!important;border:1px solid #1a1a1a!important;padding:12px 30px!important}.map-placeholder{width:100%;height:420px;background:#e8eaed;border-radius:4px;display:flex;align-items:center;justify-content:center;cursor:pointer}.map-placeholder-text{font-size:13px;color:#666;letter-spacing:1px;text-transform:uppercase}@media (max-width:768px){.reveal{opacity:0;transform:translateY(40px);transition:opacity 0.9s cubic-bezier(0.16,1,0.3,1),transform 0.9s cubic-bezier(0.16,1,0.3,1)}.reveal.active{opacity:1;transform:translateY(0)}}@media(max-width:768px){.apt-card{flex-direction:column;text-align:center;gap:30px}.apt-card-image{width:100%;height:250px}.about-row{flex-direction:column}.mini-grid img{aspect-ratio:1/1}}@media(max-width:768px){header{padding:15px 25px}nav{opacity:0;pointer-events:none;position:fixed;top:0;left:0;width:100%!important;height:100dvh!important;background:rgba(255,255,255,0.98)!important;flex-direction:column!important;justify-content:center!important;align-items:flex-start!important;padding:90px 40px 80px!important;z-index:9998;transition:opacity 0.35s cubic-bezier(0.23,1,0.32,1),transform 0.35s cubic-bezier(0.23,1,0.32,1)!important;transform:scale(1.02)!important;overflow-y:auto;box-shadow:none!important}nav.active{opacity:1!important;pointer-events:auto!important;transform:scale(1)!important}.menu-toggle{display:flex}.hero-section{height:100svh!important;min-height:600px!important;overflow:hidden!important}.hero-img-fade{transform:none!important;position:absolute!important;top:0!important;left:0!important;width:100%!important;height:100%!important;object-fit:cover!important}.hero-sidebar-content{padding-left:6%!important;padding-right:6%!important;height:auto;margin-top:280px}.main-title-side{margin-top:0}.main-title-side h1{font-size:24px;max-width:300px}.top-location-minimal{position:relative;top:-100px}.apt-row{flex-direction:column;gap:40px}.apt-gallery-side{width:100%;height:350px}.apartmani-container{padding:120px 5% 60px}}.category{color:#c5a47e;text-transform:uppercase;font-size:12px;letter-spacing:2px;display:block;margin-bottom:10px}.apt-card-info h2{font-family:'Playfair Display',serif;font-size:38px;margin-bottom:20px}.label{font-size:12px;letter-spacing:3px;color:#c5a47e;text-transform:uppercase;display:block;margin-bottom:15px}.about-title{font-family:'Playfair Display',serif;font-size:48px;line-height:1.1;font-weight:400}.about-title i{display:block;font-style:italic;color:#c5a47e;font-size:32px;margin-top:5px;font-family:'Playfair Display',serif}.lead-text{font-weight:600;color:#1a1a1a;font-size:17px}.location-text h2{font-family:'Playfair Display',serif;font-size:48px;line-height:1.1;margin:15px 0;color:#1a1a1a}.landmark-content h2{font-family:'Playfair Display',serif;font-size:clamp(40px,6vw,72px);margin:20px 0}.btn-more{display:inline-block;padding:12px 30px;margin:12px 0;border:1px solid #c5a47e;color:#c5a47e;text-decoration:none;font-size:12px;letter-spacing:2px;text-transform:uppercase;font-weight:600}.btn-book{display:inline-block;padding:18px 45px;background:#1a1a1a;color:#fff;text-decoration:none;font-size:12px;letter-spacing:2px;font-weight:600;cursor:pointer;border:none}</style>
-    <link rel="stylesheet" href="style.css?v=3" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="style.css?v=3"></noscript>
-    <link rel="stylesheet" href="apartmani.css?v=2" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="apartmani.css?v=2"></noscript>
+    <style>*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}body{font-family:'Montserrat',sans-serif;background:#fff;color:#1a1a1a;overflow-x:hidden}header{position:fixed;top:0;width:100%;display:flex;justify-content:space-between;align-items:center;padding:20px 10%;z-index:1000;background:#fff;box-shadow:none}.logo{font-family:'Playfair Display',serif;font-size:20px;text-decoration:none;color:#000;letter-spacing:2px;font-weight:600;text-transform:uppercase;position:relative}nav{display:flex;align-items:center;height:100%}nav>a{text-decoration:none;color:#1a1a1a;margin-left:20px;font-size:12px;text-transform:uppercase;letter-spacing:1.5px;font-weight:400;line-height:1;display:inline-flex;align-items:center;height:100%}.nav-dropdown{display:inline-flex;align-items:center;margin-left:30px;position:relative}.nav-dropdown>a{text-decoration:none;color:#1a1a1a;font-size:12px;text-transform:uppercase;letter-spacing:1.5px;font-weight:400;line-height:1;display:inline-flex;align-items:center}.nav-cta-btn{background-color:#1a1a1a;color:#fff!important;padding:12px 25px;display:inline-flex;align-items:center;justify-content:center;text-decoration:none;font-size:12px;font-weight:600;letter-spacing:1px;border-radius:2px;border:1px solid #1a1a1a;min-width:140px;margin-left:30px}.lang-switch{display:flex;align-items:center;gap:6px;margin-left:35px;padding-left:25px;border-left:1px solid rgba(0,0,0,0.1);font-size:12px;letter-spacing:1.5px;font-weight:600}.lang-switch span{color:#ddd;font-weight:300}.lang-switch a{text-decoration:none;color:#aaa}.lang-switch .lang-active{color:#1a1a1a}.menu-toggle{display:none;flex-direction:column;justify-content:center;align-items:center;cursor:pointer;z-index:10000;width:36px;height:36px;position:relative}.menu-toggle span{width:22px;height:1.5px;background-color:#1d1d1f;display:block;border-radius:2px;margin:3.5px 0}.hero-section{position:relative;height:100vh;width:100%;display:flex;align-items:center;justify-content:flex-start;padding-left:10%;background:#fff}.hero-img-fade{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:1;filter:brightness(0.9) contrast(1.1);-webkit-mask-image:linear-gradient(to bottom,black 60%,transparent 100%);mask-image:linear-gradient(to bottom,black 60%,transparent 100%)}.hero-sidebar-content{z-index:10;max-width:600px;display:flex;flex-direction:column;align-items:flex-start;height:80vh;justify-content:center;position:relative}.top-location-minimal{position:absolute;top:30px;left:0;font-size:11px;letter-spacing:6px;color:#c5a47e;font-weight:500;text-transform:uppercase}.main-title-side{margin-top:150px;text-align:left}.main-title-side h1{font-family:'Playfair Display',serif;font-size:clamp(24px,3vw,36px);color:#fff;line-height:1.4;font-weight:400;text-align:left}.btn-minimal-link{display:inline-block;margin-top:50px;text-decoration:none;color:#fff;font-size:12px;letter-spacing:4px;border-bottom:1px solid rgba(197,164,126,0.4);padding-bottom:5px}.hero-reveal{animation:fadeInUp 2s ease-out forwards}@keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}.apartment-slider-section{background:#fff;padding:80px 0 110px;min-height:100vh;display:flex;align-items:center;justify-content:center;position:relative}.apt-card{display:flex;align-items:center;max-width:1100px;margin:0 auto;gap:60px;padding:20px}.apt-card-image{flex:1.4;height:480px;overflow:hidden}.apt-card-image img{width:100%;height:100%;object-fit:cover}.apt-card-info{flex:1}.about-row{display:flex;align-items:center;gap:60px;max-width:1100px;margin:0 auto;padding:100px 20px}.apt-info-side{flex:1;min-width:0}.apt-gallery-side{flex:1.3;height:500px;min-width:0}.about-gallery-grid{display:flex;flex-direction:column;gap:10px;flex:1}.main-about-img{flex:1}.main-about-img img{width:100%;height:300px;object-fit:cover}.mini-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.mini-grid img{width:100%;aspect-ratio:1/1;object-fit:cover}.swiper{overflow:hidden;position:relative}.swiper-wrapper{display:flex;width:100%;height:100%;box-sizing:content-box}.swiper-slide{flex-shrink:0;width:100%;height:100%;position:relative}.apartmani-container{padding:160px 10% 80px;max-width:1400px;margin:0 auto}.apt-row{display:flex;gap:80px;align-items:center}.swiper-slide img{width:100%;height:100%;object-fit:cover}.apt-row-bottom{padding-bottom:80px;border-bottom:1px solid #eee}.apt-row-middle{padding-top:80px;padding-bottom:80px;border-bottom:1px solid #eee}.apt-row-last{padding-top:80px}.about-section-spacing{margin-top:150px;border-top:1px solid #eee;padding-top:100px}.btn-ghost{background:transparent!important;color:#1a1a1a!important;border:1px solid #1a1a1a!important;padding:12px 30px!important}.map-placeholder{width:100%;height:420px;background:#e8eaed;border-radius:4px;display:flex;align-items:center;justify-content:center;cursor:pointer}.map-placeholder-text{font-size:13px;color:#666;letter-spacing:1px;text-transform:uppercase}@media (max-width:768px){.reveal{opacity:0;transform:translateY(40px);transition:opacity 0.9s cubic-bezier(0.16,1,0.3,1),transform 0.9s cubic-bezier(0.16,1,0.3,1)}.reveal.active{opacity:1;transform:translateY(0)}}@media(max-width:768px){.apt-card{flex-direction:column;text-align:center;gap:30px}.apt-card-image{width:100%;height:250px}.about-row{flex-direction:column}.mini-grid img{aspect-ratio:1/1}}@media(max-width:768px){header{padding:15px 25px}nav{opacity:0;pointer-events:none;position:fixed;top:0;left:0;width:100%!important;height:100dvh!important;background:rgba(255,255,255,0.98)!important;flex-direction:column!important;justify-content:center!important;align-items:flex-start!important;padding:90px 40px 80px!important;z-index:9998;transition:opacity 0.35s cubic-bezier(0.23,1,0.32,1),transform 0.35s cubic-bezier(0.23,1,0.32,1)!important;transform:scale(1.02)!important;overflow-y:auto;box-shadow:none!important}nav.active{opacity:1!important;pointer-events:auto!important;transform:scale(1)!important}.menu-toggle{display:flex}.hero-section{height:100svh!important;min-height:600px!important;overflow:hidden!important}.hero-img-fade{transform:none!important;position:absolute!important;top:0!important;left:0!important;width:100%!important;height:100%!important;object-fit:cover!important}.hero-sidebar-content{padding-left:6%!important;padding-right:6%!important;height:auto;margin-top:280px}.main-title-side{margin-top:0}.main-title-side h1{font-size:24px;max-width:300px}.top-location-minimal{position:relative;top:-100px}.apt-row{flex-direction:column;gap:40px}.apt-gallery-side{width:100%;height:350px}.apartmani-container{padding:120px 5% 60px}}.category{color:#c5a47e;text-transform:uppercase;font-size:12px;letter-spacing:2px;display:block;margin-bottom:10px}.apt-card-info h2{font-family:'Playfair Display',serif;font-size:38px;margin-bottom:20px}.label{font-size:12px;letter-spacing:3px;color:#c5a47e;text-transform:uppercase;display:block;margin-bottom:15px}.about-title{font-family:'Playfair Display',serif;font-size:48px;line-height:1.1;font-weight:400}.about-title i{display:block;font-style:italic;color:#c5a47e;font-size:32px;margin-top:5px;font-family:'Playfair Display',serif}.lead-text{font-weight:600;color:#1a1a1a;font-size:17px}.location-text h2{font-family:'Playfair Display',serif;font-size:48px;line-height:1.1;margin:15px 0;color:#1a1a1a}.landmark-content h2{font-family:'Playfair Display',serif;font-size:clamp(40px,6vw,72px);margin:20px 0}.btn-more{display:inline-block;padding:12px 30px;margin:12px 0;border:1px solid #c5a47e;color:#c5a47e;text-decoration:none;font-size:12px;letter-spacing:2px;text-transform:uppercase;font-weight:600}.btn-book{display:inline-block;padding:18px 45px;background:#1a1a1a;color:#fff;text-decoration:none;font-size:12px;letter-spacing:2px;font-weight:600;cursor:pointer;border:none}</style>
+    <link rel="stylesheet" href="style.css?v=5" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="style.css?v=5"></noscript>
+    <link rel="stylesheet" href="apartmani.css?v=3" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="apartmani.css?v=3"></noscript>
     <!-- Fancybox CSS deferred — only needed when user opens gallery -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"></noscript>
@@ -240,6 +241,7 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
                     <a href="apartmana3.html">Apartman A3<span class="dropdown-sub">1. Kat • 4 osobe</span></a>
                 </div>
             </div>
+                <a href="grebastica.html">Grebaštica</a>
                 <a href="kontakt.html">Kontakt</a>
                 <a href="kontakt.html" class="btn-book nav-cta-btn" id="nav-rezerviraj">REZERVIRAJ SAD</a>
             <div class="lang-switch"><a href="index.html" class="lang-active" aria-current="page">HR</a><span>|</span><a href="index-en.html">EN</a></div>
@@ -270,10 +272,34 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
         </div>
     </section>
     
+    <section class="apt-row about-row reveal" id="upoznajte-nas">
+        <div class="apt-info-side">
+            <span class="label">Upoznajte nas</span>
+            <h2 class="about-title">Apartmani Grebaštica – <br>srce Dalmacije <i>Apartmani TOJO</i></h2>
+            <p class="lead-text">Privatni smještaj uz more u Grebaštici, 14 km od Šibenika – idealan za obiteljski odmor u Dalmaciji.</p>
+            <p>Naši apartmani Grebaštica smješteni su u mirnoj uvali između Zadra i Splita. Grebaštica je jedno od najljepših turističkih mjesta Šibenskog zaleđa – kristalno čisto more, dugi šljunčani beži i blizina Nacionalnih parkova Krka i Kornati čine je savršenom destinacijom u Dalmaciji, Hrvatskoj.</p>
+            <a href="kontakt.html" class="btn-book btn-ghost">REZERVIRAJ DIREKTNO</a>
+        </div>
+
+        <div class="apt-gallery-side about-gallery-grid">
+            <div class="main-about-img">
+                <a href="images/OKUCNICA/jug.webp" class="gallery-trigger" data-gallery="about" data-caption="Apartmani TOJO - Pogled s juga">
+                    <img srcset="images/OKUCNICA/jug%20(2)-sm.webp 600w, images/OKUCNICA/jug%20(2)-md.webp 960w, images/OKUCNICA/jug%20(2).webp 1600w" sizes="(max-width: 768px) 100vw, 950px" src="images/OKUCNICA/jug%20(2)-md.webp" alt="Apartmani TOJO – pogled s juga" width="1600" height="900" loading="lazy">
+                </a>
+            </div>
+            <div class="mini-grid">
+                <a href="images/OKUCNICA/cvice.webp" class="gallery-trigger" data-gallery="about"><img srcset="images/OKUCNICA/cvice-xs.webp 200w, images/OKUCNICA/cvice-sm.webp 600w, images/OKUCNICA/cvice.webp 1200w" sizes="(max-width: 768px) 25vw, 275px" src="images/OKUCNICA/cvice.webp" alt="Vrt Apartmani TOJO" loading="lazy"></a>
+                <a href="images/OKUCNICA/ljulja.webp" class="gallery-trigger" data-gallery="about"><img srcset="images/OKUCNICA/ljulja-xs.webp 200w, images/OKUCNICA/ljulja-sm.webp 600w, images/OKUCNICA/ljulja.webp 1200w" sizes="(max-width: 768px) 25vw, 275px" src="images/OKUCNICA/ljulja.webp" alt="Ljuljačka u vrtu" loading="lazy"></a>
+                <a href="images/OKUCNICA/jug.webp" class="gallery-trigger" data-gallery="about"><img srcset="images/OKUCNICA/jug-xs.webp 200w, images/OKUCNICA/jug-sm.webp 600w, images/OKUCNICA/jug.webp 1200w" sizes="(max-width: 768px) 25vw, 275px" src="images/OKUCNICA/jug.webp" alt="Pogled na more s juga" loading="lazy"></a>
+                <a href="images/OKUCNICA/zapad.webp" class="gallery-trigger" data-gallery="about"><img srcset="images/OKUCNICA/zapad-xs.webp 200w, images/OKUCNICA/zapad-sm.webp 600w, images/OKUCNICA/zapad.webp 1200w" sizes="(max-width: 768px) 25vw, 275px" src="images/OKUCNICA/zapad.webp" alt="Zapad sunca Grebaštica" loading="lazy"></a>
+            </div>
+        </div>
+    </section>
+
     <section class="apartment-slider-section reveal" id="apartmani">
         <div class="swiper mainSwiper">
             <div class="swiper-wrapper">
-                
+
                 <div class="swiper-slide">
                     <div class="apt-card">
                         <div class="apt-card-image">
@@ -323,30 +349,6 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
         </div>
     </section>
 
-    <section class="apt-row about-row reveal about-section-spacing">
-        <div class="apt-info-side">
-            <span class="label">Upoznajte nas</span>
-            <h2 class="about-title">Apartmani Grebaštica – <br>srce Dalmacije <i>Apartmani TOJO</i></h2>
-            <p class="lead-text">Privatni smještaj uz more u Grebaštici, 14 km od Šibenika – idealan za obiteljski odmor u Dalmaciji.</p>
-            <p>Naši apartmani Grebaštica smješteni su u mirnoj uvali između Zadra i Splita. Grebaštica je jedno od najljepših turističkih mjesta Šibenskog zaleđa – kristalno čisto more, dugi šljunčani beži i blizina Nacionalnih parkova Krka i Kornati čine je savršenom destinacijom u Dalmaciji, Hrvatskoj.</p>
-            <a href="kontakt.html" class="btn-book btn-ghost">REZERVIRAJ DIREKTNO</a>
-        </div>
-    
-        <div class="apt-gallery-side about-gallery-grid">
-            <div class="main-about-img">
-                <a href="images/OKUCNICA/jug.webp" class="gallery-trigger" data-gallery="about" data-caption="Apartmani TOJO - Pogled s juga">
-                    <img srcset="images/OKUCNICA/jug%20(2)-sm.webp 600w, images/OKUCNICA/jug%20(2)-md.webp 960w, images/OKUCNICA/jug%20(2).webp 1600w" sizes="(max-width: 768px) 100vw, 950px" src="images/OKUCNICA/jug%20(2)-md.webp" alt="Apartmani TOJO – pogled s juga" width="1600" height="900" loading="lazy">
-                </a>
-            </div>
-            <div class="mini-grid">
-                <a href="images/OKUCNICA/cvice.webp" class="gallery-trigger" data-gallery="about"><img srcset="images/OKUCNICA/cvice-xs.webp 200w, images/OKUCNICA/cvice-sm.webp 600w, images/OKUCNICA/cvice.webp 1200w" sizes="(max-width: 768px) 25vw, 275px" src="images/OKUCNICA/cvice.webp" alt="Vrt Apartmani TOJO" loading="lazy"></a>
-                <a href="images/OKUCNICA/ljulja.webp" class="gallery-trigger" data-gallery="about"><img srcset="images/OKUCNICA/ljulja-xs.webp 200w, images/OKUCNICA/ljulja-sm.webp 600w, images/OKUCNICA/ljulja.webp 1200w" sizes="(max-width: 768px) 25vw, 275px" src="images/OKUCNICA/ljulja.webp" alt="Ljuljačka u vrtu" loading="lazy"></a>
-                <a href="images/OKUCNICA/jug.webp" class="gallery-trigger" data-gallery="about"><img srcset="images/OKUCNICA/jug-xs.webp 200w, images/OKUCNICA/jug-sm.webp 600w, images/OKUCNICA/jug.webp 1200w" sizes="(max-width: 768px) 25vw, 275px" src="images/OKUCNICA/jug.webp" alt="Pogled na more s juga" loading="lazy"></a>
-                <a href="images/OKUCNICA/zapad.webp" class="gallery-trigger" data-gallery="about"><img srcset="images/OKUCNICA/zapad-xs.webp 200w, images/OKUCNICA/zapad-sm.webp 600w, images/OKUCNICA/zapad.webp 1200w" sizes="(max-width: 768px) 25vw, 275px" src="images/OKUCNICA/zapad.webp" alt="Zapad sunca Grebaštica" loading="lazy"></a>
-            </div>
-        </div>
-    </section>
-
     <section class="products-section reveal">
         <div class="products-grid">
             <div class="products-text">
@@ -386,6 +388,12 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
             </div>
         </div>
     </section>
+
+    <div style="padding:80px 10% 50px;text-align:center" class="reveal">
+        <span class="label" style="display:block;margin-bottom:14px">Okolica i znamenitosti</span>
+        <h2 style="font-family:'Playfair Display',serif;font-size:clamp(26px,3.5vw,40px);font-weight:400;color:#1a1a1a;line-height:1.2">Istražite ljepote Dalmacije <em style="font-style:italic;color:#c5a47e;display:block;font-size:0.78em;margin-top:8px">iz Grebašice – na korak od svega</em></h2>
+        <p style="font-size:14px;color:#888;margin-top:16px;letter-spacing:0.3px;max-width:500px;margin-left:auto;margin-right:auto">Kliknite na svaku atrakciju za više informacija i fotografija</p>
+    </div>
 
     <section class="landmarks-section reveal">
         <div class="swiper landmarksSwiper">
@@ -647,6 +655,41 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
         </div>
     </div>
 
+    <div style="padding:56px 0;background:#fff;display:flex;flex-direction:column;align-items:center;gap:14px">
+        <div style="display:flex;align-items:center;gap:18px;width:min(340px,70vw)">
+            <div style="flex:1;height:1px;background:linear-gradient(to right,transparent,#c5a47e 80%)"></div>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="#c5a47e"><path d="M8 0l1.8 6.2H16l-5.1 3.7 1.9 6.1L8 12 3.2 16l1.9-6.1L0 6.2h6.2z"/></svg>
+            <div style="flex:1;height:1px;background:linear-gradient(to left,transparent,#c5a47e 80%)"></div>
+        </div>
+        <span style="font-size:9px;letter-spacing:4px;text-transform:uppercase;color:#c5a47e;font-weight:600">Rezervirajte direktno</span>
+    </div>
+
+    <section class="cta-hero-section reveal" style="position:relative;height:80vh;min-height:500px;display:flex;align-items:center;justify-content:center;overflow:hidden;text-align:center">
+        <img src="images/OKUCNICA/jug%20(2).webp"
+             srcset="images/OKUCNICA/jug%20(2)-sm.webp 600w, images/OKUCNICA/jug%20(2)-md.webp 960w, images/OKUCNICA/jug%20(2).webp 1600w"
+             sizes="100vw"
+             alt="Apartmani TOJO – pogled s juga"
+             loading="lazy"
+             style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0">
+        <div style="position:absolute;inset:0;background:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55));z-index:1"></div>
+        <div style="position:relative;z-index:2;padding:20px;max-width:700px">
+            <span class="label" style="color:#c5a47e">Slobodnih mjesta je malo</span>
+            <h2 style="font-family:'Playfair Display',serif;font-size:clamp(32px,5vw,58px);color:#fff;font-weight:400;line-height:1.2;margin:18px 0 20px">Rezervirajte Vaš odmor<br><em style="font-style:italic;color:#e8c99a">već danas</em></h2>
+            <p style="color:rgba(255,255,255,0.82);font-size:15px;line-height:1.7;margin-bottom:36px;max-width:480px;margin-left:auto;margin-right:auto">Kontaktirajte nas i osigurajte termine koji vam odgovaraju.<br>Rezervirajte direktno – bez provizije i skrivenih troškova.</p>
+            <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+                <a href="kontakt.html" class="btn-book" style="background:#c5a47e;border:none;color:#fff;padding:16px 40px;font-size:12px;letter-spacing:2px">POŠALJI UPIT</a>
+                <a href="https://wa.me/385955502487?text=Zanima%20me%20smještaj" target="_blank" rel="noopener" class="btn-book" style="background:transparent;border:2px solid rgba(255,255,255,0.6);color:#fff;padding:14px 40px;font-size:12px;letter-spacing:2px">WHATSAPP</a>
+            </div>
+        </div>
+    </section>
+
+    <div style="padding:0 10%;background:#faf9f7">
+        <div class="weather-strip reveal" id="weather-widget">
+            <span class="weather-loading">Učitavam vremensku prognozu...</span>
+        </div>
+        <p style="font-size:11px;color:#bbb;letter-spacing:1.5px;text-transform:uppercase;padding:0 0 20px;margin-top:-8px">Trenutno stanje u Grebaštici – idealna destinacija cijelu godinu</p>
+    </div>
+
         <footer class="site-footer" id="kontakt">
         <div class="footer-inner">
             <div class="footer-col footer-brand">
@@ -695,7 +738,7 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
 
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="script.js?v=2"></script>
+    <script src="script.js?v=4"></script>
     <script src="apartmani.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js" defer></script>
     
