@@ -32,7 +32,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="Pogled na uvalu Grebaštica – Apartments TOJO Grebaštica">
-    <meta property="og:site_name" content="Apartmani TOJO | Apartments TOJO">
+    <meta property="og:site_name" content="Apartmani TOJO">
     <meta property="og:locale" content="hr_HR">
     <meta property="og:locale:alternate" content="en_US">
     <!-- Twitter Card -->
@@ -57,19 +57,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <noscript><link rel="stylesheet" href="style.css?v=9"></noscript>
     <link rel="stylesheet" href="apartmani.css?v=4" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="apartmani.css?v=4"></noscript>
-    <noscript>
-
     <!-- Schema.org JSON-LD strukturirani podaci -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": "LodgingBusiness",
+          "@type": ["LodgingBusiness", "VacationRental"],
           "@id": "https://www.apartments-tojo.com/#lodging",
           "name": "Apartmani TOJO",
-          "alternateName": "Apartments TOJO",
-          "description": "Tri udobna apartmana s pogledom na more u Grebaštici, 14 km od Šibenika. Privatna terasa, besplatni WiFi i parking. Rezervirajte direktno i uštedite na proviziji.",
+          "alternateName": ["Apartments TOJO", "Apartmani Grebaštica TOJO", "Privatni smještaj Grebaštica"],
+          "description": "Privatni apartmani uz more u Grebaštici – 14 km od Šibenika, Dalmacija. Tri udobna apartmana s privatnom terasom i pogledom na more. Besplatni WiFi, parking i klima uređaj. Rezervirajte direktno bez provizije.",
           "url": "https://www.apartments-tojo.com/",
           "telephone": "+385955502487",
           "email": "tonci.peran@gmail.com",
@@ -86,6 +84,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             "latitude": 43.641685,
             "longitude": 15.957384
           },
+          "containedInPlace": {
+            "@type": "Place",
+            "name": "Grebaštica",
+            "containedInPlace": {
+              "@type": "City",
+              "name": "Šibenik",
+              "containedInPlace": {
+                "@type": "AdministrativeArea",
+                "name": "Šibensko-kninska županija",
+                "containedInPlace": {"@type": "Country", "name": "Hrvatska"}
+              }
+            }
+          },
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.apartments-tojo.com/images/logo.png",
+            "width": 2048,
+            "height": 2048
+          },
+          "hasMap": "https://maps.app.goo.gl/3skmqbvgE931PrCUA",
           "image": [
             "https://www.apartments-tojo.com/images/UVALA.webp",
             "https://www.apartments-tojo.com/images/A1/balkon%20(2).webp",
@@ -94,11 +112,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           ],
           "priceRange": "€€",
           "numberOfRooms": 3,
+          "touristType": ["Obitelji", "Parovi", "Priroda i aktivnosti"],
           "areaServed": [
             {"@type": "Place", "name": "Grebaštica"},
             {"@type": "City", "name": "Šibenik"},
-            {"@type": "AdministrativeArea", "name": "Dalmacija"},
-            {"@type": "Country", "name": "Hrvatska"}
+            {"@type": "AdministrativeArea", "name": "Dalmacija"}
           ],
           "checkinTime": "14:00",
           "checkoutTime": "10:00",
@@ -137,27 +155,30 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           "containsPlace": [
             {
               "@type": "Apartment",
-              "name": "Apartman A1",
+              "name": "Apartman A1 – Grebaštica",
               "url": "https://www.apartments-tojo.com/apartmana1.html",
+              "description": "Prostran apartman za 4 osobe s privatnom terasom i pogledom na more, Grebaštica – Šibenik",
               "occupancy": {"@type": "QuantitativeValue", "maxValue": 4},
               "floorSize": {"@type": "QuantitativeValue", "value": 50, "unitCode": "MTK"},
-              "offers": {"@type": "Offer", "price": "60", "priceCurrency": "EUR"}
+              "offers": {"@type": "Offer", "price": "60", "priceCurrency": "EUR", "priceValidUntil": "2026-12-31"}
             },
             {
               "@type": "Apartment",
-              "name": "Apartman A2",
+              "name": "Apartman A2 – Grebaštica",
               "url": "https://www.apartments-tojo.com/apartmana2.html",
+              "description": "Prostran apartman za 5 osoba s balkonom i pogledom na zalazak sunca, Grebaštica – Šibenik",
               "occupancy": {"@type": "QuantitativeValue", "maxValue": 5},
               "floorSize": {"@type": "QuantitativeValue", "value": 75, "unitCode": "MTK"},
-              "offers": {"@type": "Offer", "price": "80", "priceCurrency": "EUR"}
+              "offers": {"@type": "Offer", "price": "80", "priceCurrency": "EUR", "priceValidUntil": "2026-12-31"}
             },
             {
               "@type": "Apartment",
-              "name": "Apartman A3",
+              "name": "Apartman A3 – Grebaštica",
               "url": "https://www.apartments-tojo.com/apartmana3.html",
+              "description": "Ugodan apartman za 4 osobe s terasom i pogledom na more, Grebaštica – Šibenik",
               "occupancy": {"@type": "QuantitativeValue", "maxValue": 4},
               "floorSize": {"@type": "QuantitativeValue", "value": 45, "unitCode": "MTK"},
-              "offers": {"@type": "Offer", "price": "60", "priceCurrency": "EUR"}
+              "offers": {"@type": "Offer", "price": "60", "priceCurrency": "EUR", "priceValidUntil": "2026-12-31"}
             }
           ]
         },
@@ -165,42 +186,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           "@type": "WebSite",
           "@id": "https://www.apartments-tojo.com/#website",
           "url": "https://www.apartments-tojo.com/",
-          "name": "Apartmani TOJO | Apartments TOJO",
+          "name": "Apartmani TOJO",
           "inLanguage": "hr-HR"
         },
         {
-          "@type": "ItemList",
-          "name": "Navigacija",
+          "@type": "BreadcrumbList",
           "itemListElement": [
             {
-              "@type": "SiteNavigationElement",
+              "@type": "ListItem",
               "position": 1,
-              "name": "Početna",
-              "url": "https://www.apartments-tojo.com/"
-            },
-            {
-              "@type": "SiteNavigationElement",
-              "position": 2,
-              "name": "Apartman A1 – 4 osobe, 50 m²",
-              "url": "https://www.apartments-tojo.com/apartmana1.html"
-            },
-            {
-              "@type": "SiteNavigationElement",
-              "position": 3,
-              "name": "Apartman A2 – 5 osoba, 75 m²",
-              "url": "https://www.apartments-tojo.com/apartmana2.html"
-            },
-            {
-              "@type": "SiteNavigationElement",
-              "position": 4,
-              "name": "Apartman A3 – 4 osobe, 45 m²",
-              "url": "https://www.apartments-tojo.com/apartmana3.html"
-            },
-            {
-              "@type": "SiteNavigationElement",
-              "position": 5,
-              "name": "Kontakt",
-              "url": "https://www.apartments-tojo.com/kontakt.html"
+              "name": "Grebaštica, Šibenik",
+              "item": "https://www.apartments-tojo.com/"
             }
           ]
         }
@@ -264,7 +260,7 @@ height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Ma
             <span class="label">Upoznajte nas</span>
             <h2 class="about-title">Apartmani Grebaštica – <br>srce Dalmacije <i>Apartmani TOJO</i></h2>
             <p class="lead-text">Privatni smještaj uz more u Grebaštici, 14 km od Šibenika – idealan za obiteljski odmor u Dalmaciji.</p>
-            <p>Naši apartmani Grebaštica smješteni su u mirnoj uvali između Zadra i Splita. Grebaštica je jedno od najljepših turističkih mjesta Šibenskog zaleđa – kristalno čisto more, dugi šljunčani beži i blizina Nacionalnih parkova Krka i Kornati čine je savršenom destinacijom u Dalmaciji, Hrvatskoj.</p>
+            <p>Naši apartmani Grebaštica smješteni su u mirnoj uvali između Zadra i Splita – privatni smještaj u blizini Šibenika s mirom i prirodom kakvu grad ne može ponuditi. Kristalno čisto more, dugi šljunčani beži i blizina Nacionalnih parkova Krka i Kornati čine Grebašticu savršenom destinacijom u Dalmaciji, Hrvatskoj.</p>
             <a href="kontakt.html" class="btn-book btn-ghost">REZERVIRAJ DIREKTNO</a>
         </div>
 
