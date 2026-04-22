@@ -65,6 +65,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         {
           "@type": ["LodgingBusiness", "VacationRental"],
           "@id": "https://www.apartments-tojo.com/#lodging",
+          "identifier": {"@type": "PropertyValue", "propertyID": "url", "value": "https://www.apartments-tojo.com/"},
+          "additionalType": "https://www.wikidata.org/wiki/Q11707419",
           "name": "Apartmani TOJO",
           "alternateName": ["Apartments TOJO", "Apartmani Grebaštica TOJO", "Privatni smještaj Grebaštica"],
           "description": "Privatni apartmani uz more u Grebaštici – 14 km od Šibenika, Dalmacija. Tri udobna apartmana s privatnom terasom i pogledom na more. Besplatni WiFi, parking i klima uređaj. Rezervirajte direktno bez provizije.",
@@ -108,7 +110,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             "https://www.apartments-tojo.com/images/UVALA.webp",
             "https://www.apartments-tojo.com/images/A1/balkon%20(2).webp",
             "https://www.apartments-tojo.com/images/A2/balkon%20(2).webp",
-            "https://www.apartments-tojo.com/images/A3/balkon%20(2).webp"
+            "https://www.apartments-tojo.com/images/A3/balkon%20(2).webp",
+            "https://www.apartments-tojo.com/images/OKUCNICA/jug%20(2).webp",
+            "https://www.apartments-tojo.com/images/OKUCNICA/zapad.webp",
+            "https://www.apartments-tojo.com/images/A2/kuhinja%20(2).webp",
+            "https://www.apartments-tojo.com/images/A3/kuhinja%20(2).webp"
           ],
           "priceRange": "€€",
           "numberOfRooms": 3,
@@ -141,12 +147,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           "review": [
             {
               "@type": "Review",
+              "datePublished": "2024-08-15",
               "reviewRating": {"@type": "Rating", "ratingValue": "10", "bestRating": "10"},
               "author": {"@type": "Person", "name": "Gost iz Poljske"},
               "reviewBody": "Prekrasna terasa s pogledom na more. Gostoprimljivi domaćini — poklonili su nam bademe, suhe smokve i domaće vino. Osjećali smo se kao kod familije."
             },
             {
               "@type": "Review",
+              "datePublished": "2024-07-22",
               "reviewRating": {"@type": "Rating", "ratingValue": "10", "bestRating": "10"},
               "author": {"@type": "Person", "name": "Gost iz Mađarske"},
               "reviewBody": "Fantastičan odmor! Mirno mjesto, bistro more. Apartman čist i uredan, sve na svom mjestu. Domaćini su bili iznimno ljubazni i dostupni."
@@ -155,28 +163,67 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           "containsPlace": [
             {
               "@type": "Apartment",
+              "additionalType": "https://www.wikidata.org/wiki/Q165",
               "name": "Apartman A1 – Grebaštica",
               "url": "https://www.apartments-tojo.com/apartmana1.html",
               "description": "Prostran apartman za 4 osobe s privatnom terasom i pogledom na more, Grebaštica – Šibenik",
-              "occupancy": {"@type": "QuantitativeValue", "maxValue": 4},
+              "numberOfBedrooms": 1,
+              "numberOfBathroomsTotal": 1,
+              "bed": [
+                {"@type": "BedDetails", "numberOfBeds": 1, "typeOfBed": "https://schema.org/DoubleBed"},
+                {"@type": "BedDetails", "numberOfBeds": 1, "typeOfBed": "https://schema.org/SofaBed"}
+              ],
+              "amenityFeature": [
+                {"@type": "LocationFeatureSpecification", "name": "Privatna terasa s pogledom na more", "value": true},
+                {"@type": "LocationFeatureSpecification", "name": "Klima uređaj", "value": true},
+                {"@type": "LocationFeatureSpecification", "name": "Besplatni WiFi", "value": true},
+                {"@type": "LocationFeatureSpecification", "name": "Potpuno opremljena kuhinja", "value": true}
+              ],
+              "occupancy": {"@type": "QuantitativeValue", "value": 4, "maxValue": 4},
               "floorSize": {"@type": "QuantitativeValue", "value": 50, "unitCode": "MTK"},
               "offers": {"@type": "Offer", "price": "60", "priceCurrency": "EUR", "priceValidUntil": "2026-12-31"}
             },
             {
               "@type": "Apartment",
+              "additionalType": "https://www.wikidata.org/wiki/Q165",
               "name": "Apartman A2 – Grebaštica",
               "url": "https://www.apartments-tojo.com/apartmana2.html",
               "description": "Prostran apartman za 5 osoba s balkonom i pogledom na zalazak sunca, Grebaštica – Šibenik",
-              "occupancy": {"@type": "QuantitativeValue", "maxValue": 5},
+              "numberOfBedrooms": 2,
+              "numberOfBathroomsTotal": 1,
+              "bed": [
+                {"@type": "BedDetails", "numberOfBeds": 1, "typeOfBed": "https://schema.org/DoubleBed"},
+                {"@type": "BedDetails", "numberOfBeds": 3, "typeOfBed": "https://schema.org/SingleBed"}
+              ],
+              "amenityFeature": [
+                {"@type": "LocationFeatureSpecification", "name": "Balkon s pogledom na zalazak sunca", "value": true},
+                {"@type": "LocationFeatureSpecification", "name": "Klima uređaj", "value": true},
+                {"@type": "LocationFeatureSpecification", "name": "Besplatni WiFi", "value": true},
+                {"@type": "LocationFeatureSpecification", "name": "Potpuno opremljena kuhinja", "value": true}
+              ],
+              "occupancy": {"@type": "QuantitativeValue", "value": 5, "maxValue": 5},
               "floorSize": {"@type": "QuantitativeValue", "value": 75, "unitCode": "MTK"},
               "offers": {"@type": "Offer", "price": "80", "priceCurrency": "EUR", "priceValidUntil": "2026-12-31"}
             },
             {
               "@type": "Apartment",
+              "additionalType": "https://www.wikidata.org/wiki/Q165",
               "name": "Apartman A3 – Grebaštica",
               "url": "https://www.apartments-tojo.com/apartmana3.html",
               "description": "Ugodan apartman za 4 osobe s terasom i pogledom na more, Grebaštica – Šibenik",
-              "occupancy": {"@type": "QuantitativeValue", "maxValue": 4},
+              "numberOfBedrooms": 2,
+              "numberOfBathroomsTotal": 1,
+              "bed": [
+                {"@type": "BedDetails", "numberOfBeds": 1, "typeOfBed": "https://schema.org/DoubleBed"},
+                {"@type": "BedDetails", "numberOfBeds": 2, "typeOfBed": "https://schema.org/SingleBed"}
+              ],
+              "amenityFeature": [
+                {"@type": "LocationFeatureSpecification", "name": "Terasa s pogledom na more", "value": true},
+                {"@type": "LocationFeatureSpecification", "name": "Klima uređaj", "value": true},
+                {"@type": "LocationFeatureSpecification", "name": "Besplatni WiFi", "value": true},
+                {"@type": "LocationFeatureSpecification", "name": "Potpuno opremljena kuhinja", "value": true}
+              ],
+              "occupancy": {"@type": "QuantitativeValue", "value": 4, "maxValue": 4},
               "floorSize": {"@type": "QuantitativeValue", "value": 45, "unitCode": "MTK"},
               "offers": {"@type": "Offer", "price": "60", "priceCurrency": "EUR", "priceValidUntil": "2026-12-31"}
             }
