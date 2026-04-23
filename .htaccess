@@ -1,26 +1,20 @@
-# Force HTTPS + www — single redirect hop
+# Force HTTPS + www + .html
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
-  # http non-www → https www
-  RewriteCond %{HTTPS} off
-  RewriteCond %{HTTP_HOST} !^www\. [NC]
-  RewriteRule ^(.*)$ https://www.apartments-tojo.com/$1 [R=301,L]
-
-  # http www → https www
-  RewriteCond %{HTTPS} off
-  RewriteCond %{HTTP_HOST} ^www\. [NC]
-  RewriteRule ^(.*)$ https://www.apartments-tojo.com/$1 [R=301,L]
-
-  # https non-www → https www
-  RewriteCond %{HTTPS} on
+  # Sve što nije https://www → https://www (jedan hop)
+  RewriteCond %{HTTPS} off [OR]
   RewriteCond %{HTTP_HOST} !^www\. [NC]
   RewriteRule ^(.*)$ https://www.apartments-tojo.com/$1 [R=301,L]
 
   # /index bez .html → /
-  RewriteCond %{HTTPS} on
-  RewriteCond %{HTTP_HOST} ^www\. [NC]
   RewriteRule ^index$ / [R=301,L]
+
+  # Extensionless URL → dodaj .html ako datoteka postoji
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME}.html -f
+  RewriteRule ^([^./]+)$ /$1.html [R=301,L]
 </IfModule>
 
 # Compression
