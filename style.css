@@ -357,9 +357,8 @@ nav>a:hover {
     column-gap: 60px;
     max-width: 1100px;
     margin: 0 auto;
-    padding: 20px 20px 40px 20px;
-    align-items: center;
-}
+    padding:20px 20px 40px 20px;
+    align-items: center;}
 
 .apt-card-image {
     grid-column: 1;
