@@ -1,4 +1,58 @@
 [[redirects]]
+  from = "https://apartments-tojo.com/*"
+  to = "https://www.apartments-tojo.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/index-en"
+  to = "/index-en.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/apartmani-en"
+  to = "/apartmani-en.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/apartmana1-en"
+  to = "/apartmana1-en.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/apartmana2-en"
+  to = "/apartmana2-en.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/apartmana3-en"
+  to = "/apartmana3-en.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/grebastica-en"
+  to = "/grebastica-en.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/kontakt-en"
+  to = "/kontakt-en.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/"
   to = "/index-en.html"
   status = 302
