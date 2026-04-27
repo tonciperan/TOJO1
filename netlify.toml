@@ -1,10 +1,4 @@
 [[redirects]]
-  from = "https://apartments-tojo.com/*"
-  to = "https://www.apartments-tojo.com/:splat"
-  status = 301
-  force = true
-
-[[redirects]]
   from = "/index.html"
   to = "/"
   status = 301
