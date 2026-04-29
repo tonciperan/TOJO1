@@ -2,6 +2,8 @@
 <html lang="hr">
 <head>
     <meta charset="UTF-8">
+    <!-- Preload hero image first — highest priority for LCP -->
+    <link rel="preload" as="image" imagesrcset="images/UVALA-mobile.webp 800w, images/UVALA-1400.webp 1400w, images/UVALA.webp 1920w" imagesizes="(max-width: 800px) 100vw, (max-width: 1400px) 1400px, 1920px" fetchpriority="high">
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
     <link rel="dns-prefetch" href="https://api.open-meteo.com">
     <link rel="dns-prefetch" href="https://www.googletagmanager.com">
@@ -48,8 +50,6 @@
     <link rel="apple-touch-icon" href="images/favicon-48x48.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apartmani Grebaštica | TOJO – Privatni smještaj, Šibenik</title>
-    <!-- Preload hero image for fast LCP -->
-    <link rel="preload" as="image" imagesrcset="images/UVALA-mobile.webp 800w, images/UVALA-1400.webp 1400w, images/UVALA.webp 1920w" imagesizes="(max-width: 800px) 100vw, (max-width: 1400px) 1400px, 1920px" fetchpriority="high">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"></noscript>
     <!-- Critical CSS: header + hero + slider + about — loaded synchronously -->
