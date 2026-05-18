@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \"from PIL import Image; print\\('Pillow OK'\\)\")",
+      "Bash(python -c ' *)",
+      "Bash(python update_galleries.py)",
+      "Bash(python resize_images.py)",
+      "Bash(python fix_seo_pagespeed.py)"
+    ]
+  }
+}
